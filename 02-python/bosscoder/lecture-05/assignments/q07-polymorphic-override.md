@@ -10,6 +10,15 @@ A base class and subclass define the same method, and a standalone function call
 ## Related skills
 Overriding; polymorphism; dynamic dispatch
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. A A
+2. B B
+3. A B
+4. Error
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
