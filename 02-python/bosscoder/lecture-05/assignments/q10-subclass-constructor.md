@@ -10,6 +10,13 @@ Parent and child classes each define an initializer with a visible side effect; 
 ## Related skills
 Constructors; inheritance; super
 
+## Four choices
+
+1. A
+2. B
+3. AB
+4. BA
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
