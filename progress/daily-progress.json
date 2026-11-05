@@ -1,0 +1,4376 @@
+{
+  "schema_version": 1,
+  "plan_started": "2026-11-07",
+  "timezone": "Asia/Kolkata",
+  "baseline": {
+    "sql_source_total": 205,
+    "sql_previously_solved": 20,
+    "sql_previously_solved_ids": [
+      "P001",
+      "P002",
+      "P003",
+      "P005",
+      "P007",
+      "P008",
+      "P015",
+      "P016",
+      "P017",
+      "P018",
+      "P019",
+      "A001",
+      "A004",
+      "A005",
+      "A010",
+      "A012",
+      "A014",
+      "P026",
+      "P004",
+      "P006"
+    ],
+    "python_pdf_total_pages": 80
+  },
+  "daily": [
+    {
+      "day": 1,
+      "date": "2026-11-07",
+      "sql": {
+        "title": "3. Sorting and Grouping: A016",
+        "source_ids": [
+          "A016"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 1, 2, 3, 4 — Course introduction, dataset and workflow",
+        "pdf_pages": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 2,
+      "date": "2026-11-08",
+      "sql": {
+        "title": "3. Sorting and Grouping: P009, P013",
+        "source_ids": [
+          "P009",
+          "P013"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 5 — Your first Python program",
+        "pdf_pages": [
+          5
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 3,
+      "date": "2026-11-09",
+      "sql": {
+        "title": "3. Sorting and Grouping: P014, P021",
+        "source_ids": [
+          "P014",
+          "P021"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 6 — Variables and names",
+        "pdf_pages": [
+          6
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 4,
+      "date": "2026-11-10",
+      "sql": {
+        "title": "3. Sorting and Grouping: P022, P025",
+        "source_ids": [
+          "P022",
+          "P025"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 7 — Numbers and maths",
+        "pdf_pages": [
+          7
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 5,
+      "date": "2026-11-11",
+      "sql": {
+        "title": "3. Sorting and Grouping: A017, A018",
+        "source_ids": [
+          "A017",
+          "A018"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 8 — Strings: working with text",
+        "pdf_pages": [
+          8
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 6,
+      "date": "2026-11-12",
+      "sql": {
+        "title": "3. Sorting and Grouping: A021, A025",
+        "source_ids": [
+          "A021",
+          "A025"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 9 — True, False, and comparisons",
+        "pdf_pages": [
+          9
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 7,
+      "date": "2026-11-14",
+      "sql": {
+        "title": "3. Sorting and Grouping: A039",
+        "source_ids": [
+          "A039"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 10 — Input and output",
+        "pdf_pages": [
+          10
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 8,
+      "date": "2026-11-15",
+      "sql": {
+        "title": "3. Sorting and Grouping: P050, A020",
+        "source_ids": [
+          "P050",
+          "A020"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 11 — Making decisions: if, elif, else",
+        "pdf_pages": [
+          11
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 9,
+      "date": "2026-11-16",
+      "sql": {
+        "title": "4. Aggregation: P010, P011",
+        "source_ids": [
+          "P010",
+          "P011"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 12 — Loops part 1: for and range",
+        "pdf_pages": [
+          12
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 10,
+      "date": "2026-11-17",
+      "sql": {
+        "title": "4. Aggregation: P012, A019",
+        "source_ids": [
+          "P012",
+          "A019"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 13 — Loops part 2: while, break, continue",
+        "pdf_pages": [
+          13
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 11,
+      "date": "2026-11-18",
+      "sql": {
+        "title": "4. Aggregation: A022, A023",
+        "source_ids": [
+          "A022",
+          "A023"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 14 — Lists: ordered collections",
+        "pdf_pages": [
+          14
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 12,
+      "date": "2026-11-19",
+      "sql": {
+        "title": "4. Aggregation: A024, A026",
+        "source_ids": [
+          "A024",
+          "A026"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 15 — Tuples and sets",
+        "pdf_pages": [
+          15
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 13,
+      "date": "2026-11-21",
+      "sql": {
+        "title": "4. Aggregation: A027, P035",
+        "source_ids": [
+          "A027",
+          "P035"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 16 — Dictionaries: key and value",
+        "pdf_pages": [
+          16
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 14,
+      "date": "2026-11-22",
+      "sql": {
+        "title": "4. Aggregation: P036",
+        "source_ids": [
+          "P036"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 17 — Which data structure?",
+        "pdf_pages": [
+          17
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 15,
+      "date": "2026-11-23",
+      "sql": {
+        "title": "4. Aggregation: P047, P048",
+        "source_ids": [
+          "P047",
+          "P048"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 18 — Functions: reusable steps",
+        "pdf_pages": [
+          18
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 16,
+      "date": "2026-11-24",
+      "sql": {
+        "title": "4. Aggregation: P051, P052",
+        "source_ids": [
+          "P051",
+          "P052"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 19 — Functions part 2: a mini pipeline",
+        "pdf_pages": [
+          19
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 17,
+      "date": "2026-11-25",
+      "sql": {
+        "title": "4. Aggregation: P054, P055",
+        "source_ids": [
+          "P054",
+          "P055"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 20 — Modules, packages and pip",
+        "pdf_pages": [
+          20
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 18,
+      "date": "2026-11-26",
+      "sql": {
+        "title": "4. Aggregation: P059, P084",
+        "source_ids": [
+          "P059",
+          "P084"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 21 — Reading errors without panic",
+        "pdf_pages": [
+          21
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 19,
+      "date": "2026-11-28",
+      "sql": {
+        "title": "2. Joins: A006, A008",
+        "source_ids": [
+          "A006",
+          "A008"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 22 — Files: read and write",
+        "pdf_pages": [
+          22
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 20,
+      "date": "2026-11-29",
+      "sql": {
+        "title": "2. Joins: A009, A011",
+        "source_ids": [
+          "A009",
+          "A011"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 23 — Mini project: monthly sales report",
+        "pdf_pages": [
+          23
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 21,
+      "date": "2026-11-30",
+      "sql": {
+        "title": "2. Joins: A013",
+        "source_ids": [
+          "A013"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 24 — Practice set 0: first steps",
+        "pdf_pages": [
+          24
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 22,
+      "date": "2026-12-01",
+      "sql": {
+        "title": "2. Joins: P027, P029",
+        "source_ids": [
+          "P027",
+          "P029"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 25 — The 6-step approach to any coding question",
+        "pdf_pages": [
+          25
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 23,
+      "date": "2026-12-02",
+      "sql": {
+        "title": "2. Joins: P038, P039",
+        "source_ids": [
+          "P038",
+          "P039"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 26 — Names objects and mutability",
+        "pdf_pages": [
+          26
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 24,
+      "date": "2026-12-03",
+      "sql": {
+        "title": "2. Joins: P046, P053",
+        "source_ids": [
+          "P046",
+          "P053"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 27 — Numbers strings and dates",
+        "pdf_pages": [
+          27
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 25,
+      "date": "2026-12-05",
+      "sql": {
+        "title": "2. Joins: P070, P077",
+        "source_ids": [
+          "P070",
+          "P077"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 28 — Lists tuples sets and Big-O",
+        "pdf_pages": [
+          28
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 26,
+      "date": "2026-12-06",
+      "sql": {
+        "title": "8. Advance string functions, regex and clause: P023, A091",
+        "source_ids": [
+          "P023",
+          "A091"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 29 — Dicts defaultdict and Counter",
+        "pdf_pages": [
+          29
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 27,
+      "date": "2026-12-07",
+      "sql": {
+        "title": "11. NULL Logic: A092",
+        "source_ids": [
+          "A092"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 30 — Loops comprehensions and unpacking",
+        "pdf_pages": [
+          30
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 28,
+      "date": "2026-12-08",
+      "sql": {
+        "title": "11. NULL Logic: A093, A095,%20and%20how%20do%20you%20make%20them.md)",
+        "source_ids": [
+          "A093",
+          "A095"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 31 — Functions scope and closures",
+        "pdf_pages": [
+          31
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 29,
+      "date": "2026-12-09",
+      "sql": {
+        "title": "11. NULL Logic: P024, A094",
+        "source_ids": [
+          "P024",
+          "A094"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 32 — Errors exceptions and context managers",
+        "pdf_pages": [
+          32
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 30,
+      "date": "2026-12-10",
+      "sql": {
+        "title": "12. Dates and Time: P020, A096",
+        "source_ids": [
+          "P020",
+          "A096"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 33 — Files CSV JSON JSON Lines and paths",
+        "pdf_pages": [
+          33
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 31,
+      "date": "2026-12-12",
+      "sql": {
+        "title": "12. Dates and Time: A097, A098",
+        "source_ids": [
+          "A097",
+          "A098"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 34 — Practice set 1 foundations",
+        "pdf_pages": [
+          34
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 32,
+      "date": "2026-12-13",
+      "sql": {
+        "title": "12. Dates and Time: A099, P040",
+        "source_ids": [
+          "A099",
+          "P040"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 35 — Iterators and generators",
+        "pdf_pages": [
+          35
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 33,
+      "date": "2026-12-14",
+      "sql": {
+        "title": "12. Dates and Time: A100, P061",
+        "source_ids": [
+          "A100",
+          "P061"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 36 — itertools functools and sorting",
+        "pdf_pages": [
+          36
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 34,
+      "date": "2026-12-15",
+      "sql": {
+        "title": "12. Dates and Time: P064",
+        "source_ids": [
+          "P064"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 37 — Classes and dataclasses",
+        "pdf_pages": [
+          37
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 35,
+      "date": "2026-12-16",
+      "sql": {
+        "title": "12. Dates and Time: P066, P069",
+        "source_ids": [
+          "P066",
+          "P069"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 38 — Decorators and context managers",
+        "pdf_pages": [
+          38
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 36,
+      "date": "2026-12-17",
+      "sql": {
+        "title": "12. Dates and Time: P075, P076",
+        "source_ids": [
+          "P075",
+          "P076"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 39 — Concurrency threads processes and asyncio",
+        "pdf_pages": [
+          39
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 37,
+      "date": "2026-12-19",
+      "sql": {
+        "title": "12. Dates and Time: P081, P085",
+        "source_ids": [
+          "P081",
+          "P085"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 40 — Practice set 2 advanced",
+        "pdf_pages": [
+          40
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 38,
+      "date": "2026-12-20",
+      "sql": {
+        "title": "12. Dates and Time: P091.md), A036",
+        "source_ids": [
+          "P091",
+          "A036"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 41 — Big-O in plain words",
+        "pdf_pages": [
+          41
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 39,
+      "date": "2026-12-21",
+      "sql": {
+        "title": "6. SubQueries: A002, A007",
+        "source_ids": [
+          "A002",
+          "A007"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 42 — Space complexity",
+        "pdf_pages": [
+          42
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 40,
+      "date": "2026-12-22",
+      "sql": {
+        "title": "6. SubQueries: A028, A029",
+        "source_ids": [
+          "A028",
+          "A029"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 43 — Time versus space trade-offs",
+        "pdf_pages": [
+          43
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 41,
+      "date": "2026-12-23",
+      "sql": {
+        "title": "6. SubQueries: A030",
+        "source_ids": [
+          "A030"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 44 — What Python operations cost",
+        "pdf_pages": [
+          44
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 42,
+      "date": "2026-12-24",
+      "sql": {
+        "title": "6. SubQueries: A033, A034",
+        "source_ids": [
+          "A033",
+          "A034"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 45 — Arrays and strings with two pointers",
+        "pdf_pages": [
+          45
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 43,
+      "date": "2026-12-26",
+      "sql": {
+        "title": "6. SubQueries: A035, A037",
+        "source_ids": [
+          "A035",
+          "A037"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 46 — Hashing",
+        "pdf_pages": [
+          46
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 44,
+      "date": "2026-12-27",
+      "sql": {
+        "title": "6. SubQueries: P028, P031",
+        "source_ids": [
+          "P028",
+          "P031"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 47 — Sliding windows",
+        "pdf_pages": [
+          47
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 45,
+      "date": "2026-12-28",
+      "sql": {
+        "title": "6. SubQueries: P032, P033",
+        "source_ids": [
+          "P032",
+          "P033"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 48 — Stacks and queues",
+        "pdf_pages": [
+          48
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 46,
+      "date": "2026-12-29",
+      "sql": {
+        "title": "6. SubQueries: P056, P057",
+        "source_ids": [
+          "P056",
+          "P057"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 49 — Linked lists",
+        "pdf_pages": [
+          49
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 47,
+      "date": "2026-12-30",
+      "sql": {
+        "title": "6. SubQueries: A031",
+        "source_ids": [
+          "A031"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 50 — Binary search",
+        "pdf_pages": [
+          50
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 48,
+      "date": "2026-12-31",
+      "sql": {
+        "title": "6. SubQueries: A032, A038",
+        "source_ids": [
+          "A032",
+          "A038"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 51 — Sorting",
+        "pdf_pages": [
+          51
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 49,
+      "date": "2027-01-02",
+      "sql": {
+        "title": "6. SubQueries: A078, P080",
+        "source_ids": [
+          "A078",
+          "P080"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 52 — Recursion and backtracking",
+        "pdf_pages": [
+          52
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 50,
+      "date": "2027-01-03",
+      "sql": {
+        "title": "5. CTEs: A040, A041",
+        "source_ids": [
+          "A040",
+          "A041"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 53 — Trees with DFS and BFS",
+        "pdf_pages": [
+          53
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 51,
+      "date": "2027-01-04",
+      "sql": {
+        "title": "5. CTEs: A043, A044",
+        "source_ids": [
+          "A043",
+          "A044"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 54 — Graphs and pipeline DAGs",
+        "pdf_pages": [
+          54
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 52,
+      "date": "2027-01-05",
+      "sql": {
+        "title": "5. CTEs: A045, P030",
+        "source_ids": [
+          "A045",
+          "P030"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 55 — Heaps and greedy choices",
+        "pdf_pages": [
+          55
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 53,
+      "date": "2027-01-06",
+      "sql": {
+        "title": "5. CTEs: A042, A051",
+        "source_ids": [
+          "A042",
+          "A051"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 56 — Dynamic programming basics",
+        "pdf_pages": [
+          56
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 54,
+      "date": "2027-01-07",
+      "sql": {
+        "title": "9. Windowing Functions: A052",
+        "source_ids": [
+          "A052"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 57 — Practice set 3: DSA",
+        "pdf_pages": [
+          57
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 55,
+      "date": "2027-01-09",
+      "sql": {
+        "title": "9. Windowing Functions: A060, A064",
+        "source_ids": [
+          "A060",
+          "A064"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 58 — Hear the coding pattern in the question",
+        "pdf_pages": [
+          58
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 56,
+      "date": "2027-01-10",
+      "sql": {
+        "title": "9. Windowing Functions: A071, A003",
+        "source_ids": [
+          "A071",
+          "A003"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 59 — Count first, then choose the top K (P1 and P2)",
+        "pdf_pages": [
+          59
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 57,
+      "date": "2027-01-11",
+      "sql": {
+        "title": "9. Windowing Functions: A015, A053",
+        "source_ids": [
+          "A015",
+          "A053"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 60 — Group baskets and keep the latest record (P3 and P4)",
+        "pdf_pages": [
+          60
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 58,
+      "date": "2027-01-12",
+      "sql": {
+        "title": "9. Windowing Functions: A054, A055",
+        "source_ids": [
+          "A054",
+          "A055"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 61 — Rolling windows and pre-sorted streams (P5 and P6)",
+        "pdf_pages": [
+          61
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 59,
+      "date": "2027-01-13",
+      "sql": {
+        "title": "9. Windowing Functions: A056, A057",
+        "source_ids": [
+          "A056",
+          "A057"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 62 — Flatten dictionaries; explode lists of records (P7)",
+        "pdf_pages": [
+          62
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 60,
+      "date": "2027-01-14",
+      "sql": {
+        "title": "9. Windowing Functions: A058, A059",
+        "source_ids": [
+          "A058",
+          "A059"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 63 — Split sessions and find consecutive streaks (P8 and P9)",
+        "pdf_pages": [
+          63
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 61,
+      "date": "2027-01-16",
+      "sql": {
+        "title": "9. Windowing Functions: A061",
+        "source_ids": [
+          "A061"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 64 — Parse messy logs and keep the skipped lines (P10)",
+        "pdf_pages": [
+          64
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 62,
+      "date": "2027-01-17",
+      "sql": {
+        "title": "9. Windowing Functions: A062, A063",
+        "source_ids": [
+          "A062",
+          "A063"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 65 — Merge time intervals; join files with a lookup (P11 and P12)",
+        "pdf_pages": [
+          65
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 63,
+      "date": "2027-01-18",
+      "sql": {
+        "title": "9. Windowing Functions: A066, A067",
+        "source_ids": [
+          "A066",
+          "A067"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 66 — Read big files in chunks; retry transient failures (P13 and P14)",
+        "pdf_pages": [
+          66
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 64,
+      "date": "2027-01-19",
+      "sql": {
+        "title": "9. Windowing Functions: A068, A069",
+        "source_ids": [
+          "A068",
+          "A069"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 67 — Pull every page; cache repeated lookups (P15 and P16)",
+        "pdf_pages": [
+          67
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 65,
+      "date": "2027-01-20",
+      "sql": {
+        "title": "9. Windowing Functions: A070, A073",
+        "source_ids": [
+          "A070",
+          "A073"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 68 — Quarantine bad rows and compare snapshots (P17 and P18)",
+        "pdf_pages": [
+          68
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 66,
+      "date": "2027-01-21",
+      "sql": {
+        "title": "9. Windowing Functions: A074, A075",
+        "source_ids": [
+          "A074",
+          "A075"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 69 — Pandas essentials, mapped to SQL",
+        "pdf_pages": [
+          69
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 67,
+      "date": "2027-01-23",
+      "sql": {
+        "title": "9. Windowing Functions: A076",
+        "source_ids": [
+          "A076"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 70 — Pandas results can be wrong without an error",
+        "pdf_pages": [
+          70
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 68,
+      "date": "2027-01-24",
+      "sql": {
+        "title": "9. Windowing Functions: A077, A079",
+        "source_ids": [
+          "A077",
+          "A079"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 71 — Load, query, transact and upsert with Python",
+        "pdf_pages": [
+          71
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 69,
+      "date": "2027-01-25",
+      "sql": {
+        "title": "9. Windowing Functions: P034, P041",
+        "source_ids": [
+          "P034",
+          "P041"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 72 — Build a small ETL pipeline you can rerun",
+        "pdf_pages": [
+          72
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 70,
+      "date": "2027-01-26",
+      "sql": {
+        "title": "9. Windowing Functions: P042, P043",
+        "source_ids": [
+          "P042",
+          "P043"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 73 — Test the code and check the data",
+        "pdf_pages": [
+          73
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 71,
+      "date": "2027-01-27",
+      "sql": {
+        "title": "9. Windowing Functions: P044, P045",
+        "source_ids": [
+          "P044",
+          "P045"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 74 — Move from pandas to PySpark, then schedule with Airflow",
+        "pdf_pages": [
+          74
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 72,
+      "date": "2027-01-28",
+      "sql": {
+        "title": "9. Windowing Functions: P049, P058",
+        "source_ids": [
+          "P049",
+          "P058"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 75 — Interview set: Python coding for data engineering",
+        "pdf_pages": [
+          75
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 73,
+      "date": "2027-01-30",
+      "sql": {
+        "title": "9. Windowing Functions: P060, A065",
+        "source_ids": [
+          "P060",
+          "A065"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 76 — Interview set: pandas and data wrangling",
+        "pdf_pages": [
+          76
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 74,
+      "date": "2027-01-31",
+      "sql": {
+        "title": "9. Windowing Functions: A072",
+        "source_ids": [
+          "A072"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 77 — Concept questions with short answers",
+        "pdf_pages": [
+          77
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 75,
+      "date": "2027-02-01",
+      "sql": {
+        "title": "9. Windowing Functions: P068, P074",
+        "source_ids": [
+          "P068",
+          "P074"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 78 — Complexity cheat sheet",
+        "pdf_pages": [
+          78
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 76,
+      "date": "2027-02-02",
+      "sql": {
+        "title": "9. Windowing Functions: P078, P079",
+        "source_ids": [
+          "P078",
+          "P079"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 79 — The preparation flow: ten weeks from zero to interviews",
+        "pdf_pages": [
+          79
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 77,
+      "date": "2027-02-03",
+      "sql": {
+        "title": "9. Windowing Functions: P082, P097",
+        "source_ids": [
+          "P082",
+          "P097"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PDF pp. 80 — Final revision sheet and the last 48 hours",
+        "pdf_pages": [
+          80
+        ],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 78,
+      "date": "2027-02-04",
+      "sql": {
+        "title": "10. Recursive CTE: A046, A047",
+        "source_ids": [
+          "A046",
+          "A047"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Pytest and test fixtures",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 79,
+      "date": "2027-02-06",
+      "sql": {
+        "title": "10. Recursive CTE: A049, A048",
+        "source_ids": [
+          "A049",
+          "A048"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build tested CSV/JSON ETL",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 80,
+      "date": "2027-02-07",
+      "sql": {
+        "title": "10. Recursive CTE: A050, A080",
+        "source_ids": [
+          "A050",
+          "A080"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "API pagination with retries",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 81,
+      "date": "2027-02-08",
+      "sql": {
+        "title": "13. Gaps and Islands: A081",
+        "source_ids": [
+          "A081"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Schema validation and error quarantine",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 82,
+      "date": "2027-02-09",
+      "sql": {
+        "title": "13. Gaps and Islands: A082, A083",
+        "source_ids": [
+          "A082",
+          "A083"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Configure logging / metrics",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 83,
+      "date": "2027-02-10",
+      "sql": {
+        "title": "13. Gaps and Islands: A084, P065",
+        "source_ids": [
+          "A084",
+          "P065"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "pandas join and groupby lab",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 84,
+      "date": "2027-02-11",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: A085%20combination%20in%20payments.md), A086",
+        "source_ids": [
+          "A085",
+          "A086"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python-PostgreSQL load and parameterization",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 85,
+      "date": "2027-02-13",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: A089, A090",
+        "source_ids": [
+          "A089",
+          "A090"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Incremental ingestion/checkpoints",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 86,
+      "date": "2027-02-14",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: P037, A087",
+        "source_ids": [
+          "P037",
+          "A087"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PySpark DataFrames",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 87,
+      "date": "2027-02-15",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: A088",
+        "source_ids": [
+          "A088"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Spark partitions and Parquet",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 88,
+      "date": "2027-02-16",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: P071, P072",
+        "source_ids": [
+          "P071",
+          "P072"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Spark joins and window functions",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 89,
+      "date": "2027-02-17",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: P086, P087",
+        "source_ids": [
+          "P086",
+          "P087"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Tune Spark plans / skew",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 90,
+      "date": "2027-02-18",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: P088, P089",
+        "source_ids": [
+          "P088",
+          "P089"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Airflow DAG and retry policies",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 91,
+      "date": "2027-02-20",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: P090, P092",
+        "source_ids": [
+          "P090",
+          "P092"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Cloud object storage and IAM",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 92,
+      "date": "2027-02-21",
+      "sql": {
+        "title": "14. Data Quality and Deduplication: P093, P095",
+        "source_ids": [
+          "P093",
+          "P095"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Design robust batch pipeline",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 93,
+      "date": "2027-02-22",
+      "sql": {
+        "title": "15. Analytics and Performance: P062.md), P063",
+        "source_ids": [
+          "P062",
+          "P063"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Event-data processing simulation",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 94,
+      "date": "2027-02-23",
+      "sql": {
+        "title": "15. Analytics and Performance: P067",
+        "source_ids": [
+          "P067"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python data-quality test suite",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 95,
+      "date": "2027-02-24",
+      "sql": {
+        "title": "15. Analytics and Performance: P073, P083",
+        "source_ids": [
+          "P073",
+          "P083"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build warehouse pipeline project",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 96,
+      "date": "2027-02-25",
+      "sql": {
+        "title": "15. Analytics and Performance: P094.md), P096",
+        "source_ids": [
+          "P094",
+          "P096"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build event analytics project",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 97,
+      "date": "2027-02-27",
+      "sql": {
+        "title": "15. Analytics and Performance: P098, P099",
+        "source_ids": [
+          "P098",
+          "P099"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Fault injection, replay and recovery",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 98,
+      "date": "2027-02-28",
+      "sql": {
+        "title": "15. Analytics and Performance: P100, X001",
+        "source_ids": [
+          "P100",
+          "X001"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Coding interview with complexity",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 99,
+      "date": "2027-03-01",
+      "sql": {
+        "title": "7. Extra Problems: X002, X005",
+        "source_ids": [
+          "X002",
+          "X005"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python timed mock round",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 100,
+      "date": "2027-03-02",
+      "sql": {
+        "title": "7. Extra Problems: X003, X004",
+        "source_ids": [
+          "X003",
+          "X004"
+        ],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PySpark transformation mock",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 101,
+      "date": "2027-03-03",
+      "sql": {
+        "title": "Refresh advanced joins and anti-joins",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Project documentation and testing",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 102,
+      "date": "2027-03-04",
+      "sql": {
+        "title": "Explain query plans and access paths",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "ETL system design mock",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 103,
+      "date": "2027-03-06",
+      "sql": {
+        "title": "Diagnose duplicate amplification",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Resume project walk-through",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 104,
+      "date": "2027-03-07",
+      "sql": {
+        "title": "Model fact grain, dimensions and SCD2",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Interview weak-point revision",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 105,
+      "date": "2027-03-08",
+      "sql": {
+        "title": "Build watermark-driven incremental SQL",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Portfolio final assessment",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 106,
+      "date": "2027-03-09",
+      "sql": {
+        "title": "MERGE/upsert and idempotency",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Pytest and test fixtures",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 107,
+      "date": "2027-03-10",
+      "sql": {
+        "title": "Schema drift and contract checks",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build tested CSV/JSON ETL",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 108,
+      "date": "2027-03-11",
+      "sql": {
+        "title": "CDC and late arriving records",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "API pagination with retries",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 109,
+      "date": "2027-03-13",
+      "sql": {
+        "title": "Partition pruning and clustering",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Schema validation and error quarantine",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 110,
+      "date": "2027-03-14",
+      "sql": {
+        "title": "Cohort/retention analytics review",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Configure logging / metrics",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 111,
+      "date": "2027-03-15",
+      "sql": {
+        "title": "Window frame edge cases",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "pandas join and groupby lab",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 112,
+      "date": "2027-03-16",
+      "sql": {
+        "title": "Gaps-and-islands timed exercise",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python-PostgreSQL load and parameterization",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 113,
+      "date": "2027-03-17",
+      "sql": {
+        "title": "Revenue reconciliation and data quality",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Incremental ingestion/checkpoints",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 114,
+      "date": "2027-03-18",
+      "sql": {
+        "title": "Spark SQL vs PostgreSQL differences",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PySpark DataFrames",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 115,
+      "date": "2027-03-20",
+      "sql": {
+        "title": "Join skew / broadcast tradeoffs",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Spark partitions and Parquet",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 116,
+      "date": "2027-03-21",
+      "sql": {
+        "title": "Warehouse query performance lab",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Spark joins and window functions",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 117,
+      "date": "2027-03-22",
+      "sql": {
+        "title": "Materialized aggregates and cost",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Tune Spark plans / skew",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 118,
+      "date": "2027-03-23",
+      "sql": {
+        "title": "Event-session analytics",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Airflow DAG and retry policies",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 119,
+      "date": "2027-03-24",
+      "sql": {
+        "title": "SQL for streaming corrections",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Cloud object storage and IAM",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 120,
+      "date": "2027-03-25",
+      "sql": {
+        "title": "Rolling metrics / timezones",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Design robust batch pipeline",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 121,
+      "date": "2027-03-27",
+      "sql": {
+        "title": "SQL model tests",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Event-data processing simulation",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 122,
+      "date": "2027-03-28",
+      "sql": {
+        "title": "Optimize a slow reporting query",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python data-quality test suite",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 123,
+      "date": "2027-03-29",
+      "sql": {
+        "title": "Backfills and reproducibility",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build warehouse pipeline project",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 124,
+      "date": "2027-03-30",
+      "sql": {
+        "title": "Project 1 warehouse SQL",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build event analytics project",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 125,
+      "date": "2027-03-31",
+      "sql": {
+        "title": "Project 2 event analytics SQL",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Fault injection, replay and recovery",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 126,
+      "date": "2027-04-01",
+      "sql": {
+        "title": "Incident query debugging",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Coding interview with complexity",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 127,
+      "date": "2027-04-03",
+      "sql": {
+        "title": "Data platform SQL system design",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python timed mock round",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 128,
+      "date": "2027-04-04",
+      "sql": {
+        "title": "Hard interview case under time",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PySpark transformation mock",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 129,
+      "date": "2027-04-05",
+      "sql": {
+        "title": "Explain plan presentation and feedback",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Project documentation and testing",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 130,
+      "date": "2027-04-06",
+      "sql": {
+        "title": "Refresh advanced joins and anti-joins",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "ETL system design mock",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 131,
+      "date": "2027-04-07",
+      "sql": {
+        "title": "Explain query plans and access paths",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Resume project walk-through",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 132,
+      "date": "2027-04-08",
+      "sql": {
+        "title": "Diagnose duplicate amplification",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Interview weak-point revision",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 133,
+      "date": "2027-04-10",
+      "sql": {
+        "title": "Model fact grain, dimensions and SCD2",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Portfolio final assessment",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 134,
+      "date": "2027-04-11",
+      "sql": {
+        "title": "Build watermark-driven incremental SQL",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Pytest and test fixtures",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 135,
+      "date": "2027-04-12",
+      "sql": {
+        "title": "MERGE/upsert and idempotency",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build tested CSV/JSON ETL",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 136,
+      "date": "2027-04-13",
+      "sql": {
+        "title": "Schema drift and contract checks",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "API pagination with retries",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 137,
+      "date": "2027-04-14",
+      "sql": {
+        "title": "CDC and late arriving records",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Schema validation and error quarantine",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 138,
+      "date": "2027-04-15",
+      "sql": {
+        "title": "Partition pruning and clustering",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Configure logging / metrics",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 139,
+      "date": "2027-04-17",
+      "sql": {
+        "title": "Cohort/retention analytics review",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "pandas join and groupby lab",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 140,
+      "date": "2027-04-18",
+      "sql": {
+        "title": "Window frame edge cases",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python-PostgreSQL load and parameterization",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 141,
+      "date": "2027-04-19",
+      "sql": {
+        "title": "Gaps-and-islands timed exercise",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Incremental ingestion/checkpoints",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 142,
+      "date": "2027-04-20",
+      "sql": {
+        "title": "Revenue reconciliation and data quality",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PySpark DataFrames",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 143,
+      "date": "2027-04-21",
+      "sql": {
+        "title": "Spark SQL vs PostgreSQL differences",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Spark partitions and Parquet",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 144,
+      "date": "2027-04-22",
+      "sql": {
+        "title": "Join skew / broadcast tradeoffs",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Spark joins and window functions",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 145,
+      "date": "2027-04-24",
+      "sql": {
+        "title": "Warehouse query performance lab",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Tune Spark plans / skew",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 146,
+      "date": "2027-04-25",
+      "sql": {
+        "title": "Materialized aggregates and cost",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Airflow DAG and retry policies",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 147,
+      "date": "2027-04-26",
+      "sql": {
+        "title": "Event-session analytics",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Cloud object storage and IAM",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 148,
+      "date": "2027-04-27",
+      "sql": {
+        "title": "SQL for streaming corrections",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Design robust batch pipeline",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 149,
+      "date": "2027-04-28",
+      "sql": {
+        "title": "Rolling metrics / timezones",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Event-data processing simulation",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 150,
+      "date": "2027-04-29",
+      "sql": {
+        "title": "SQL model tests",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python data-quality test suite",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 151,
+      "date": "2027-05-01",
+      "sql": {
+        "title": "Optimize a slow reporting query",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build warehouse pipeline project",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 152,
+      "date": "2027-05-02",
+      "sql": {
+        "title": "Backfills and reproducibility",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Build event analytics project",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 153,
+      "date": "2027-05-03",
+      "sql": {
+        "title": "Project 1 warehouse SQL",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Fault injection, replay and recovery",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 154,
+      "date": "2027-05-04",
+      "sql": {
+        "title": "Project 2 event analytics SQL",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Coding interview with complexity",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 155,
+      "date": "2027-05-05",
+      "sql": {
+        "title": "Incident query debugging",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Python timed mock round",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    },
+    {
+      "day": 156,
+      "date": "2027-05-06",
+      "sql": {
+        "title": "Data platform SQL system design",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "PySpark transformation mock",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "",
+      "evidence_links": []
+    }
+  ]
+}
