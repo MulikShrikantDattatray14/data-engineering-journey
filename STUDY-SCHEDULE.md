@@ -1,32 +1,29 @@
-# Daily Study Schedule — Six-Month Data Engineering Transition
+# Approved Daily Study Schedule — Data Engineering Transition
 
-**Adopted:** 2026-11-06 (Asia/Kolkata)  
-**First study day planned:** Morning of 2026-11-07  
-**Commitment:** Four focused hours daily, six days weekly; one flexible rest/review day.  
-**Planned:** 24 hours/week, approximately 624 hours over 26 weeks (312 SQL + 312 Python initially).
+**Effective study start:** 2026-11-07 (Asia/Kolkata)  
+**Cadence:** 6 study days weekly, Friday flexible rest/revision.  
+**Daily aspirational target:** 10 focused hours, split equally across SQL and Python.
 
-## Equal daily focus: SQL and Python
+| Subject | ChatGPT interactive study/review | Original Repository 2 source/practice | Total |
+|---|---:|---:|---:|
+| SQL | 2 hours | 3 hours | 5 hours |
+| Python | 2 hours | 3 hours | 5 hours |
+| **Total** | **4 hours** | **6 hours** | **10 hours** |
 
-| Subject | Easy theory and guided examples | Independent practice | Active recall, debugging and GitHub notes | Total |
-|---|---:|---:|---:|---:|
-| SQL | 25 minutes | 75 minutes | 20 minutes | 120 minutes |
-| Python | 25 minutes | 75 minutes | 20 minutes | 120 minutes |
-| **Total** | **50 minutes** | **150 minutes** | **40 minutes** | **240 minutes** |
+**Important:** This is an intensive *target*, not ten automatically available clock hours. Adjust if work, gym, breaks, adequate sleep or recovery make it impractical.
 
-These times are flexible. Breaks may be added outside the focused four hours. Python explanations should connect to existing JavaScript knowledge.
+## What to study each date
+Follow [the integrated 156-day plan](INTEGRATED-10H-DAILY-PLAN.md).
 
-## Learning rules
-- Explain every concept in simple language: what it is, why it exists, and when to use it.
-- Practice frequently, starting easy and progressing to medium, hard and mixed-concept challenges.
-- Ask for an independent solution before showing the answer; provide optional hints.
-- Review correctness, edge cases, alternative solutions and performance.
-- Use realistic data problems and small, fun challenges to keep learning enjoyable.
-- Document reviewed explanations and solutions to GitHub, with an honest revision log.
-- Reassess the plan weekly and protect sleep, work and recovery.
-- As foundations mature, integrate Data Engineering topics into the same four-hour budget; don't assume SQL and Python alone are sufficient for interview readiness.
+## Source coverage
+- [205 SQL source questions](SQL-SOURCE-INVENTORY.md): 20 previously solved, 185 pending at the time of the source audit.
+- [Python PDF pages 1–80](PYTHON-PDF-COVERAGE.md), including all seven parts, Markdown companions, runnable examples, practice runner and datasets.
+- Source material remains in [Data-Engineering-Mastry](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry). Keep original work intact.
 
-## First study sessions
-- SQL Lesson 1: `SELECT`, `FROM`, `WHERE`, `ORDER BY`, and logical processing order.
-- Python Lesson 1: variables, values, types and basic program flow, with JavaScript comparisons.
+## Calendar
+156 all-day study target entries were created for 2026-11-07 through 2027-05-06. They describe daily content without blocking a fictional ten-hour free slot. Recurring lifestyle blocks: morning walking 07:00–08:00; lunch 13:00–14:00; gym 17:00–19:00; existing morning and evening care routines retained.
 
-**Status:** Schedule adopted. These lessons are not marked complete until practice is reviewed.
+## Learning method
+Read and understand using easy language → solve original SQL/Python source exercises → receive hints and detailed review → practice cumulative concepts → revise → document genuine progress in this repository.
+
+Never count a source question or page as completed merely because it appears on the schedule.
