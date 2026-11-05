@@ -2,7 +2,7 @@
 
 **All twelve screenshots received; all questions have dedicated study-prompt records.** Answers deliberately withheld until the student attempts them. Python-only analysis and experiments.
 
-**Completion: 0/12 reviewed.** This is different from documentation coverage.
+**Completion: 0/12 reviewed; all four numbered options now shown for each MCQ.** This is different from documentation coverage.
 
 | # | Topic | Practice record | Status |
 |---:|---|---|---|
@@ -27,3 +27,5 @@ The records paraphrase the screenshot concepts. Use the original Bosscoder scree
 3. Attempt its matching Bosscoder MCQ independently.
 4. Review reasoning and test new variants in Python.
 5. Update GitHub only after actual completion.
+
+**MCQ display rule:** Each linked question displays four numbered choices; no correct choices or explanations are supplied before your independent attempt.
