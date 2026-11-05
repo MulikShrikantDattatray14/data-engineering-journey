@@ -1,7 +1,7 @@
 # Bosscoder Functional Programming Lecture 3 — Exhaustive Coverage Audit
 
-**Source:** User-provided Functional Programming lecture notes. The source contains 1,401 extracted lines. This checklist tracks its subject coverage; explanations are independently authored rather than copied.
-**Status:** Documentation mapped, **all learning and exercise checks initially pending**. The separate graded assignment set has not been shared.
+**Source:** User-provided Functional Programming lecture notes. The supplied PDF contains 42 pages; coverage has been cross-checked against it. This checklist tracks its subject coverage; explanations are independently authored rather than copied.
+**Status:** Documentation mapped, **all learning and exercise checks initially pending**. All ten graded MCQ screenshots were received and indexed; none was solved or reviewed.
 
 ## Foundations, properties and paradigms
 - [ ] What FP is; declarative versus imperative thinking
@@ -115,8 +115,13 @@
 - [ ] Study the corresponding PNP concept and match all Bosscoder subpoints
 - [ ] Predict outputs and run new examples
 - [ ] Reimplement classroom demonstrations independently
-- [ ] Attempt Bosscoder graded assignments when provided, in Python only
+- [ ] Attempt the 10 already supplied Bosscoder graded MCQs independently, in Python only
 - [ ] Discuss errors, correctness, complexity, side effects and performance
 - [ ] Save reviewed notes/attempts and actual completion date to the central tracker
 
 **Important:** Full documentation coverage ≠ mastery. All these boxes remain unmarked until real study evidence is reviewed.
+
+## PDF verification
+
+- [42-page Functional Programming PDF cross-check](pdf-source-audit.md) confirms page-group coverage and source-specific cautions.
+- The academy assignment set has been received; it is **not** completed.
