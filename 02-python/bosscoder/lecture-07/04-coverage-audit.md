@@ -91,3 +91,7 @@
 **PNP integration:** Python foundations (files, data parsing, pandas), SQL analogies (joins, groupby, window-like transform), later ETL reliability and performance.
 
 **Documentation complete does not mean mastery complete.**
+## PDF source verification
+
+- [21-page Pandas/Data Visualisation PDF cross-check](pdf-source-audit.md) confirms the original chart demonstrations, file handling and notebook-version warnings.
+- The source's Seaborn violin example warns about a future `palette` without `hue` deprecation; we will use version-appropriate plotting syntax when practicing.
