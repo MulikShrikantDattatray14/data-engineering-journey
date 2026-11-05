@@ -28,3 +28,7 @@ Use existing JavaScript knowledge for comparisons, but write idiomatic Python. A
 ## Bosscoder question display rule
 
 For all graded MCQs, keep all four numbered answer options in the question record, but **never show correct choices, solutions, explanations or hints before the learner's own attempt**. For coding assignments, preserve the problem and constraints, and require the learner to write their first solution independently in Python. Concept coverage and actual assignment completion are separate statuses.
+
+## Seven uploaded PDFs cross-checked (6 Nov 2026)
+
+**[Open the master 148-page, seven-PDF verification index](bosscoder/README-PDF-VERIFICATION-2026-11-06.md).** Each of Lectures 1–7 has a `pdf-source-audit.md` mapping its PDF page groups to the independent study chapters and recording discrepancies. All major PDF topic groups are present in the study structure; this is not a claim of word-for-word reproduction or verified learner mastery. All 71 supplied graded assignments remain pending independent attempts.
