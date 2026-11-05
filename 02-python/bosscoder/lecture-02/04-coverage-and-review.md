@@ -71,4 +71,4 @@
 - [ ] Review correctness/edge cases/complexity
 - [ ] Record actual date and GitHub evidence; do not pre-mark complete
 
-**Academy Lecture 2 graded assignment set:** User reports four problems. Statements will be recorded only once the four screenshots can be verified.
+**Academy Lecture 2 graded assignment set:** All four user-supplied screenshots have been verified and their unsolved practice statements recorded in [assignments/README.md](assignments/README.md). The four tasks remain pending independent Python solutions. PDF-to-GitHub page mapping is in [pdf-source-audit.md](pdf-source-audit.md).
