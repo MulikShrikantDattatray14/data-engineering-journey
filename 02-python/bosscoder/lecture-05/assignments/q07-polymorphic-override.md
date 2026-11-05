@@ -19,6 +19,13 @@ Overriding; polymorphism; dynamic dispatch
 
 **Do not mark any correct option or provide reasoning before your own attempt.**
 
+## Four choices
+
+1. A A
+2. B B
+3. A B
+4. Error
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
