@@ -1,6 +1,6 @@
 # Bosscoder Python Lecture 3 — Functional Programming
 
-**Documentation:** Drafted independently from user-supplied Lecture 3 notes. **Mastery:** Not yet assessed. **Graded assignments:** Awaiting user upload.
+**Documentation:** Drafted independently from user-supplied Lecture 3 notes. **Mastery:** Not yet assessed. **Graded assignments:** All ten MCQs received and indexed; 0/10 answered/reviewed.
 
 These are self-contained, newly written public revision notes—not a verbatim republication of the academy's notebook. The purpose is full topic coverage with runnable, original examples and no pre-solved graded assignment questions.
 
@@ -10,6 +10,7 @@ These are self-contained, newly written public revision notes—not a verbatim r
 3. [Lambda expressions and decorators](03-lambdas-and-decorators.md)
 4. [map, filter, zip, ZIP files and reduce](04-map-filter-zip-reduce.md)
 5. [No-skip concept and example audit](05-coverage-audit.md)
+6. [All ten Bosscoder MCQs — original attempts pending](assignments/README.md)
 
 ## What is included
 - Functional versus imperative versus object-oriented styles; ten benefits and realistic limits
