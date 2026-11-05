@@ -19,6 +19,13 @@ Method binding; instance namespace
 
 **Do not mark any correct option or provide reasoning before your own attempt.**
 
+## Four choices
+
+1. 'method'
+2. 'attribute'
+3. Error
+4. None
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
