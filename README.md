@@ -7,6 +7,8 @@ I have around two years of software engineering experience with the MERN stack. 
 > **Goal:** Prepare for competitive Data Engineering and Data Platform roles in India, including aspirational ₹30–40 LPA total-compensation opportunities. This is a preparation goal, not a guaranteed outcome.
 
 ## Start here
+- **[Live daily wins and six-month progress dashboard](PROGRESS-DASHBOARD.md)**
+- [Progress records for all 156 days](progress/daily-progress.json)
 - **[Approved integrated daily plan: 10 focused hours, 156 days](INTEGRATED-10H-DAILY-PLAN.md)**
 - [SQL question coverage: all 205 IDs](SQL-SOURCE-INVENTORY.md)
 - [Python PDF coverage: all 80 pages](PYTHON-PDF-COVERAGE.md)
