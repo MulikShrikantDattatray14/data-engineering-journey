@@ -13,7 +13,9 @@
 **Important:** This is an intensive *target*, not ten automatically available clock hours. Adjust if work, gym, breaks, adequate sleep or recovery make it impractical.
 
 ## What to study each date
-Follow [the integrated 156-day plan](INTEGRATED-10H-DAILY-PLAN.md).
+**November 7–22, 2026:** Follow the [14-study-day source-completion sprint](SPRINT-NOV-22.md), targeting all 205 SQL questions (20 already solved) and all 80 Python PDF pages and exercises by **November 22 evening**. ChatGPT Study Mode on both subjects runs concurrently using these same sources; no duplicated question bank.
+
+**After November 22:** Continue intensive SQL/Python mastery reviews, system design and Data Engineering preparation through the [six-month program](INTEGRATED-10H-DAILY-PLAN.md). The old source assignment dates in that older table are superseded by the sprint.
 
 ## Source coverage
 - [205 SQL source questions](SQL-SOURCE-INVENTORY.md): 20 previously solved, 185 pending at the time of the source audit.
