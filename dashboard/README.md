@@ -54,3 +54,11 @@ Both tracked repositories are public. Never commit credentials, personal contact
 
 ## Developer check
 No framework or build step is required. Edit `dashboard/index.html`, open locally, validate the embedded JavaScript, commit to `main` and allow GitHub Pages deployment. The old `PROGRESS-DASHBOARD.md` remains available as a Markdown report; this website is a visual companion, not a destructive replacement.
+
+## First deployment status (checked 6 November 2026)
+
+The deploy workflow was pushed successfully but its initial run **failed during `actions/configure-pages`** with `Get Pages site failed ... Not Found`. This means the repository has not had GitHub Pages enabled yet; the website code was not rejected by a build step.
+
+**One-time owner action:** Visit [Repository Settings → Pages](https://github.com/MulikShrikantDattatray14/data-engineering-journey/settings/pages), choose **GitHub Actions** as the build source. Then visit [Actions → Deploy Data Engineering Progress Dashboard](https://github.com/MulikShrikantDattatray14/data-engineering-journey/actions/workflows/deploy-de-dashboard.yml) and use **Run workflow** if GitHub does not redeploy automatically. Once the workflow succeeds, use the Pages URL GitHub reports. The live site is not asserted active before that succeeds.
+
+No repository secret or PAT is necessary for normal publishing. Do not add an access token to the public static website.
