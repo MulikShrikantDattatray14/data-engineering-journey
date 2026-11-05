@@ -10,6 +10,15 @@ A class initializes a single-underscore field and a double-underscore field. Com
 ## Related skills
 Encapsulation; name mangling; introspection
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. True False True
+2. True True True
+3. False False True
+4. True False False
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
