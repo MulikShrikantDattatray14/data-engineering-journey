@@ -24,3 +24,7 @@ Use existing JavaScript knowledge for comparisons, but write idiomatic Python. A
 - **[Bosscoder Lecture 6 — NumPy complete study notes and coverage audit](bosscoder/lecture-06/README.md)**; [12 NumPy MCQ practice records](bosscoder/lecture-06/assignments/README.md).
 
 - **[Bosscoder Lecture 7 — Pandas and Data Visualisation](bosscoder/lecture-07/README.md)** — complete topic notes, 49-point coverage audit and [10 four-option MCQs without answers](bosscoder/lecture-07/assignments/README.md).
+
+## Bosscoder question display rule
+
+For all graded MCQs, keep all four numbered answer options in the question record, but **never show correct choices, solutions, explanations or hints before the learner's own attempt**. For coding assignments, preserve the problem and constraints, and require the learner to write their first solution independently in Python. Concept coverage and actual assignment completion are separate statuses.
