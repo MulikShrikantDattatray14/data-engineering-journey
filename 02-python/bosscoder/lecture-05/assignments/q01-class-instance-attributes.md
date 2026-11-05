@@ -19,6 +19,13 @@ Class vs instance attribute; attribute lookup
 
 **Do not mark any correct option or provide reasoning before your own attempt.**
 
+## Four choices
+
+1. 10 10
+2. 5 5
+3. 10 5
+4. 5 10
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
