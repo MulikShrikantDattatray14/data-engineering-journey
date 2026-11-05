@@ -14,3 +14,5 @@ Use existing JavaScript knowledge for comparisons, but write idiomatic Python. A
 
 - **[Python Refresher 2 — complete independent notes, examples and coverage audit](bosscoder/lecture-02/README.md)**
 - [Refresher 2 — four-question assignment tracker](bosscoder/lecture-02/assignments/README.md)
+
+- **[Bosscoder Lecture 3 — Functional Programming, complete original notes and no-skip audit](bosscoder/lecture-03/README.md)** — class notes integrated; independent practice and graded assignment still pending.
