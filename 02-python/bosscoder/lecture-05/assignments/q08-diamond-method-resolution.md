@@ -19,6 +19,13 @@ C3 MRO; multiple inheritance
 
 **Do not mark any correct option or provide reasoning before your own attempt.**
 
+## Four choices
+
+1. A
+2. B
+3. C
+4. Error
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
