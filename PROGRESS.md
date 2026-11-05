@@ -8,6 +8,8 @@ Progress isn't inferred from scheduled time. After study, record your completed 
 
 **Status:** Integrated 10-hour plan scheduled, 156 daily calendar targets created. Repository 2 reported 20/205 SQL problems solved before this plan; no new study completions claimed yet.
 
+**Accelerated source deadline: Sunday, November 22, 2026 evening.** [Sprint question IDs and Python pages](SPRINT-NOV-22.md). Interactive Study Mode continues in parallel.
+
 **Current roadmap:** [Integrated 156-day plan](INTEGRATED-10H-DAILY-PLAN.md) · [205 SQL questions](SQL-SOURCE-INVENTORY.md) · [80 Python PDF pages](PYTHON-PDF-COVERAGE.md)
 
 | Area | Status | Last reviewed | Evidence |
