@@ -1,3 +1,5 @@
+> **SOURCE DEADLINE OVERRIDE:** The original 100-day SQL and 77-day Python source deadlines in this file are **superseded**. The current authoritative November 7–22 schedule is **[SPRINT-NOV-22.md](SPRINT-NOV-22.md)**. Its 185 pending SQL IDs and 80 PDF pages are now assigned to the first 14 study days. After November 22, do not interpret the old source rows below as outstanding source questions; use them only as a long-term topic reference. Daily progress data has been remapped.
+
 # Approved Integrated 10-Hour SQL + Python Plan
 
 **Period:** November 7, 2026 – May 6, 2027; 156 study days, six days/week (Friday rest/revision).
