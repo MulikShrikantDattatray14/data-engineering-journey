@@ -60,13 +60,24 @@ At the end of **every matched Python topic**: (1) check Bosscoder's Lecture 1 no
 
 ## Assignment queue
 
-- Lecture: Python Refresher 1
-- Assignment Q01: [Even or Odd — parity check](assignments/refresher-1-q01-even-odd.md) — shared; solution pending.
-- Assignment Q02: [Leap Year — century and 400-year cases](assignments/refresher-1-q02-leap-year.md) — shared; solution pending.
-- Assignment Q03: [Maximum Integer — comparison and conditionals](assignments/refresher-1-q03-maximum-integer.md) — shared; solution pending.
-- Remaining assignment questions: awaiting user submission.
-- Theory coverage: **0/18 marked mastered** (mapping complete, practice pending).
-- Assignment completion: **Q01, Q02 and Q03 pending independent attempts/review**; Bosscoder platform completion status unverified.
+**All 12 Bosscoder Python Refresher 1 questions received and indexed. Every solution must be written in Python by the learner. Status: 0/12 reviewed; no solution code prefilled.**
+
+| Assignment | Concept | Status |
+|---|---|---|
+| [Q01 — Even/Odd](assignments/refresher-1-q01-even-odd.md) | Arithmetic, booleans | Pending |
+| [Q02 — Leap Year](assignments/refresher-1-q02-leap-year.md) | Conditions, logical operators | Pending |
+| [Q03 — Maximum Integer](assignments/refresher-1-q03-maximum-integer.md) | Comparisons, conditions | Pending |
+| [Q04 — Check Positive](assignments/refresher-1-q04-check-positive.md) | Comparisons and sign | Pending |
+| [Q05 — Multiple of Three](assignments/refresher-1-q05-multiple-of-three.md) | Modulo and booleans | Pending |
+| [Q06 — Multiple of Five](assignments/refresher-1-q06-multiple-of-five.md) | Loops and lists | Pending |
+| [Q07 — Positive Number](assignments/refresher-1-q07-positive-number-count.md) | List iteration and counts | Pending |
+| [Q08 — Length of Last Word](assignments/refresher-1-q08-length-of-last-word.md) | Strings and whitespace | Pending |
+| [Q09 — Palindrome Number](assignments/refresher-1-q09-palindrome-number.md) | Loops and digit/string processing | Pending |
+| [Q10 — Factorial of a Number](assignments/refresher-1-q10-factorial-recursion.md) | Recursion and base cases | Pending |
+| [Q11 — Reverse Integer](assignments/refresher-1-q11-reverse-integer.md) | Loops and digits | Pending |
+| [Q12 — Armstrong Number](assignments/refresher-1-q12-armstrong-number.md) | Digits, powers and loops | Pending |
+
+**Practice protocol:** Learn PNP topic → confirm Bosscoder note coverage → attempt matching question independently in Python → review solution and edge cases → record GitHub evidence. Q10 explicitly requests recursion, so don't substitute an iterative-only answer. The pictured N upper bound is large enough to merit discussing Python recursion limits during the *review*, not by giving a solution now.
 
 ## Related sources
 
