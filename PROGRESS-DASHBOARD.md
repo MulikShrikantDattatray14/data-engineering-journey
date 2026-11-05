@@ -1,6 +1,6 @@
 # Data Engineering — Daily Wins Dashboard
 
-**Progress is earned, not assumed.** Scheduled targets and time spent do not count as completed learning.
+> **Progress is earned, not assumed.** Scheduled dates and time spent alone do not count as learning completed.
 
 ## Overall progress
 
@@ -8,15 +8,15 @@
 
 **Daily wins:** 0/156
 
-**SQL source bank:** █░░░░░░░░░░░ **20/205** (9.8%) — includes 20 previously solved questions; 185 assigned for review
+**SQL source bank:** █░░░░░░░░░░░ **20/205** — includes 20 previously solved questions
 
 **Python PDF:** ░░░░░░░░░░░░ **0/80 pages**
 
-**Actually logged focused learning:** SQL 0.0h · Python 0.0h (ten hours daily is a target, not proof of progress)
+**Actually logged focused learning:** SQL 0.0h · Python 0.0h (daily 10h is a target, not proof of learning)
 
-**Daily score:** 25% SQL source task + 25% SQL guided review + 25% Python source task + 25% Python guided review. Proportional credit applies to multiple question IDs or PDF pages. A daily win additionally requires a short reflection.
+**Daily score:** 25% SQL source task + 25% reviewed SQL learning + 25% Python source task + 25% reviewed Python learning. For days with multiple questions or pages, credit is proportional. After original material finishes, source-task credit comes from the day's applied assignment. An official **daily win** additionally requires the learning reflection.
 
-[Integrated timetable](INTEGRATED-10H-DAILY-PLAN.md) · [SQL inventory](SQL-SOURCE-INVENTORY.md) · [Python page coverage](PYTHON-PDF-COVERAGE.md) · [Editable progress data](progress/daily-progress.json)
+[Daily integrated timetable](INTEGRATED-10H-DAILY-PLAN.md) · [205 question inventory](SQL-SOURCE-INVENTORY.md) · [80-page Python index](PYTHON-PDF-COVERAGE.md) · [Progress data](progress/daily-progress.json)
 
 ## Weekly performance
 
@@ -51,7 +51,7 @@
 
 ## Daily progress bars
 
-Expand a week to see its six study days.
+Expand a week to see the individual SQL, Python and combined progress.
 
 <details><summary>Week 01: 2026-11-07 – 2026-11-12</summary>
 
@@ -391,13 +391,13 @@ Expand a week to see its six study days.
 
 </details>
 
-## What counts as a daily win?
+## How to record a daily win
 
-1. Review the assigned original SQL questions (or later applied task).
-2. Finish the Python PDF pages plus their coding exercises (or later applied task).
-3. Demonstrate understanding in both guided reviews.
-4. Record mistakes, takeaways and a reflection.
+1. Complete and review that day's source SQL question IDs or applied SQL assignment.
+2. Practice the assigned PDF pages and their original exercises, or complete the applied Python task.
+3. Pass a guided SQL review and a guided Python review.
+4. Record a learning reflection and mistakes.
 
-**How to update:** After a reviewed session, update the corresponding day in `progress/daily-progress.json`: `completed_ids`, `completed_pages`, `guided_reviewed`, later `applied_task_done`, `focus_minutes`, `notes`, `evidence_links`, and `reflection_completed`. GitHub Actions regenerates this dashboard when progress data changes. You can also run `python scripts/render_progress.py` locally.
+Update only the corresponding record in progress/daily-progress.json: completed_ids, completed_pages, guided_reviewed, applied_task_done (later days), reflection_completed, actual focus_minutes, notes and evidence_links. The workflow renders this dashboard on each JSON update; or run the script locally.
 
-No progress is claimed without verified study; 20 SQL questions are pre-plan baseline only.
+Never mark a task completed just because you spent its scheduled time. The old 20 solved questions remain a baseline, not new daily wins.
