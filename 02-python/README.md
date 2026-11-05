@@ -20,3 +20,5 @@ Use existing JavaScript knowledge for comparisons, but write idiomatic Python. A
 - **[Bosscoder Lecture 4 — Modules, Namespaces, Errors and Exceptions](bosscoder/lecture-04/README.md)** — complete concept notes, no-skip audit, 11 MCQ topics queued without answers.
 
 - **[Bosscoder Lecture 5 — OOP complete independent notes and 48-point coverage audit](bosscoder/lecture-05/README.md)**; [all 12 MCQ practice prompts](bosscoder/lecture-05/assignments/README.md).
+
+- **[Bosscoder Lecture 6 — NumPy complete study notes and coverage audit](bosscoder/lecture-06/README.md)**; [12 NumPy MCQ practice records](bosscoder/lecture-06/assignments/README.md).
