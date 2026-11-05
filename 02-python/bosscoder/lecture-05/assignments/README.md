@@ -1,7 +1,7 @@
 # Bosscoder OOP Lecture 5 — Twelve MCQs
 
 **Source:** Twelve screenshots of Bosscoder Academy's OOP MCQ assignment. **All 12 received, individually catalogued.**
-**Progress:** **0/12 reviewed**. Solutions are withheld until the learner independently attempts them in Python.
+**Progress:** **0/12 reviewed; all four numbered options now shown for each MCQ**. Solutions are withheld until the learner independently attempts them in Python.
 
 | Number | MCQ concept | Prompt | Review |
 |---:|---|---|---|
@@ -27,3 +27,5 @@
 **Q03 and Q05 deliberately remain distinct assessments:** they repeat a similar method-shadowing theme. We will avoid duplicated theory, but preserve both questions.
 
 [Lecture 5 notes](../README.md) · [48-point no-skip audit](../04-coverage-audit.md)
+
+**MCQ display rule:** Each linked question displays four numbered choices; no correct choices or explanations are supplied before your independent attempt.
