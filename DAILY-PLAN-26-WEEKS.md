@@ -282,7 +282,7 @@ For each day: record time spent, number of independent attempts, concepts confid
 | Day 110 (2027-03-14) | Watermark and status queries | Airflow task dependencies |
 | Day 111 (2027-03-15) | Audit and reconciliation SQL | Retry and timeout handling |
 | Day 112 (2027-03-16) | Backfill correctness SQL | Backfill and catchup |
-| Day 113 (2027-03-17) | Retry-safe SQL design | Logging and metrics |
+| Day 113 (2027-03-17) | Retry-safe SQL design | Cloud object storage, IAM and monitoring |
 | Day 114 (2027-03-18) | Failure debugging exercise | Orchestrate mini-pipeline |
 
 **Daily practice target this week:** SQL 2–4 scenarios; Python 1–2 substantial tasks. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
@@ -302,114 +302,86 @@ For each day: record time spent, number of independent attempts, concepts confid
 **Daily practice target this week:** SQL 2–4 scenarios; Python 1–2 substantial tasks. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
 
-## Week 21 — Data platforms + cloud integration
+## Week 21 — Production project I: batch warehouse
 
 | Study day (date) | SQL — 2h focus | Python — 2h focus |
 |---|---|---|
-| Day 121 (2027-03-27) | Warehouse vs lakehouse SQL | Cloud object-store basics |
-| Day 122 (2027-03-28) | External table concepts | IAM and least privilege |
-| Day 123 (2027-03-29) | Iceberg/Delta table concepts | Read/write cloud-like paths |
-| Day 124 (2027-03-30) | Schema evolution SQL | Secrets management |
-| Day 125 (2027-03-31) | Cost/performance tradeoffs | Job retries and observability |
-| Day 126 (2027-04-01) | Cloud warehouse scenario | Cloud ingestion prototype |
+| Day 121 (2027-03-27) | Define source-to-target SQL models | Project-I folder & contracts |
+| Day 122 (2027-03-28) | Staging and clean-up SQL | Extract data reliably |
+| Day 123 (2027-03-29) | Fact and dimension transformations | Transform with Python/Spark |
+| Day 124 (2027-03-30) | Incremental warehouse loads | Schedule and test pipeline |
+| Day 125 (2027-03-31) | Data quality and reconciliations | Document retries & recovery |
+| Day 126 (2027-04-01) | Project-I SQL code review | Project-I end-to-end demo |
 
 **Daily practice target this week:** SQL 2–4 scenarios; Python 1–2 substantial tasks. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
 
-## Week 22 — Production project I: batch warehouse
+## Week 22 — Production project II: event analytics
 
 | Study day (date) | SQL — 2h focus | Python — 2h focus |
 |---|---|---|
-| Day 127 (2027-04-03) | Define source-to-target SQL models | Project-I folder & contracts |
-| Day 128 (2027-04-04) | Staging and clean-up SQL | Extract data reliably |
-| Day 129 (2027-04-05) | Fact and dimension transformations | Transform with Python/Spark |
-| Day 130 (2027-04-06) | Incremental warehouse loads | Schedule and test pipeline |
-| Day 131 (2027-04-07) | Data quality and reconciliations | Document retries & recovery |
-| Day 132 (2027-04-08) | Project-I SQL code review | Project-I end-to-end demo |
-
-**Daily practice target this week:** SQL 2–4 scenarios; Python 1–2 substantial tasks. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
-
-
-## Week 23 — Production project II: event analytics
-
-| Study day (date) | SQL — 2h focus | Python — 2h focus |
-|---|---|---|
-| Day 133 (2027-04-10) | Event schema and timestamps | Build event generator |
-| Day 134 (2027-04-11) | Dedup and late events SQL | Implement ingestion flow |
-| Day 135 (2027-04-12) | Sessionization and funnels | Process events in microbatches |
-| Day 136 (2027-04-13) | Daily aggregates and retention | Quarantine bad records |
-| Day 137 (2027-04-14) | Backfill and correction SQL | Add monitoring and tests |
-| Day 138 (2027-04-15) | Project-II SQL review | Project-II end-to-end demo |
+| Day 127 (2027-04-03) | Event schema and timestamps | Build event generator |
+| Day 128 (2027-04-04) | Dedup and late events SQL | Implement ingestion flow |
+| Day 129 (2027-04-05) | Sessionization and funnels | Process events in microbatches |
+| Day 130 (2027-04-06) | Daily aggregates and retention | Quarantine bad records |
+| Day 131 (2027-04-07) | Backfill and correction SQL | Add monitoring and tests |
+| Day 132 (2027-04-08) | Project-II SQL review | Project-II end-to-end demo |
 
 **Daily practice target this week:** One timed SQL mock and one Python/ETL mock, with reviews. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
 
-## Week 24 — System design + coding rigor
+## Week 23 — System design + coding rigor
 
 | Study day (date) | SQL — 2h focus | Python — 2h focus |
 |---|---|---|
-| Day 139 (2027-04-17) | High-volume query tradeoffs | Write scalable ETL components |
-| Day 140 (2027-04-18) | Hot partitions and skew | Design retry contracts |
-| Day 141 (2027-04-19) | Latency vs throughput | Use interfaces/modules |
-| Day 142 (2027-04-20) | Consistency and reprocessing | Test fault injection |
-| Day 143 (2027-04-21) | Data contracts and evolution | Profiling and benchmarks |
-| Day 144 (2027-04-22) | Explain system design choices | System-design mock drill |
+| Day 133 (2027-04-10) | High-volume query tradeoffs | Write scalable ETL components |
+| Day 134 (2027-04-11) | Hot partitions and skew | Design retry contracts |
+| Day 135 (2027-04-12) | Latency vs throughput | Use interfaces/modules |
+| Day 136 (2027-04-13) | Consistency and reprocessing | Test fault injection |
+| Day 137 (2027-04-14) | Data contracts and evolution | Profiling and benchmarks |
+| Day 138 (2027-04-15) | Explain system design choices | System-design mock drill |
 
 **Daily practice target this week:** One timed SQL mock and one Python/ETL mock, with reviews. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
 
-## Week 25 — Hard SQL interviews + Python interviews
+## Week 24 — Hard SQL interviews + Python interviews
 
 | Study day (date) | SQL — 2h focus | Python — 2h focus |
 |---|---|---|
-| Day 145 (2027-04-24) | Hard joins + windows timed | Arrays, maps, sets drills |
-| Day 146 (2027-04-25) | Gaps/islands timed | String parsing problems |
-| Day 147 (2027-04-26) | Cohort and retention timed | Iterators and generators tasks |
-| Day 148 (2027-04-27) | Top-N and dedup timed | File and JSON coding |
-| Day 149 (2027-04-28) | Query optimization timed | ETL debugging task |
-| Day 150 (2027-04-29) | Full SQL mock review | Python timed mock |
+| Day 139 (2027-04-17) | Hard joins + windows timed | Arrays, maps, sets drills |
+| Day 140 (2027-04-18) | Gaps/islands timed | String parsing problems |
+| Day 141 (2027-04-19) | Cohort and retention timed | Iterators and generators tasks |
+| Day 142 (2027-04-20) | Top-N and dedup timed | File and JSON coding |
+| Day 143 (2027-04-21) | Query optimization timed | ETL debugging task |
+| Day 144 (2027-04-22) | Full SQL mock review | Python timed mock |
 
 **Daily practice target this week:** One timed SQL mock and one Python/ETL mock, with reviews. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
 
-## Week 26 — Interview simulations I
+## Week 25 — Interview simulations I
 
 | Study day (date) | SQL — 2h focus | Python — 2h focus |
 |---|---|---|
-| Day 151 (2027-05-01) | SQL screening mock A | Python screening mock A |
-| Day 152 (2027-05-02) | SQL business metrics mock | Build mini ETL in 60 min |
-| Day 153 (2027-05-03) | Optimize an unfamiliar query | Debug failing ingestion |
-| Day 154 (2027-05-04) | Explain join/NULL edge cases | Explain Python performance |
-| Day 155 (2027-05-05) | SQL scenario under time limit | Python scenario under limit |
-| Day 156 (2027-05-06) | Review weak SQL concepts | Review Python gaps |
+| Day 145 (2027-04-24) | SQL screening mock A | Python screening mock A |
+| Day 146 (2027-04-25) | SQL business metrics mock | Build mini ETL in 60 min |
+| Day 147 (2027-04-26) | Optimize an unfamiliar query | Debug failing ingestion |
+| Day 148 (2027-04-27) | Explain join/NULL edge cases | Explain Python performance |
+| Day 149 (2027-04-28) | SQL scenario under time limit | Python scenario under limit |
+| Day 150 (2027-04-29) | Review weak SQL concepts | Review Python gaps |
 
 **Daily practice target this week:** One timed SQL mock and one Python/ETL mock, with reviews. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
 
-## Week 27 — Interview simulations II
+## Week 26 — Portfolio + applications + final assessment
 
 | Study day (date) | SQL — 2h focus | Python — 2h focus |
 |---|---|---|
-| Day 157 (2027-05-08) | SQL screening mock B | Python screening mock B |
-| Day 158 (2027-05-09) | Window + CTE case study | PySpark transformation round |
-| Day 159 (2027-05-10) | Incremental merge case study | Testing/retry design task |
-| Day 160 (2027-05-11) | Data modeling SQL round | Pipeline code review |
-| Day 161 (2027-05-12) | Explain query plan | Python systems Q&A |
-| Day 162 (2027-05-13) | SQL final weak-spot revision | Python final weak-spot revision |
-
-**Daily practice target this week:** One timed SQL mock and one Python/ETL mock, with reviews. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
-
-
-## Week 28 — Portfolio + applications + final assessment
-
-| Study day (date) | SQL — 2h focus | Python — 2h focus |
-|---|---|---|
-| Day 163 (2027-05-15) | Project SQL walkthrough | Project Python walkthrough |
-| Day 164 (2027-05-16) | Warehouse modeling mock | PySpark performance mock |
-| Day 165 (2027-05-17) | Warehouse cost optimization | Resume-linked project demo |
-| Day 166 (2027-05-18) | Capstone SQL troubleshooting | End-to-end pipeline debugging |
-| Day 167 (2027-05-19) | Final SQL timed assessment | Final Python/ETL assessment |
-| Day 168 (2027-05-20) | Final SQL revision and reflection | Six-month retrospective |
+| Day 151 (2027-05-01) | Project SQL walkthrough | Project Python walkthrough |
+| Day 152 (2027-05-02) | Warehouse modeling mock | PySpark performance mock |
+| Day 153 (2027-05-03) | Warehouse cost optimization | Resume-linked project demo |
+| Day 154 (2027-05-04) | Capstone SQL troubleshooting | End-to-end pipeline debugging |
+| Day 155 (2027-05-05) | Final SQL timed assessment | Final Python/ETL assessment |
+| Day 156 (2027-05-06) | Final SQL revision and reflection | Six-month retrospective |
 
 **Daily practice target this week:** One timed SQL mock and one Python/ETL mock, with reviews. Use a 25m/75m/20m learning/practice/review split **in each subject**. Mixed revisions count toward practice.
 
