@@ -19,6 +19,13 @@ ABC; abstractmethod; instantiation
 
 **Do not mark any correct option or provide reasoning before your own attempt.**
 
+## Four choices
+
+1. Works fine
+2. Error: abstract class not implemented
+3. Prints None
+4. RuntimeWarning
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
