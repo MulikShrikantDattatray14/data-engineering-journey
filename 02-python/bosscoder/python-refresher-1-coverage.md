@@ -8,6 +8,8 @@
 
 PNP Python lessons supply the core topic progression; ChatGPT provides beginner-friendly explanations, JavaScript comparisons, interactive coding, and answer reviews. At each matching topic: revisit this Bosscoder checklist, inspect your own class notes for uncovered points, and solve relevant Bosscoder assignment problems once shared. The topic is not marked complete until understanding and practice are verified.
 
+**Detailed verification:** [64 unchecked subtopic and classroom-exercise items](python-refresher-1-detailed-audit.md). Verify all items before claiming complete Lecture 1 mastery; the summary table below is not a substitute for this audit.
+
 ## Full Lecture 1 topic coverage
 
 | Bosscoder class-note topic | PNP Python alignment (PDF page) | Evidence before marking complete | Status |
