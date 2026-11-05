@@ -10,6 +10,13 @@ A list is declared on a class and each new instance mutates it; multiple instanc
 ## Related skills
 Shared mutable class state; aliasing
 
+## Four choices
+
+1. 2 1 2
+2. 2 2 2
+3. 1 1 1
+4. Error
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
