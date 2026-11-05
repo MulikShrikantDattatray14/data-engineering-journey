@@ -32,3 +32,6 @@ These are self-contained, newly written public revision notes—not a verbatim r
 
 ## Rules
 Learn each shared concept in plain language, predict outputs, run examples, solve the source exercises yourself, and review code/edge cases. After the topic, check Bosscoder's matching notes and assignments. **No assignment solution will be supplied before your independent attempt.** A published chapter does not mean the user has mastered it.
+## Verified against PDF
+
+The supplied 42-page Functional Programming PDF has been checked against the four chapters in the [page-by-page source audit](pdf-source-audit.md). All ten MCQs were received; answers and review remain pending.
