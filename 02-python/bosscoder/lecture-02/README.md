@@ -18,3 +18,6 @@ Predict outputs, run and modify original examples, solve classroom prompts, then
 
 ## Important discrepancies noted
 Some list-method displayed outputs depend on earlier mutable-list notebook state and do not match the accompanying comments. The reference to tuple cmp() is outdated for Python 3; modern dictionaries preserve insertion order. Sets have no guaranteed iteration order. We'll discuss these in review.
+## Verified against PDF
+
+The supplied 11-page Python Refresher-2 PDF has been checked against the three chapters and the [page-by-page PDF audit](pdf-source-audit.md). The [four coding assignments](assignments/README.md) are received but remain unsolved.
