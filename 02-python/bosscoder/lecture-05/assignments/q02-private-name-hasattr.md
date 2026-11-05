@@ -19,6 +19,13 @@ Encapsulation; name mangling; introspection
 
 **Do not mark any correct option or provide reasoning before your own attempt.**
 
+## Four choices
+
+1. True False True
+2. True True True
+3. False False True
+4. True False False
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
