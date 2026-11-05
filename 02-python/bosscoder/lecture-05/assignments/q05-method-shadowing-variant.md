@@ -10,6 +10,15 @@ A second MCQ examines assigning a same-named instance attribute over a previousl
 ## Related skills
 Method shadowing; repeated assessment
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. 'method'
+2. 'attribute'
+3. Error
+4. None
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
