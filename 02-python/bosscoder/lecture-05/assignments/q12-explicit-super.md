@@ -10,6 +10,13 @@ Given a base and subclass that override a method, predict the outputs of calling
 ## Related skills
 super; method lookup; overriding
 
+## Four choices
+
+1. A B A
+2. A B B
+3. B A A
+4. Error
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
