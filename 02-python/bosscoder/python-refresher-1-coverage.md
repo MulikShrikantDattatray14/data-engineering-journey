@@ -10,6 +10,8 @@ PNP Python lessons supply the core topic progression; ChatGPT provides beginner-
 
 **Detailed verification:** [64 unchecked subtopic and classroom-exercise items](python-refresher-1-detailed-audit.md). Verify all items before claiming complete Lecture 1 mastery; the summary table below is not a substitute for this audit.
 
+**Public full explanations:** [Lecture 1 — Complete independent study notes](lecture-01/README.md), including runnable examples, differences from JavaScript, all classroom concepts, and practice without answers to the 12 graded assignments.
+
 ## Full Lecture 1 topic coverage
 
 | Bosscoder class-note topic | PNP Python alignment (PDF page) | Evidence before marking complete | Status |
