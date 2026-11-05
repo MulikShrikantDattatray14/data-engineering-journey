@@ -10,6 +10,15 @@ A class has a static method and a regular instance method; calls are made on bot
 ## Related skills
 Static/instance methods and binding
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. static static instance
+2. static Error instance
+3. static static static
+4. Error
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
