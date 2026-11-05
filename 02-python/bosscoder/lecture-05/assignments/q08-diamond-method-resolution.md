@@ -10,6 +10,15 @@ Several classes form a diamond-style multiple-inheritance hierarchy, with differ
 ## Related skills
 C3 MRO; multiple inheritance
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. A
+2. B
+3. C
+4. Error
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
