@@ -10,6 +10,15 @@ A class defines a method; after instantiation the same name is assigned a string
 ## Related skills
 Method binding; instance namespace
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. 'method'
+2. 'attribute'
+3. Error
+4. None
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
