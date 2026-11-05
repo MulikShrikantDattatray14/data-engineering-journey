@@ -45,3 +45,7 @@ After **each Python topic**, run the same five-step check:
 - [Daily progress dashboard](PROGRESS-DASHBOARD.md)
 
 **Note:** The currently dated JSON tracker begins November 7 and records planned-day objectives. Before tracking Nov 6 actual achievements and early completion of Nov 7+ tasks, adapt the tracker to distinguish real completion dates from assigned target days. This document is a holiday sprint overlay; do not mark old source entries complete merely because they appear here.
+
+## Bosscoder Lecture 1 included
+
+Use the [Python Refresher 1 topic and exercise checklist](02-python/bosscoder/python-refresher-1-coverage.md) during the holiday sprint. Class-note concepts are interleaved with matching PNP PDF pages, including slicing, operators, scope, loops, factorial, and palindrome. After each topic, check Bosscoder notes and the forthcoming assignment; do not mark them solved until reviewed.
