@@ -10,6 +10,13 @@ Two unrelated base classes are inherited by another class. Predict the order rep
 ## Related skills
 MRO tuple; class hierarchy
 
+## Four choices
+
+1. (C, A, B, object)
+2. (C, B, A, object)
+3. (A, B, C, object)
+4. (C, object, A, B)
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
