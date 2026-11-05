@@ -1,3 +1,5 @@
+> **SUPERSEDED (2026-11-06):** The original four-hour daily plan below is archived for reference. The approved current schedule is **[INTEGRATED-10H-DAILY-PLAN.md](INTEGRATED-10H-DAILY-PLAN.md)**, aligned with Repository 2’s complete SQL question bank and Python PDF. Do not use this earlier file for daily targets.
+
 # 26-Week Daily SQL + Python Learning Plan
 
 **Start:** Saturday, 2026-11-07 (Asia/Kolkata)
