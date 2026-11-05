@@ -59,9 +59,10 @@ At the end of **every matched Python topic**: (1) check Bosscoder's Lecture 1 no
 ## Assignment queue
 
 - Lecture: Python Refresher 1
-- Assignment: **Not yet provided** — pending user upload.
+- Assignment Q01: [Even or Odd — parity check](assignments/refresher-1-q01-even-odd.md) — shared; solution pending.
+- Remaining assignment questions: awaiting user submission.
 - Theory coverage: **0/18 marked mastered** (mapping complete, practice pending).
-- Assignment completion: **Not started/unknown until problems are shared**.
+- Assignment completion: **Q01 not yet attempted/reviewed**; Bosscoder platform completion status unverified.
 
 ## Related sources
 
