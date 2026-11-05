@@ -61,9 +61,10 @@ At the end of **every matched Python topic**: (1) check Bosscoder's Lecture 1 no
 - Lecture: Python Refresher 1
 - Assignment Q01: [Even or Odd — parity check](assignments/refresher-1-q01-even-odd.md) — shared; solution pending.
 - Assignment Q02: [Leap Year — century and 400-year cases](assignments/refresher-1-q02-leap-year.md) — shared; solution pending.
+- Assignment Q03: [Maximum Integer — comparison and conditionals](assignments/refresher-1-q03-maximum-integer.md) — shared; solution pending.
 - Remaining assignment questions: awaiting user submission.
 - Theory coverage: **0/18 marked mastered** (mapping complete, practice pending).
-- Assignment completion: **Q01 and Q02 pending independent attempts/review**; Bosscoder platform completion status unverified.
+- Assignment completion: **Q01, Q02 and Q03 pending independent attempts/review**; Bosscoder platform completion status unverified.
 
 ## Related sources
 
