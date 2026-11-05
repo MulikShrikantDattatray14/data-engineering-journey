@@ -10,6 +10,15 @@ A concrete-looking subclass inherits an abstract method but does not implement i
 ## Related skills
 ABC; abstractmethod; instantiation
 
+## Four choices (as supplied in MCQ screenshot)
+
+1. Works fine
+2. Error due to unimplemented abstract method
+3. Prints None
+4. RuntimeWarning
+
+**Do not mark any correct option or provide reasoning before your own attempt.**
+
 ## Your independent attempt
 - [ ] Read the actual problem and all four options in the original Bosscoder screenshot.
 - [ ] Predict the outcome *without* executing it first.
