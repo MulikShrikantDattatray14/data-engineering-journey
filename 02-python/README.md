@@ -16,3 +16,5 @@ Use existing JavaScript knowledge for comparisons, but write idiomatic Python. A
 - [Refresher 2 — four-question assignment tracker](bosscoder/lecture-02/assignments/README.md)
 
 - **[Bosscoder Lecture 3 — Functional Programming, complete original notes and no-skip audit](bosscoder/lecture-03/README.md)** — class notes integrated; independent practice and graded assignment still pending.
+
+- **[Bosscoder Lecture 4 — Modules, Namespaces, Errors and Exceptions](bosscoder/lecture-04/README.md)** — complete concept notes, no-skip audit, 11 MCQ topics queued without answers.
