@@ -10,7 +10,7 @@
 7. Query performance: indexes, query plans, partition pruning
 8. Timed mixed interview challenges
 
-Use PostgreSQL syntax for fundamentals. Document Spark SQL and warehouse differences where relevant.
+Use **SQLite** for all original learner attempts. Archive the original SQLite solution verbatim and, after review, an assistant-labeled **SQL Server (T-SQL)** translation. Save solution versions only in those two dialects. Do not reveal translations before independent attempts.
 
 - [Detailed concept notes](notes/README.md)
 - [Practice and solutions](practice/README.md)
