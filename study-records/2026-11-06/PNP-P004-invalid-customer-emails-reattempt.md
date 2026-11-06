@@ -107,3 +107,10 @@ order by CustomerID asc
 ## Latest combined query attempt — syntax review
 
 The student submitted a combined CASE query with corrected Missing (`IS NULL OR LENGTH(TRIM(Email)) = 0`) and literal-space (`LIKE '% %'`) conditions. The pasted SQL became malformed around the third WHEN and CASE END: the `THEN 'Not in name@domain.tld form'` appeared after ORDER BY. Its LIKE pattern also included literal asterisks and backslashes instead of the previously tested pattern. A reconstruction produced SQLite 3.46.1 `OperationalError: near "end": syntax error`. The original paste contains formatting artifacts, so it was not executed byte-for-byte. No output rows, no completion credit, and no solution was supplied. Ask student to resubmit clean final SQL.
+
+
+## Current full-query submission — malformed paste and incomplete CASE
+
+Learner's new attempt correctly included the Missing condition (`Email IS NULL OR LENGTH(TRIM(Email)) = 0`) and the space condition (`Email LIKE '% %'`) in CASE, with corresponding WHERE checks. The third `WHEN Email NOT LIKE ...` was corrupted by composer formatting, included stray wildcard/escape characters and was missing a `THEN` label before `END`. The pasted text also contained formatting marks around `END` / `FROM`.
+
+**Execution of readable SQL preserving the missing THEN:** Python sqlite3 returned `OperationalError: near "end": syntax error`. No result rows were produced. This is a parsing failure, not a negative sample-result comparison. Prior individual-format tests had succeeded; the full query remains independently unverified. Student needs to resubmit a clean SQLite code block and supply the third CASE branch with a valid THEN label. No reference solution has been revealed or P004 credited.
