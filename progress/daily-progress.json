@@ -52,7 +52,7 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0. Later Nov 6 chat: P004-style email validation query corrected; three guided challenges reviewed: identify bad emails, count duplicate emails with HAVING, return customers sharing emails using IN subquery. SQL Slot 1 and Slot 3 study sessions concluded by learner request, logged as reviewed rather than fully complete because PNP reattempt minimum and new source stretch targets were not met. No SQLite verification or new PNP source solve claimed.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0. Later Nov 6 chat: P004-style email validation query corrected; three guided challenges reviewed: identify bad emails, count duplicate emails with HAVING, return customers sharing emails using IN subquery. SQL Slot 1 and Slot 3 study sessions concluded by learner request, logged as reviewed rather than fully complete because PNP reattempt minimum and new source stretch targets were not met. No SQLite verification or new PNP source solve claimed. P004 formally closed: final learner-authored label correction to 'Not in name@domain.tld form' joined with previously submitted full query; executed in SQLite 3.46.1. Source sample 3/3 rows with exact 5 columns/labels; edge cases checked. Previously solved source reattempts now 4/6, no new PNP source ID credited.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
@@ -69,7 +69,8 @@
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-customers-in-metro-cities-reattempt.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-CLOSED.md",
         "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P003-CLOSED.md",
-        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-03-sql.md"
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-03-sql.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P004-invalid-customer-emails-reattempt.md"
       ],
       "practice": {
         "sql_tutor_reviewed": 8,
@@ -259,11 +260,12 @@
           "sqlite_execution": "verified",
           "tsql_execution": "not performed"
         },
-        "pnp_source_reattempts_verified": 3,
+        "pnp_source_reattempts_verified": 4,
         "pnp_reattempt_ids": [
           "P001",
           "P002",
-          "P003"
+          "P003",
+          "P004"
         ],
         "pnp_reattempt_target_min": 6,
         "pnp_p001_learning_response_verbatim": "No new learning.",
@@ -281,7 +283,7 @@
             {
               "title": "Email validation and issue labels",
               "result": "Final query reviewed correct under basic LIKE validation rules",
-              "source_relation": "P004-style reattempt; not source-closed"
+              "source_relation": "PNP P004 source reattempt verified, corrected, executed and formally closed; not a newly solved source ID"
             },
             {
               "title": "Duplicate emails",
@@ -294,7 +296,9 @@
           ],
           "source_credit": 0,
           "focus_minutes_logged": false
-        }
+        },
+        "pnp_p004_status": "CLOSED in Journey + Mastry after independent CASE label correction; SQLite 3.46.1 execution matched 3 sample rows and tested relevant edge cases",
+        "pnp_p004_first_try_correct": false
       },
       "execution": {
         "state": "sql_sessions_concluded_python_next",
@@ -309,7 +313,7 @@
             "track": "SQL",
             "status": "reviewed",
             "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
-            "done": "Guided SQL Q1–Q8 reviewed (4 independently correct/corrected); previously verified PNP P001–P003 reattempts (3/6 original minimum). Session concluded; official reattempt quota unfinished. P004 email cleanup reviewed in later session.",
+            "done": "Guided Q1–Q8 reviewed, 4 independent correct/corrected; previously solved PNP P001–P004 independently corrected and source-closed (4/6 minimum). Slot session concluded with 2 source reattempts remaining.",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
           },
           {
@@ -329,7 +333,7 @@
             "track": "SQL",
             "status": "reviewed",
             "target": "PNP A016, P009, P013, P014 if ready; independent queries and review",
-            "done": "Additional reviewed SQL practice: invalid/missing emails via CASE/LIKE (Challenge 1), duplicate-email GROUP BY/HAVING (Challenge 2), and duplicate customers via IN subquery (Challenge 3). Final SQL reviewed in chat; no SQLite execution claimed. Original stretch PNP A016/P009/P013/P014 not attempted, so source target still pending.",
+            "done": "Additional reviewed SQL practice: invalid/missing emails via CASE/LIKE (Challenge 1), duplicate-email GROUP BY/HAVING (Challenge 2), and duplicate customers via IN subquery (Challenge 3). P004 final email-validation query subsequently executed in SQLite and formally source-closed (counted in 4/6 reattempts); other guided queries reviewed in chat only. Original stretch PNP A016/P009/P013/P014 not attempted, so source target still pending.",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-03-sql.md"
           },
           {
@@ -382,10 +386,10 @@
             "track": "SQL",
             "name": "Reattempt 6–10 previously solved PNP SQL questions",
             "target": 6,
-            "completed": 3,
+            "completed": 4,
             "unit": "verified reattempts (minimum target 6)",
             "status": "in_progress",
-            "detail": "P001–P003 independently verified previously; P004 email-cleanup query reviewed in subsequent chat, not independently executed or formally source-closed. Original minimum 6 fully verified reattempts not yet met.",
+            "detail": "P001–P004 source reattempts independently verified and closed; P004 final query executed against sample and edge cases in SQLite 3.46.1. Two more verified reattempts required for minimum six.",
             "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
           },
           {
@@ -445,6 +449,7 @@
           }
         ],
         "next_actions": [
+          "P004 source reattempt independently corrected, SQLite-verified and formally closed. P005/P006 still needed for 6/6 source reattempts.",
           "SQL sessions concluded; switch to Python fundamentals and independent practice. SQL source quota and stretch IDs remain uncompleted.",
           "Independently retry Q3–Q6 weak areas before claiming mastery.",
           "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
