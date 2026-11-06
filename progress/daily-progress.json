@@ -76,8 +76,138 @@
           "Q2",
           "Q7"
         ],
-        "status": "Q7 closed; Q8 not started",
-        "kind": "tutor-practice-not-pnp"
+        "status": "Q7 reviewed and closed; Q8 not started",
+        "kind": "tutor-practice-not-pnp",
+        "sql_tutor_target": 8,
+        "index_url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md",
+        "questions": [
+          {
+            "id": "Q1",
+            "title": "Paid Maharashtra orders",
+            "status": "Correct first attempt",
+            "topics": [
+              "SELECT",
+              "WHERE",
+              "AND",
+              "NULL",
+              "ORDER BY"
+            ],
+            "verified_correct": true,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q1"
+          },
+          {
+            "id": "Q2",
+            "title": "OR filtering with NULL exclusions",
+            "status": "Correct after independent revision",
+            "topics": [
+              "AND",
+              "OR",
+              "NULL",
+              "global filters"
+            ],
+            "verified_correct": true,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q2"
+          },
+          {
+            "id": "Q3",
+            "title": "Keep all customers and their orders",
+            "status": "Reviewed; independent correction pending",
+            "topics": [
+              "LEFT JOIN",
+              "one-to-many",
+              "ORDER BY"
+            ],
+            "verified_correct": false,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q3"
+          },
+          {
+            "id": "Q4",
+            "title": "Customers with paid orders",
+            "status": "Reviewed; independent correction pending",
+            "topics": [
+              "INNER JOIN",
+              "WHERE",
+              "aliases"
+            ],
+            "verified_correct": false,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q4"
+          },
+          {
+            "id": "Q5",
+            "title": "All customers, paid order matches only",
+            "status": "Reviewed; independent correction pending",
+            "topics": [
+              "LEFT JOIN",
+              "ON vs WHERE",
+              "NULL"
+            ],
+            "verified_correct": false,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q5"
+          },
+          {
+            "id": "Q6",
+            "title": "Customers with no paid orders",
+            "status": "Reviewed; independent correction pending",
+            "topics": [
+              "anti-join",
+              "no qualifying matches",
+              "NULL"
+            ],
+            "verified_correct": false,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q6"
+          },
+          {
+            "id": "Q7",
+            "title": "Accounts without qualifying settled payments",
+            "status": "Correct LEFT JOIN after independent revision; NOT IN lacks ORDER BY",
+            "topics": [
+              "anti-join",
+              "NOT IN",
+              "ON vs WHERE",
+              "NULL"
+            ],
+            "verified_correct": true,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q7"
+          }
+        ],
+        "concepts": [
+          {
+            "id": "SQL-R001",
+            "title": "NULL comparisons and WHERE",
+            "summary": "NULL values produce UNKNOWN in ordinary comparisons; WHERE retains TRUE",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md#sql-r001--null-comparisons-and-where-filtering"
+          },
+          {
+            "id": "SQL-R002",
+            "title": "AND / OR grouping and global filters",
+            "summary": "Use parentheses; global AND restrictions must apply to every OR branch",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md#sql-r002--mandatory-conditions-across-or-branches"
+          },
+          {
+            "id": "SQL-R003",
+            "title": "Pre-submit checking discipline",
+            "summary": "Recheck aliases, WHERE, ORDER BY and expected result before submitting",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md#sql-r003--check-syntax-and-requirements-before-submitting"
+          },
+          {
+            "id": "SQL-R004",
+            "title": "LEFT JOIN: ON vs WHERE",
+            "summary": "ON limits matches; NULL-rejecting WHERE may remove unmatched rows",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md#sql-r004--left-join-on-versus-where-filtering"
+          },
+          {
+            "id": "SQL-R005",
+            "title": "Anti-join: absence of qualifying rows",
+            "summary": "LEFT JOIN qualifying matches then check missing right-side key",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/SQL-R005-ANTI-JOIN-DETAILED-LESSON.md"
+          },
+          {
+            "id": "SQL-R006",
+            "title": "Anti-join vs NOT IN; progressive Q7",
+            "summary": "Compare anti-match and NOT IN approaches, missing data, duplicates and ordering",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/SQL-R006-Q7-ANTI-JOIN-AND-SUBQUERY-DETAILED-LESSON.md"
+          }
+        ]
       }
     },
     {
