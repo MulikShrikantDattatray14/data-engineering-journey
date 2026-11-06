@@ -102,3 +102,8 @@ order by CustomerID asc
 | 10 | `a@ ex.com` | Contains a space | omitted (wrong exclusion) |
 
 **Diagnosis without solution spoiler:** `'% %@%.com'` recognizes only certain space placements, not every literal space. `'%@%.com'` hardcodes `.com`, incorrectly rejecting valid other-domain suffixes. The Missing branch tests NULL but not blank/whitespace-only values. Label precedence and basic CASE/WHERE design are promising. **Status:** Correct for the four-row example, but independent correction required for the broader stated task; do not credit a verified P004 reattempt or reveal a full reference solution yet.
+
+
+## Latest combined query attempt — syntax review
+
+The student submitted a combined CASE query with corrected Missing (`IS NULL OR LENGTH(TRIM(Email)) = 0`) and literal-space (`LIKE '% %'`) conditions. The pasted SQL became malformed around the third WHEN and CASE END: the `THEN 'Not in name@domain.tld form'` appeared after ORDER BY. Its LIKE pattern also included literal asterisks and backslashes instead of the previously tested pattern. A reconstruction produced SQLite 3.46.1 `OperationalError: near "end": syntax error`. The original paste contains formatting artifacts, so it was not executed byte-for-byte. No output rows, no completion credit, and no solution was supplied. Ask student to resubmit clean final SQL.
