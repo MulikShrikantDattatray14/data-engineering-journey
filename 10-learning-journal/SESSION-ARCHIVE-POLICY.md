@@ -83,3 +83,14 @@ Starting Day 1 Slot 1 Q7 and for subsequent SQL problems, **do not begin with a 
 5. Record step output as **executed** only when it was really run; otherwise explicitly mark it not executed. SQLite is the primary dialect, not PostgreSQL. Include duplicate and NULL behavior in output reviews.
 
 The goal is visible reasoning development and learner autonomy, **not** giving a complete reference answer before final submission.
+
+## GitHub commit checkpoint — per-question workflow (adopted before Q7)
+
+**User preference:** Collect the question's steps and complete the review, then **commit the finished question to the default branch before starting the next question**. A review checkpoint is not automatically a mastery pass.
+
+- During a question, keep every learner-authored intermediate SQLite step, the reasoning, and output/error in the session record. The assistant may save checkpoints during a long question to avoid losing material, but should **not** label the question finished or proceed without the end-of-question commit.
+- Once the learner makes the final submission, execute the query, compare actual and expected output, document corrections and verified references, complete the optional Yes/No learning capture, and then create the **question-closing GitHub commit** with the problem ID/date in its message.
+- Include exact student solutions, progressive explanation, intermediate output, actual execution errors, the distinction between student and assistant code, SQL Server reference, and revision-bank additions.
+- After the commit is acknowledged, provide the user with a link and move to the next question. If the user's solution remains incorrect, record **reviewed / needs independent retry**, not successfully mastered. If the user elects to move on, make the status explicit.
+- The GitHub connection writes directly to the remote repo; its successful commit is the equivalent of committing and pushing. Do not claim a separate local git push occurred.
+- Never commit correct answers to a not-yet-attempted question. Q7 keeps its final solution hidden until the learner has submitted it.
