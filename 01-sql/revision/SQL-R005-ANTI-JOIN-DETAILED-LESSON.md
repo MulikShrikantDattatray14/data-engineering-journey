@@ -2,7 +2,7 @@
 
 **Date learned:** November 6, 2026 · Day 1 / Slot 1 / Q6  
 **Status:** Learner explicitly identified anti-joins as **important new learning** after Q6.  
-**Related work:** [Q6 original attempt, review, and follow-up](../../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md) · [Progressive Q6 walkthrough](../practice/verified-results/2026-11-06-q06-walkthrough.md)  
+**Related work:** [Q6 original attempt, review, and follow-up](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md) · [Progressive Q6 walkthrough](../practice/verified-results/2026-11-06-q06-walkthrough.md)  
 **Dialects:** Original practice in **SQLite**; companion reference syntax in **SQL Server (T-SQL)**.  
 **Attribution:** This is an assistant-authored explanation of the reviewed tutor question, **not** an official PNP answer key, and **not** an independently written student solution.
 
