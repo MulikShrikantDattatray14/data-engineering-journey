@@ -1,7 +1,7 @@
 # Day 1 — Slot 01: SQL Foundations & PNP Practice
 
 **Study date:** November 6, 2026 (Asia/Kolkata)  
-**Status:** Interactive session in progress; Q1 correct, Q2 first attempt reviewed (revision pending)  
+**Status:** Interactive session in progress; Q1 correct, Q2 corrected and reviewed (5/5)  
 **Actual start/end and verified focus minutes:** Not recorded  
 **Goal:** Rebuild accurate foundations, use independent queries to demonstrate fluency, then revisit the existing PNP SQL 205-question bank without duplicating solutions.
 
@@ -161,4 +161,60 @@ WHERE status = 'paid'
 ORDER BY amount DESC;
 ```
 
-This particular original query is syntactically valid in both dialects; the second version is a readability formatting of the same logic, **not a second learner-authored attempt**. Q2 first SQLite attempt has now been recorded below in the Q2 section; its correction remains pending.
+This particular original query is syntactically valid in both dialects; the second version is a readability formatting of the same logic, **not a second learner-authored attempt**. Q2 first and revised SQLite attempts have been preserved, with its reviewed SQL Server translation below.
+
+## Q2 — Learner's revised SQLite solution (verbatim)
+
+```sql
+SELECT order_id, status, state, amount
+FROM orders
+WHERE  (status ='paid' and state='Maharashtra' and amount is not null ) or  (amount > 2000 and amount is not null)
+order by order_id
+```
+
+**Review:** 5/5 requirements. Both branches reject NULL amounts, logical grouping is explicit, and `ORDER BY order_id` sorts ascending. Correct rows: 101, 103, 105, 106. The `amount IS NOT NULL` check in the second OR branch is redundant given `amount > 2000`, but not incorrect. Original first attempt and its 4/5 review remain preserved above.
+
+### SQL Server / T-SQL — assistant-converted after successful learner revision
+
+```sql
+SELECT order_id, status, state, amount
+FROM orders
+WHERE
+    (status = 'paid'
+     AND state = 'Maharashtra'
+     AND amount IS NOT NULL)
+    OR
+    (amount > 2000
+     AND amount IS NOT NULL)
+ORDER BY order_id ASC;
+```
+
+**Learning-capture response:** `No new learning to record.` No new rule is added to the centralized SQL revision bank. The correction is retained in this session review.
+
+**Source completion credit:** Q2 is an original tutor diagnostic, not an additional PNP SQL ID. Focus time and complete slot mastery have not been verified.
+
+## Question 3 — LEFT JOIN and missing records (unattempted)
+
+### Tables
+
+`customers`:
+
+| customer_id | customer_name |
+|---:|---|
+| 1 | Asha |
+| 2 | Ravi |
+| 3 | Neha |
+| 4 | Kabir |
+
+`orders`:
+
+| order_id | customer_id | status |
+|---:|---:|---|
+| 201 | 1 | paid |
+| 202 | 1 | pending |
+| 203 | 2 | cancelled |
+| 204 | 3 | paid |
+
+**Task:** Write a SQLite query returning `customer_id`, `customer_name`, and `order_id` for **every customer, including customers with no orders**. For each customer, return their matching orders as separate rows, sorted by `customer_id` and then `order_id` ascending. Do not filter by order status.
+
+**Student SQLite attempt:** Pending. **Assistant review and SQL Server version:** Withheld until attempt.
