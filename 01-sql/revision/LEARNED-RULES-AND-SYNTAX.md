@@ -114,3 +114,43 @@ same learning as previous question, i hurried up without rechecking,
 The Q4 original query mistakenly used the digit `0` in `0.status` rather than the letter `o` from the orders alias. The learner explicitly connected this to rushing, the same preventable behavior identified in Q3. This is an additional **Q4 occurrence of SQL-R003**, not a new rule.
 
 **Q4 source:** [Day 1 Slot 1 Q4](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md).
+
+
+## SQL-R004 — LEFT JOIN: ON versus WHERE filtering
+
+**Date:** 2026-11-06 · Day 1 · Slot 1 · Q5  
+**Category:** Join semantics / filtering / NULL  
+**Related attempt:** [Q5 original query, expected vs actual, and corrections](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md)
+
+### Exact learner-chosen takeaway (verbatim)
+
+```text
+filters the joined result after the JOIN.
+
+For Ravi, the matching order is cancelled, so it is removed. For Kabir, there is no matching order, so o.status is NULL, and the condition evaluates to UNKNOWN. That row is removed too.
+
+The crucial distinction:
+- ON controls which orders match each customer during the JOIN.
+- WHERE filters the rows that remain after the JOIN.
+```
+
+### Generalized rule (assistant explanation)
+
+**With an outer join, choose WHERE a right-table filter is placed based on whether unmatched left-table rows must survive.**
+
+- A right-table predicate in the `ON` clause controls **which right rows match**, while `LEFT JOIN` still preserves every left row by supplying NULLs when no match qualifies.
+- A right-table predicate in the `WHERE` clause filters **the completed joined rows**. A condition such as `WHERE o.status = 'paid'` rejects NULL-extended rows (`UNKNOWN`) and non-paid matches (`FALSE`), so customers without paid orders disappear.
+- **If you need every customer but only paid order details**, place `o.status = 'paid'` in `ON`. **If you need only customers with paid orders**, put that condition in `WHERE` (or use INNER JOIN appropriately).
+
+```sql
+-- Preserve all customers; attach only paid orders
+SELECT c.customer_id, c.customer_name, o.order_id
+FROM customers AS c
+LEFT JOIN orders AS o
+  ON c.customer_id = o.customer_id
+ AND o.status = 'paid';
+```
+
+**Nuance:** This is not a universal claim that `WHERE` always turns a LEFT JOIN into INNER JOIN. It applies to NULL-rejecting right-table conditions such as `o.status = 'paid'`. Conditions like `WHERE o.order_id IS NULL` deliberately select unmatched rows instead. SQL logical processing considers JOIN/ON before WHERE.
+
+**SQLite and SQL Server:** The demonstrated syntax and behavior apply to both. This is a new confirmed learning entry, not a new PNP question completion.
