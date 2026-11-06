@@ -931,3 +931,20 @@ and status ='settled' and amount >1000 and amount is null and status is null
 | 16 | Luna | North | NULL | NULL |
 
 **Expected final account IDs:** 11, 12, 13, 15, 16. The actual query contains extra account 14 and two extra selected columns. The ON clause is impossible to satisfy: `amount>1000 AND amount IS NULL` cannot be TRUE, nor can `status='settled' AND status IS NULL`. Thus every account is retained by LEFT JOIN as unmatched, including Maple. This query is an intermediate failed attempt, not the completed Q7 result. Await learner's distinction between match conditions (ON) and post-join filtering (WHERE), without providing their final query.
+
+
+## Q7 LEFT JOIN — Step 5 conceptual correction (reviewed, not executed)
+
+**Learner's explicit selection:** `WHERE` for identifying qualifying matches (incorrect as a conceptual label; the student's actual query does use ON for qualifying matches).
+
+**Learner's exact proposed query (review-only, not executed in this review):**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status ='settled' and amount >1000 where 
+amount is null and status is null
+```
+
+**Reasoning review:** Meaningful progress: ON restricts matching to settled payments with amount >1000; WHERE checks NULL-extended right-side fields to select accounts with no qualifying matches. For the specific Q7 fixture, the NULL checks are sufficient since any qualifying matched row has non-NULL status and amount. For robust anti-match detection, prefer testing a non-nullable payment key. The submitted query still includes extra right-side columns and no explicit ORDER BY; full output requirements not yet complete. No actual execution claimed for this Step 5 proposal. Student should independently finalize it. Q7 closing commit still pending.
