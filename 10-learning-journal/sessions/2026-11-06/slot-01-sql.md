@@ -588,3 +588,47 @@ ORDER BY c.customer_id ASC;
 **Important:** Reference solutions are not learner submissions or academy official keys. No PNP course question ID credited.
 
 **Post-question learning:** Await optional Yes/No from learner.
+
+## Q6 — Learner-confirmed comprehensive new learning
+
+**Original learner request (verbatim):**
+
+```text
+there is lot of learn from this question ... include all those things that got wrong here as the  new learning
+```
+
+The learner requested that **all** misconceptions in the Q6 review be included. Detailed review is stored at [SQL-R005 — Anti-join and absence of qualifying matches](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md). Topics include: distinguishing non-paid rows from absence of paid rows, INNER JOIN eliminating no-order customers, LEFT JOIN with qualifying ON predicate plus right-side IS NULL, row-versus-customer level logic, NULL UNKNOWN semantics, aliases, and mixed-status / no-order edge cases. Marked high priority for interleaved practice.
+
+## Question 7 — Interleaved practice: orders, risk holds, and NULL (unattempted)
+
+Two new SQLite tables:
+
+**accounts**
+
+| account_id | account_name | region |
+|---:|---|---|
+| 11 | Cedar | West |
+| 12 | Delta | North |
+| 13 | Orion | West |
+| 14 | Maple | South |
+| 15 | Nova | West |
+| 16 | Luna | North |
+
+**payments**
+
+| payment_id | account_id | status | amount |
+|---:|---:|---|---:|
+| 501 | 11 | settled | 900 |
+| 502 | 11 | pending | 300 |
+| 503 | 12 | failed | 1500 |
+| 504 | 13 | settled | NULL |
+| 505 | 14 | settled | 1800 |
+| 506 | 15 | failed | 400 |
+| 507 | 15 | pending | 600 |
+
+**Task:** Return `account_id`, `account_name` and `region` for accounts that have **no settled payment with a non-NULL amount greater than 1000**. All accounts must be considered, including those with no payments, non-settled payments, and settled payments with NULL or low amounts. Sort by `account_id` ascending. Use a JOIN-based SQLite query; no hardcoded account IDs, and do not use aggregation, a subquery or `NOT EXISTS` in this question.
+
+**Why this task:** Interleave Q1's NULL comparisons, Q2's Boolean grouping, Q5's ON/WHERE, Q6's anti-match, and Q3/Q4's syntax/requirements checklist.
+
+**Learner's original SQLite attempt and reasoning:** Pending.
+**Expected result and SQLite reference/T-SQL translation:** Hidden until first attempt. Save attempts unmodified; execute and compare actual vs expected after submission.
