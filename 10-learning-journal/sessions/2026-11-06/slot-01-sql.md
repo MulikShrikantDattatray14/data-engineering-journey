@@ -852,3 +852,30 @@ and status !='settled' and amount <=1000
 **Review of reasoning only:** Moving right-side conditions to ON helps preserve the left accounts. However, matching non-settled low-amount payments is still conceptually the inverse of the intended qualifying payments. Maple, whose settled payment of 1800 is qualifying, would not match this predicate and would be retained as an unmatched left row. No corrected SQL is shown to the student; await revised reasoning before next code step.
 
 **Status:** Q7 incomplete, closing commit pending.
+
+
+## Q7 LEFT JOIN — Step 3 corrected intermediate SQLite query (executed)
+
+**Learner's exact submitted query (verbatim):**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status ='settled' and amount >1000
+```
+
+**Actual execution:** Ran the exact query in SQLite against Q7's six `accounts` and seven `payments` rows. Successful execution, six rows (observed order; no ORDER BY guarantee):
+
+| account_id | account_name | region |
+|---:|---|---|
+| 11 | Cedar | West |
+| 12 | Delta | North |
+| 13 | Orion | West |
+| 14 | Maple | South |
+| 15 | Nova | West |
+| 16 | Luna | North |
+
+**Review:** The `ON` clause correctly restricts matches to settled payments with amount greater than 1000, leaving account 14 (Maple) as the only account with a qualifying payment match in this sample. Every left-side account remains due to `LEFT JOIN`. The user projects only `accounts` fields, so NULL-extended payment fields are not visible in the actual result; they should not be presented as actual selected output. Account 14 remains, so this step is correct as an intermediate join, not the completed anti-join answer.
+
+**Status:** Step 3 reviewed; Step 4 reasoning is next. Q7 closing commit remains pending until both approaches are completed and reviewed.
