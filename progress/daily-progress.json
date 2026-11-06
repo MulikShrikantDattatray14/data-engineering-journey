@@ -52,7 +52,7 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
@@ -62,7 +62,8 @@
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P001-brand-directory-reattempt.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P001-CLOSED.md",
-        "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P001-CLOSED.md"
+        "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P001-CLOSED.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P002-ten-highest-priced-products-reattempt.md"
       ],
       "practice": {
         "sql_tutor_reviewed": 8,
@@ -252,18 +253,20 @@
           "sqlite_execution": "verified",
           "tsql_execution": "not performed"
         },
-        "pnp_source_reattempts_verified": 1,
+        "pnp_source_reattempts_verified": 2,
         "pnp_reattempt_ids": [
-          "P001"
+          "P001",
+          "P002"
         ],
         "pnp_reattempt_target_min": 6,
         "pnp_p001_learning_response_verbatim": "No new learning.",
-        "pnp_p001_status": "question-closing checkpoint committed in both GitHub repositories"
+        "pnp_p001_status": "question-closing checkpoint committed in both GitHub repositories",
+        "pnp_p002_status": "first independent reattempt correct; learning Yes/No and closing checkpoint pending"
       },
       "execution": {
         "state": "in_progress",
         "current_slot": 1,
-        "current_question": "PNP P001 closed; P002 source reattempt next",
+        "current_question": "PNP P002 verified; capture optional learning then close checkpoint",
         "last_verified": "2026-11-06",
         "slots": [
           {
@@ -273,7 +276,7 @@
             "track": "SQL",
             "status": "in_progress",
             "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
-            "done": "Q1–Q8 tutor diagnostic reviewed (4 independently correct/corrected); PNP source reattempt P001 completed and question-closing commits verified (1/6 minimum).",
+            "done": "Q1–Q8 tutor diagnostics complete; P001 closed and P002 independently correct on first reattempt (2/6 minimum), P002 closing pending.",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
           },
           {
@@ -346,10 +349,10 @@
             "track": "SQL",
             "name": "Reattempt 6–10 previously solved PNP SQL questions",
             "target": 6,
-            "completed": 1,
+            "completed": 2,
             "unit": "verified reattempts (minimum target 6)",
             "status": "in_progress",
-            "detail": "P001 reattempt independently corrected on third submission and formally closed in both repos; minimum five more reattempts outstanding.",
+            "detail": "P001 closed; P002 first-try correct against illustrative fixture, awaiting learning capture/closing checkpoint. Minimum four more verified reattempts.",
             "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
           },
           {
@@ -398,7 +401,7 @@
           }
         ],
         "next_actions": [
-          "Attempt PNP P002 independently using its given illustrative input/output; do not look at earlier source code or provider key.",
+          "Capture P002 new learning Yes/No, then commit closing checkpoints in both repositories.",
           "Independently retry Q3–Q6 weak areas before claiming mastery.",
           "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
           "Start Python PDF pages 1–8 and record actual page/exercise evidence.",
