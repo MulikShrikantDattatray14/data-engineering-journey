@@ -636,3 +636,13 @@ Two new SQLite tables:
 ## Q6 — Progressive reference explanation
 
 The learner requested detailed justification for every reference solution, including a single dataset carried through all stages and the resulting **actual SQLite output after each step**. The complete Q6 tutorial has now been committed here: [Step-by-step Q6 walkthrough](../../../01-sql/practice/verified-results/2026-11-06-q06-walkthrough.md). It covers 4 stages (all customers → all LEFT JOIN matches → paid-only matches in ON → missing paid matches in WHERE), detailed output tables, anti-join reasoning, error analysis, and SQLite/T-SQL references. The Q7 answer remains unrevealed pending the learner's attempt.
+
+## Q6 follow-up understanding check — LEFT JOIN multiple qualifying matches
+
+**Prompt:** Ravi (customer_id 2) has orders 203 (cancelled), 205 (paid), and 206 (paid). With `LEFT JOIN orders AS o ON c.customer_id = o.customer_id AND o.status = 'paid'`, how many result rows does Ravi produce?
+
+**Learner's answer (verbatim):** `2 rows, orders 205 and 206.`
+
+**Review:** Correct. The cancelled order 203 does not match the ON predicate. Both paid orders match independently and produce two rows: (Ravi, 205, paid) and (Ravi, 206, paid). No extra NULL-extended row is generated because at least one qualifying right-side match exists.
+
+**Evidence classification:** One correct follow-up reasoning check on JOIN multiplicity. This is not a new PNP SQL problem or proof of complete anti-join mastery. Q7 remains unattempted.
