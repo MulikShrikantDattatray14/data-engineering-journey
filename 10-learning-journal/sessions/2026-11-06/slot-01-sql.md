@@ -768,3 +768,31 @@ left join payments  on accounts.account_id = payments.account_id
 **Executed in SQLite** against the Q7 six-account/seven-payment fixture. Actual result: `OperationalError: near "from": syntax error`. **No output table** was returned; this is not an empty successful result. SQLite requires at least one selected expression or column after SELECT. The LEFT JOIN table order and account_id matching condition themselves are correct.
 
 **Step status:** Awaiting independent correction of the SELECT list; do not proceed to Step 2 or reveal the final query yet. Keep Q7 question-closing commit pending until both approaches and optional new learning are complete. This is an intermediate preservation commit.
+
+
+### Q7 LEFT JOIN Step 1 — Independent revised SQLite query and real execution
+
+**Student's corrected partial query, verbatim:**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+```
+
+**Actual execution:** Ran exact SQL using SQLite against Q7's 6-row `accounts` and 7-row `payments` tables. The SQLite engine returned **8 rows** in the following observed order (not guaranteed without ORDER BY):
+
+| account_id | account_name | region |
+|---:|---|---|
+| 11 | Cedar | West |
+| 11 | Cedar | West |
+| 12 | Delta | North |
+| 13 | Orion | West |
+| 14 | Maple | South |
+| 15 | Nova | West |
+| 15 | Nova | West |
+| 16 | Luna | North |
+
+**Review:** Valid SQLite syntax and correct LEFT JOIN keys. Accounts 11 and 15 each have two matching payment rows, producing repeated account columns; account 16 has no payment match but remains due to LEFT JOIN. The student's SELECT projects only columns from `accounts`, so NULL payment values are **not visible in this result**. In a diagnostic query selecting payment fields, Luna's right-side fields would be NULL, but that was not this submitted query's output. No filter, sorting, or final anti-match evaluation has yet been performed, by design.
+
+**Step status:** Step 1 reviewed correct and preserved. Await student's Step 2 reasoning **before** asking them to write a new SQL query. Q7 question-closing commit remains pending; this is an incremental save.
