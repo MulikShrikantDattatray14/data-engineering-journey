@@ -84,3 +84,17 @@ order by trim(`City`) asc , CustomerID asc
 **Actual execution:** SQLite 3.46.1 on the nine-row sample; no errors, zero rows returned. Column names: CustomerID, FirstName, LastName, `trim(`City`)`, State.
 
 **Expected:** Eight rows, as shown above. **Review:** UPPER(TRIM(City)) produces uppercase values but the IN list contains lowercase/mixed-case values; SQLite's normal equality is case-sensitive. Chennai and Hyderabad are absent from the accepted list. The trimmed city projection lacks the required alias, and sorting by TRIM(City) alone is case-sensitive. Independent correction needed. No P003 verified reattempt credit yet; old source/assistant answers withheld.
+
+
+## Third independent attempt — executed SQLite output
+
+Student's exact query:
+
+```sql
+select `CustomerID`, `FirstName`, `LastName`, trim(City), `State`
+from Customers
+where lower(trim(City)) in  ('bangalore','bengaluru','bombay','mumbai','new delhi','delhi','chennai','hyderabad')
+order by trim(City) asc , CustomerID asc
+```
+
+SQLite 3.46.1 on the nine sample customers returned 8 rows (ID order 14,7,12,6,9,3,5,8), matching the expected row values and observed order. Actual fourth column name is `trim(City)` rather than required `City`. The case-sensitive `ORDER BY trim(City)` does not guarantee case-insensitive sorting for arbitrary input. Filtering is now correct, but final alias and robust ordering need an independent correction. No P003 completion credit yet.
