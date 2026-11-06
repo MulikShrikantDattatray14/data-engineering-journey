@@ -672,3 +672,24 @@ where status='status' and amount>=1000
 **Review:** Table `payments`, column `account_id`, and AND combination are appropriate for the intended first step. Two filtering issues: `status='status'` compares against literal text `status`, which appears in no row; target status should be the qualifying value specified in the question. `amount>=1000` includes amounts equal to 1000, whereas the problem requires strictly greater than 1000. The original submission has been preserved before any learner revision.
 
 **Step 1 status:** Needs independent correction by learner; not completed. The outer query and final Q7 solution remain withheld. This is an intermediate GitHub preservation commit, **not** the Q7 question-closing commit.
+
+
+### Q7 Step 1 — Student's independent corrected SQLite query
+
+**Learner's revised query, verbatim:**
+
+```sql
+select account_id
+from payments
+where status='settled' and amount>1000
+```
+
+**Actual SQLite execution:** Ran this exact query in an in-memory SQLite database with the Q7 `payments` fixture (payment_id 501–507). Returned:
+
+| account_id |
+|---:|
+| 14 |
+
+**Expected for this partial step:** Account 14 only, because only its settled payment of 1800 has amount strictly greater than 1000. `amount > 1000` yields UNKNOWN for NULL, so an explicit IS NOT NULL check isn't necessary for this filter. Result matched expected. The student independently corrected the earlier literal `'status'` and `>=1000` errors.
+
+**Status:** Step 1 successfully completed and reviewed. This is an intermediate preservation commit; full Q7 and Step 2 remain pending. Do not reveal the outer query or closing solution before the learner's independent attempt.
