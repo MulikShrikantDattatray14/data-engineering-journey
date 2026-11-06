@@ -108,3 +108,29 @@ You do not need an additional amount IS NOT NULL condition for this query.
 ```
 
 This entry reproduces the learner's subsequent submission exactly; the original formatted entry above is retained for history.
+
+## SQL dialect correction — user preference
+
+From this point onward the student solves every SQL problem **in SQLite**. Following an independent attempt and review, save the original SQLite solution *unchanged* and an assistant-created **SQL Server (T-SQL)** translation. The earlier references to PostgreSQL describe the initial plan and are **superseded**. Do not create PostgreSQL solution versions.
+
+### Q1 SQLite: original student solution (verbatim)
+
+```sql
+SELECT order_id , amount
+FROM orders
+WHERE status = 'paid' and  state = 'Maharashtra' and amount > 1000
+order by amount desc
+```
+
+### Q1 SQL Server (T-SQL): assistant-converted after student review
+
+```sql
+SELECT order_id, amount
+FROM orders
+WHERE status = 'paid'
+  AND state = 'Maharashtra'
+  AND amount > 1000
+ORDER BY amount DESC;
+```
+
+This particular original query is syntactically valid in both dialects; the second version is a readability formatting of the same logic, **not a second learner-authored attempt**. Q2 still awaits the student's SQLite attempt and has no answer recorded.
