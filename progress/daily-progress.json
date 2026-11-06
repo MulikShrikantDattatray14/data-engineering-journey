@@ -52,15 +52,18 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 kickoff: 7 tutor-created SQLite SQL diagnostics (Q1–Q7) reviewed. Q1 correct first try; Q2 independently corrected; Q7 LEFT JOIN approach independently corrected and verified; Q3–Q6 reviewed but not independently solved in final form. Q7 NOT IN returned correct account rows but omitted explicit ORDER BY. SQL-R001–SQL-R006 documented. No new PNP question IDs or Python PDF pages verified. Exact focused minutes not recorded.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
-        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md"
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
+        "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
       ],
       "practice": {
-        "sql_tutor_reviewed": 7,
-        "sql_tutor_verified_correct": 3,
+        "sql_tutor_reviewed": 8,
+        "sql_tutor_verified_correct": 4,
         "first_try_correct": 1,
         "reviewed_question_ids": [
           "Q1",
@@ -69,14 +72,16 @@
           "Q4",
           "Q5",
           "Q6",
-          "Q7"
+          "Q7",
+          "Q8"
         ],
         "verified_correct_ids": [
           "Q1",
           "Q2",
-          "Q7"
+          "Q7",
+          "Q8"
         ],
-        "status": "Q7 reviewed and closed; Q8 not started",
+        "status": "Q1–Q8 tutor diagnostic reviewed; Q8 final SQLite independently corrected and verified; PNP source practice pending",
         "kind": "tutor-practice-not-pnp",
         "sql_tutor_target": 8,
         "index_url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md",
@@ -168,6 +173,22 @@
             ],
             "verified_correct": true,
             "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md#q7"
+          },
+          {
+            "id": "Q8",
+            "title": "Vendors without qualifying deliveries",
+            "status": "Independent final SQLite correction verified (not first try)",
+            "topics": [
+              "LEFT JOIN anti-join",
+              "ON vs WHERE",
+              "AND/OR",
+              "NULL",
+              "right-side unmatched key",
+              "left-side projection",
+              "ORDER BY"
+            ],
+            "verified_correct": true,
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md"
           }
         ],
         "concepts": [
@@ -206,13 +227,33 @@
             "title": "Anti-join vs NOT IN; progressive Q7",
             "summary": "Compare anti-match and NOT IN approaches, missing data, duplicates and ordering",
             "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/SQL-R006-Q7-ANTI-JOIN-AND-SUBQUERY-DETAILED-LESSON.md"
+          },
+          {
+            "id": "SQL-R007",
+            "title": "Q8 anti-join transfer and left-side IDs",
+            "summary": "Learner takeaway verbatim: anti join pattern concept; project and sort by left-side key when right-side is NULL",
+            "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md#sql-r007--q8-anti-join-transfer-and-selecting-left-side-ids"
           }
-        ]
+        ],
+        "last_verified_q8": {
+          "status": "independent-correction-verified",
+          "actual_rows": 5,
+          "expected_rows": 5,
+          "actual_columns": 3,
+          "expected_columns": 3,
+          "first_try": false,
+          "source_type": "tutor-original",
+          "learner_insight_verbatim": "anti join pattern concept",
+          "source_url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
+          "mirror_url": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
+          "sqlite_execution": "verified",
+          "tsql_execution": "not performed"
+        }
       },
       "execution": {
         "state": "in_progress",
         "current_slot": 1,
-        "current_question": "Q8 next; Q7 closed",
+        "current_question": "Q8 verified and reviewed; PNP source reattempts next",
         "last_verified": "2026-11-06",
         "slots": [
           {
@@ -222,7 +263,7 @@
             "track": "SQL",
             "status": "in_progress",
             "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
-            "done": "Q1–Q7 reviewed; 3 independently correct/corrected; no PNP reattempts verified",
+            "done": "Q1–Q8 reviewed (8/8); 4 independently correct/corrected; no PNP reattempts verified",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
           },
           {
@@ -261,11 +302,11 @@
             "id": "sql-concepts",
             "track": "SQL",
             "name": "Learn SQL filtering, NULL, INNER/LEFT JOIN and anti-joins",
-            "target": 6,
-            "completed": 6,
+            "target": 7,
+            "completed": 7,
             "unit": "documented learning rules",
             "status": "reviewed",
-            "detail": "SQL-R001 to SQL-R006 documented; learning not equivalent to mastery",
+            "detail": "SQL-R001 through SQL-R007 documented; learning not equivalent to mastery",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md"
           },
           {
@@ -273,10 +314,10 @@
             "track": "SQL",
             "name": "Complete 8 guided SQL diagnostic questions",
             "target": 8,
-            "completed": 7,
+            "completed": 8,
             "unit": "reviewed questions",
-            "status": "in_progress",
-            "detail": "3 independently correct/corrected; Q8 pending",
+            "status": "complete",
+            "detail": "8/8 reviewed; 4 independently correct/corrected, including Q8; Q3–Q6 still need independent retries",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
           },
           {
@@ -284,10 +325,10 @@
             "track": "SQL",
             "name": "Independently correct/review weak SQL patterns",
             "target": null,
-            "completed": 3,
-            "unit": "verified correct/corrected (of 7 reviewed)",
+            "completed": 4,
+            "unit": "verified correct/corrected (of 8 reviewed)",
             "status": "in_progress",
-            "detail": "Q3–Q6 independent corrections still not verified",
+            "detail": "Q1, Q2, Q7, Q8 verified; Q3–Q6 independent corrections still outstanding",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
           },
           {
@@ -347,7 +388,7 @@
           }
         ],
         "next_actions": [
-          "Finish Q8 using the student-led SQLite workflow and commit its closing review.",
+          "Start independently reattempting 6–10 previously solved PNP source SQL questions; the tutor diagnostic Q8 is complete.",
           "Independently retry Q3–Q6 weak areas before claiming mastery.",
           "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
           "Start Python PDF pages 1–8 and record actual page/exercise evidence.",
