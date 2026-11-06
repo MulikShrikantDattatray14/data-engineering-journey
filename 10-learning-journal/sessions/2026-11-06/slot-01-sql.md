@@ -906,3 +906,28 @@ and status ='settled' and amount >1000
 **Review:** Six rows. Only Maple has a qualifying joined payment, as shown by non-null payment columns. Other accounts have no payment match satisfying both status='settled' and amount>1000, so LEFT JOIN preserves them with null-extended right-side fields. Orion has a real payment with a NULL amount, but that payment is not a qualifying match. No ORDER BY, so presentation order not guaranteed. Current result is an exploratory stage, not the final account list.
 
 **Next:** Learner explains the filtering step in their own words, then writes its SQLite query. No final reference query pre-revealed. Closing Q7 commit remains pending until both approaches and review are complete.
+
+
+## Q7 LEFT JOIN — Step 5 repeated reasoning attempt (executed)
+
+**Learner's exact SQLite query:**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status ='settled' and amount >1000 and amount is null and status is null
+```
+
+**SQLite execution verified in the Q7 fixture:** Six rows, each with NULL status and NULL amount:
+
+| account_id | account_name | region | status | amount |
+|---:|---|---|---|---:|
+| 11 | Cedar | West | NULL | NULL |
+| 12 | Delta | North | NULL | NULL |
+| 13 | Orion | West | NULL | NULL |
+| 14 | Maple | South | NULL | NULL |
+| 15 | Nova | West | NULL | NULL |
+| 16 | Luna | North | NULL | NULL |
+
+**Expected final account IDs:** 11, 12, 13, 15, 16. The actual query contains extra account 14 and two extra selected columns. The ON clause is impossible to satisfy: `amount>1000 AND amount IS NULL` cannot be TRUE, nor can `status='settled' AND status IS NULL`. Thus every account is retained by LEFT JOIN as unmatched, including Maple. This query is an intermediate failed attempt, not the completed Q7 result. Await learner's distinction between match conditions (ON) and post-join filtering (WHERE), without providing their final query.
