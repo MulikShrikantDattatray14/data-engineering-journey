@@ -492,3 +492,31 @@ ORDER BY c.customer_id, o.order_id ASC;
 **Reviewed status:** Original query attempted and compared; logic incorrect for two unmatched customers. No independently revised SQLite submission yet. No PNP source ID earned.
 
 **Optional new learning from Q5:** Awaiting learner Yes/No and their exact wording if Yes.
+
+## Q5 — Learner-confirmed new learning
+
+**Learner's exact takeaway (verbatim):**
+
+```text
+filters the joined result after the JOIN.
+
+For Ravi, the matching order is cancelled, so it is removed. For Kabir, there is no matching order, so o.status is NULL, and the condition evaluates to UNKNOWN. That row is removed too.
+
+The crucial distinction:
+- ON controls which orders match each customer during the JOIN.
+- WHERE filters the rows that remain after the JOIN.
+```
+
+**Generalized concept:** `LEFT JOIN ... ON ... AND right_table_condition` preserves all left rows while limiting matches. A null-rejecting right-table filter in `WHERE`, e.g. `WHERE o.status = 'paid'`, filters joined rows and may remove otherwise-preserved customers. Specific exceptions exist; e.g. `WHERE o.order_id IS NULL` can be used to identify unmatched customers.
+
+**Centralized reference:** [SQL-R004 — LEFT JOIN ON versus WHERE](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md). The student chose this takeaway after review; their original Q5 answer is preserved separately.
+
+## Question 6 — Customers without paid orders (not attempted)
+
+Use the same Q5 tables: customers (1 Asha, 2 Ravi, 3 Neha, 4 Kabir); orders (201,1,paid), (202,1,pending), (203,2,cancelled), (204,3,paid).
+
+**Task:** In SQLite, return `customer_id` and `customer_name` for customers who have **no paid orders at all**, including customers who have only pending/cancelled orders and customers who have no orders. Sort by `customer_id` ascending. Do not hardcode IDs or names. Use a JOIN-based approach.
+
+**Student first attempt:** Pending.
+**Expected/actual output and reference answers:** Withheld until attempt.
+**After review:** Run actual SQLite query; show expected vs actual; preserve learner's answer, an assistant-verified SQLite reference, and assistant-converted T-SQL reference; offer optional new-learning Yes/No.
