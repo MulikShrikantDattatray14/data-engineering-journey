@@ -2,12 +2,12 @@
 
 **Mission:** Data Engineering / Day 1 / Slot 1. **All entries are tutor-created interactive practice, NOT additional PNP source completions.**  
 **Archive:** [Original questions, student queries, reasoning, actual SQLite outputs, revisions and references](slot-01-sql.md).  
-**Rules bank:** [General SQL rules SQL-R001–R006](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
+**Rules bank:** [General SQL rules SQL-R001–R007](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
 
 ## Progress checkpoint
 
-- **Questions attempted and reviewed:** 7 of the proposed 8-question foundations diagnostic (Q8 unattempted).
-- **Independent success after allowed revisions:** 3 (Q1, Q2, Q7).
+- **Questions attempted and reviewed:** 8 of 8 tutor-authored foundation diagnostic questions.
+- **Independent success after allowed revisions:** 4 (Q1, Q2, Q7, Q8).
 - **Correct first attempt:** 1 (Q1).
 - **Reviewed, further independent full-query correction needed:** Q3, Q4, Q5, Q6.
 - **New PNP source question completions:** 0 verified.
@@ -73,8 +73,19 @@
 **Complete original step-by-step queries and outputs:** [Q7 in full session archive](slot-01-sql.md).  
 **Verified question-closing checkpoint:** [Q7-CLOSED](Q7-CLOSED.md).
 
+
+## Q8
+
+**Problem:** Find vendors with no qualifying delivered amount >1000 when the vendor is West or service is express, including vendors without deliveries.  
+**Topics:** LEFT JOIN anti-join; qualifying `ON` predicates; nested AND/OR; NULL handling; one-to-many matching; correct left-side ID projection and ordering.  
+**Outcome:** Final learner-authored SQLite query independently corrected and verified: exactly 5 rows, 3 columns and ascending vendor IDs; *not correct on first attempt*. Stepwise intermediate outputs: unfiltered JOIN 10 rows; qualifying LEFT JOIN 8 rows; anti-match 5 rows.  
+**Exact learner insight:** `anti join pattern concept`.  
+**Full original question and input/output plus original student attempts, executed progressive SQLite review and assistant T-SQL reference:** [Q8 complete record](../../../study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md).  
+**Revision rule:** [SQL-R007 — Q8 transfer and left-side IDs](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).  
+**PNP credit:** Zero — original tutor diagnostic.
+
 ## Next steps
 
-**Q8 remains unattempted.** After Q8, the original Slot 1 target also includes reattempting 6–10 previously solved PNP SQL questions; no such new reattempt credit has been verified. Each future date gets the same per-question and per-concept revision links.
+**Q8 independently corrected and verified.** After Q8, the original Slot 1 target also includes reattempting 6–10 previously solved PNP SQL questions; no such new reattempt credit has been verified. Each future date gets the same per-question and per-concept revision links.
 
 **Integrity:** Reviewed is not necessarily correct; a correct reference solution isn't the learner's own solution; a GitHub commit isn't automatically a source assignment or mastered topic.
