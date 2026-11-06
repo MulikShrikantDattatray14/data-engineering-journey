@@ -41,3 +41,11 @@ GitHub does **not** automatically ingest ChatGPT conversations. During the study
 Only after verifying actual learning update `progress/daily-progress.json`; GitHub commit activity is separate from source exercise completion, reasoning quality and mastery evidence. The website dashboard can then read the new records on refresh.
 
 **Rule: plan ≠ attended; attended ≠ attempted; attempted ≠ reviewed; reviewed ≠ mastered.**
+
+## Optional "What did I learn?" after every question
+
+**After each practice submission is reviewed**, offer an optional prompt: **“Did you learn anything new from this question?”** The learner may choose **No** and move on without explanation, or choose **Yes** and submit their takeaway in their own words. Do not force this step or delay the next challenge if the learner opts out.
+
+When **Yes**: preserve the exact text in the dated slot under that question, tag it as rule/syntax/formula, misconception, strategy, or engineering insight, then create/update a linked entry in the subject's cumulative revision notes (e.g., [SQL learned rules](../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md)). Include question, date, source and any important caveat. Distinguish the student's new takeaway from a response they independently authored *before* seeing feedback.
+
+**No** = record no new rule; it must not reduce question credit or prevent moving forward.
