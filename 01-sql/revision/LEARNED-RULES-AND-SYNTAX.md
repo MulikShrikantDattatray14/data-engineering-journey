@@ -102,3 +102,15 @@ The learner **knew** the correct SQL keyword but rushed and wrote `SORT BY`. In 
 This records a learner-identified process mistake, **not** a new JOIN misconception or a PNP completion.
 
 ---
+
+### Q4 reinforcement — same learner-identified habit (2026-11-06)
+
+**Original Q4 reflection, verbatim:**
+
+```text
+same learning as previous question, i hurried up without rechecking,
+```
+
+The Q4 original query mistakenly used the digit `0` in `0.status` rather than the letter `o` from the orders alias. The learner explicitly connected this to rushing, the same preventable behavior identified in Q3. This is an additional **Q4 occurrence of SQL-R003**, not a new rule.
+
+**Q4 source:** [Day 1 Slot 1 Q4](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md).
