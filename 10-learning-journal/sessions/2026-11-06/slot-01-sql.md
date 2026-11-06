@@ -385,3 +385,25 @@ ORDER BY o.order_id ASC;
 **Optional post-question learning:** Awaiting learner reply, Yes with exact reflection or No.
 
 **Tracking:** Tutor diagnostic Q4 reviewed, but original query did not execute. No new PNP source credit.
+
+## Q4 — Learner-confirmed learning (verbatim)
+
+```text
+same learning as previous question, i hurried up without rechecking,
+```
+
+**Category:** Submission discipline. Connects to existing [SQL-R003](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md), not a new rule. This was a later reflection, not the original written reasoning.
+
+## Question 5 — LEFT JOIN with selective matching (awaiting original attempt)
+
+The following tables are unchanged from Q3/Q4:
+
+**customers:** (1,Asha), (2,Ravi), (3,Neha), (4,Kabir)  
+**orders:** (201,1,paid), (202,1,pending), (203,2,cancelled), (204,3,paid)
+
+**Task:** Return `customer_id`, `customer_name`, `order_id` and `status` for **every customer**, but attach **only paid orders**. Keep customers with no paid orders as rows with NULL order_id and NULL status. If a customer has multiple paid orders, show each matching paid order. Sort first by customer_id, then order_id, ascending. Use an explicit JOIN. No hardcoding.
+
+**Original SQLite submission:** Not yet received.  
+**Expected and actual output comparison:** Withheld until learner submission.  
+**SQLite reference and T-SQL translation:** Withheld until learner submission.  
+**New learning capture:** Ask optional Yes/No after review.
