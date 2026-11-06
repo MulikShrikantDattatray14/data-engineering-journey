@@ -59,3 +59,46 @@ This is an **illustrative format check**, not a production-grade email validator
 
 - [Journey P004](https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P004-invalid-customer-emails-reattempt.md)
 - [Mastry P004](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P004-invalid-customer-emails-reattempt.md)
+
+
+## Student first independent SQLite submission and execution
+
+**Learner's submitted SQL (composer HTML spaces normalized, text otherwise preserved):**
+
+```sql
+select `CustomerID`, `FirstName`, `LastName`, `Email`, 
+( case
+when Email is null then 'Missing'
+when Email like '% %@%.com' then 'Contains a space'
+when Email not like '%@%.com' then 'Not in name@domain.tld form'
+end) as 
+`issue`
+from Customers
+where Email is null or Email like '% %@%.com' or Email not like '%@%.com'
+order by CustomerID asc
+```
+
+**Execution environment:** SQLite 3.46.1; exact 4-row illustrative Customers fixture.
+
+**Actual output (3 rows, 5 columns):**
+
+| CustomerID | FirstName | LastName | Email | issue |
+|---:|---|---|---|---|
+| 1 | Asha | Rao | NULL | Missing |
+| 2 | Ben | Das | `ben das@example.com` | Contains a space |
+| 3 | Cia | Sen | `cia.example.com` | Not in name@domain.tld form |
+
+**Comparison:** All 3 expected sample rows, 5 expected output columns, labels and sorting match. The query executes successfully; it is not yet fully correct for the stated general problem because additional requirements fail on edge-case data.
+
+**Actual additional SQLite test (six added records on top of original fixture):**
+
+| ID | Email | Expected interpretation | Student query result |
+|---:|---|---|---|
+| 5 | empty string | Missing | Not in name@domain.tld form |
+| 6 | three spaces | Missing | Not in name@domain.tld form |
+| 7 | `a@b.org` | valid simple email | Not in name@domain.tld form (wrong inclusion) |
+| 8 | `a@exa mple.com` | Contains a space | omitted (wrong exclusion) |
+| 9 | `a@b.` | invalid format | Not in name@domain.tld form |
+| 10 | `a@ ex.com` | Contains a space | omitted (wrong exclusion) |
+
+**Diagnosis without solution spoiler:** `'% %@%.com'` recognizes only certain space placements, not every literal space. `'%@%.com'` hardcodes `.com`, incorrectly rejecting valid other-domain suffixes. The Missing branch tests NULL but not blank/whitespace-only values. Label precedence and basic CASE/WHERE design are promising. **Status:** Correct for the four-row example, but independent correction required for the broader stated task; do not credit a verified P004 reattempt or reveal a full reference solution yet.
