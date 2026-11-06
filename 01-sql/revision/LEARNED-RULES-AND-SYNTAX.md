@@ -44,3 +44,35 @@ WHERE amount IS NULL;
 ## Future entries
 
 Add each new student-submitted learning point here with a stable rule ID, date, slot, question, original wording, validated general rule, representative syntax, a caveat if needed, and a link to the exact question archive. Optional: student may explicitly say **No new learning** and continue without creating an entry.
+
+
+## SQL-R002 — Mandatory conditions across OR branches
+
+**Date:** 2026-11-06 | **Day 1 Slot 1 Q2** | **Category:** SQL Boolean logic / NULL / WHERE
+**Learner explicitly confirmed after review:** Q2's explanation is important new learning.
+**Question:** [Q2 session and both learner attempts](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md)
+
+### Rule
+SQL evaluates the **entire WHERE expression**. AND needs both conditions TRUE; OR needs at least one TRUE. AND has higher precedence than OR unless parentheses specify another grouping.
+
+For this expression:
+
+```sql
+WHERE (status = 'paid' AND state = 'Maharashtra')
+   OR amount > 2000
+```
+
+A paid Maharashtra row with NULL amount passes: the first branch is TRUE, the second is UNKNOWN, and TRUE OR UNKNOWN is TRUE.
+
+**If a requirement must apply to every OR branch, group the OR alternatives and place the mandatory condition outside with AND:**
+
+```sql
+WHERE ((status = 'paid' AND state = 'Maharashtra') OR amount > 2000)
+  AND amount IS NOT NULL
+```
+
+This syntax works in SQLite and SQL Server. The student originally repeated IS NOT NULL within both branches; that correction was valid, while this grouped version is shorter. WHERE only retains TRUE, not FALSE or UNKNOWN.
+
+**Recall:** Would a paid row with NULL amount pass `status = 'paid' OR amount > 2000`?
+
+**Source:** [Verified expected vs actual Q2](../practice/verified-results/2026-11-06-q01-q02.md). Learner requested this new learning **after** previously choosing No for Q2; this later explicit request overrides No. No extra course problem completion is credited.
