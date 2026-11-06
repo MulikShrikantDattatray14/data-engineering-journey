@@ -208,6 +208,151 @@
             "url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/SQL-R006-Q7-ANTI-JOIN-AND-SUBQUERY-DETAILED-LESSON.md"
           }
         ]
+      },
+      "execution": {
+        "state": "in_progress",
+        "current_slot": 1,
+        "current_question": "Q8 next; Q7 closed",
+        "last_verified": "2026-11-06",
+        "slots": [
+          {
+            "id": "slot-01",
+            "name": "SQL foundations + PNP practice",
+            "time": "10:45–12:45 IST (planned)",
+            "track": "SQL",
+            "status": "in_progress",
+            "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
+            "done": "Q1–Q7 reviewed; 3 independently correct/corrected; no PNP reattempts verified",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
+          },
+          {
+            "id": "slot-02",
+            "name": "Python fundamentals — PNP PDF",
+            "time": "14:00–16:45 IST (planned)",
+            "track": "Python",
+            "status": "not_started",
+            "target": "PDF pages 1–8; variables, numbers, strings and hands-on exercises",
+            "done": "0 pages or exercises verified",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/DIWALI-HOLIDAY-SPRINT-NOV-6-9.md"
+          },
+          {
+            "id": "slot-03",
+            "name": "SQL source practice and review",
+            "time": "19:45–22:30 IST (planned)",
+            "track": "SQL",
+            "status": "not_started",
+            "target": "PNP A016, P009, P013, P014 if ready; independent queries and review",
+            "done": "0 new source IDs verified",
+            "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
+          },
+          {
+            "id": "slot-04",
+            "name": "Python practice, Bosscoder and day review",
+            "time": "22:30–00:00 IST (planned)",
+            "track": "Python",
+            "status": "not_started",
+            "target": "Lecture 1 alignment; 6–8 coding exercises; daily GitHub evidence check",
+            "done": "0 exercises verified",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/tree/main/02-python/bosscoder"
+          }
+        ],
+        "tasks": [
+          {
+            "id": "sql-concepts",
+            "track": "SQL",
+            "name": "Learn SQL filtering, NULL, INNER/LEFT JOIN and anti-joins",
+            "target": 6,
+            "completed": 6,
+            "unit": "documented learning rules",
+            "status": "reviewed",
+            "detail": "SQL-R001 to SQL-R006 documented; learning not equivalent to mastery",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md"
+          },
+          {
+            "id": "sql-diagnostic",
+            "track": "SQL",
+            "name": "Complete 8 guided SQL diagnostic questions",
+            "target": 8,
+            "completed": 7,
+            "unit": "reviewed questions",
+            "status": "in_progress",
+            "detail": "3 independently correct/corrected; Q8 pending",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
+          },
+          {
+            "id": "sql-independent",
+            "track": "SQL",
+            "name": "Independently correct/review weak SQL patterns",
+            "target": null,
+            "completed": 3,
+            "unit": "verified correct/corrected (of 7 reviewed)",
+            "status": "in_progress",
+            "detail": "Q3–Q6 independent corrections still not verified",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
+          },
+          {
+            "id": "sql-pnp-review",
+            "track": "SQL",
+            "name": "Reattempt 6–10 previously solved PNP SQL questions",
+            "target": 6,
+            "completed": 0,
+            "unit": "verified reattempts (minimum target 6)",
+            "status": "not_started",
+            "detail": "Existing baseline 20 solves is not new Day 1 credit",
+            "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
+          },
+          {
+            "id": "sql-new-pnp",
+            "track": "SQL",
+            "name": "Stretch: attempt PNP A016, P009, P013, P014",
+            "target": 4,
+            "completed": 0,
+            "unit": "new independently verified IDs",
+            "status": "not_started",
+            "detail": "Stretch only; no claimed completions",
+            "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
+          },
+          {
+            "id": "python-pdf",
+            "track": "Python",
+            "name": "Study and practice Python PDF pages 1–8",
+            "target": 8,
+            "completed": 0,
+            "unit": "verified pages",
+            "status": "not_started",
+            "detail": "Planning target, not credited",
+            "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
+          },
+          {
+            "id": "python-practice",
+            "track": "Python",
+            "name": "Complete 6–8 original Python exercises",
+            "target": 6,
+            "completed": 0,
+            "unit": "independent exercises (minimum target 6)",
+            "status": "not_started",
+            "detail": "No original coding attempts logged",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/tree/main/02-python/bosscoder"
+          },
+          {
+            "id": "reflection",
+            "track": "Review",
+            "name": "End-of-day reflection and verification",
+            "target": 1,
+            "completed": 0,
+            "unit": "day-end reflections",
+            "status": "not_started",
+            "detail": "Per-question insights exist; end-of-day reflection not yet recorded",
+            "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
+          }
+        ],
+        "next_actions": [
+          "Finish Q8 using the student-led SQLite workflow and commit its closing review.",
+          "Independently retry Q3–Q6 weak areas before claiming mastery.",
+          "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
+          "Start Python PDF pages 1–8 and record actual page/exercise evidence.",
+          "Record actual focused minutes and end-of-day reflection; do not infer from the timetable."
+        ]
       }
     },
     {
