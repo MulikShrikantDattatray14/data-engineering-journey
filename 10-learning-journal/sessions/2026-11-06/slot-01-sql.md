@@ -511,12 +511,80 @@ The crucial distinction:
 
 **Centralized reference:** [SQL-R004 — LEFT JOIN ON versus WHERE](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md). The student chose this takeaway after review; their original Q5 answer is preserved separately.
 
-## Question 6 — Customers without paid orders (not attempted)
+## Question 6 — Customers without paid orders (original attempt reviewed)
 
 Use the same Q5 tables: customers (1 Asha, 2 Ravi, 3 Neha, 4 Kabir); orders (201,1,paid), (202,1,pending), (203,2,cancelled), (204,3,paid).
 
 **Task:** In SQLite, return `customer_id` and `customer_name` for customers who have **no paid orders at all**, including customers who have only pending/cancelled orders and customers who have no orders. Sort by `customer_id` ascending. Do not hardcode IDs or names. Use a JOIN-based approach.
 
-**Student first attempt:** Pending.
-**Expected/actual output and reference answers:** Withheld until attempt.
+**Student first attempt:** Submitted; exact attempt, expected/actual comparison and reference answers documented below.
 **After review:** Run actual SQLite query; show expected vs actual; preserve learner's answer, an assistant-verified SQLite reference, and assistant-converted T-SQL reference; offer optional new-learning Yes/No.
+
+## Q6 — Original attempted SQLite query, execution and reviewed references
+
+**Status:** Original attempt reviewed, incorrect result. Learner revision and optional learning pending.
+
+### Original SQLite query — learner-authored, unchanged
+
+```sql
+SELECT c.customer_id , c.customer_name
+FROM customers AS c
+inner join orders as o on  ( c.customer_id = o.customer_id )and status!='paid'
+order by c.customer_id asc
+```
+
+### Original explanation — learner-authored, unchanged
+
+```text
+i dont need to know to each  customers , so not using left join
+
+and used inner join to get only those customers who have no paid orders at all.
+```
+
+### Sample dataset
+`customers`: (1,Asha), (2,Ravi), (3,Neha), (4,Kabir).  
+`orders`: (201,1,paid), (202,1,pending), (203,2,cancelled), (204,3,paid).
+
+**Expected output:**
+
+| customer_id | customer_name |
+|---:|---|
+| 2 | Ravi |
+| 4 | Kabir |
+
+**Actual output: executed original SQLite query**
+
+| customer_id | customer_name |
+|---:|---|
+| 1 | Asha |
+| 2 | Ravi |
+
+**Difference:** Extra Asha; missing Kabir. The `INNER JOIN` condition finds customers with *any non-paid order*, not customers having *zero paid orders*. Asha has both a paid and pending order, so the submitted query wrongly includes her. Kabir has no order, so the INNER JOIN drops him. SQLite executed without error; an unqualified `status` is unambiguous in this schema, but `o.status` is recommended.
+
+### SQLite reference solution — assistant-authored and executed
+
+```sql
+SELECT c.customer_id, c.customer_name
+FROM customers AS c
+LEFT JOIN orders AS o
+  ON c.customer_id = o.customer_id AND o.status = 'paid'
+WHERE o.order_id IS NULL
+ORDER BY c.customer_id ASC;
+```
+
+**Actual reference execution:** (2,Ravi), (4,Kabir) — matches expected. Join to *paid orders only*, then keep rows where the matching right-side primary key is NULL (no paid match). This is an anti-join pattern.
+
+### SQL Server (T-SQL) reference — assistant-converted, not executed in SQL Server
+
+```sql
+SELECT c.customer_id, c.customer_name
+FROM customers AS c
+LEFT JOIN orders AS o
+  ON c.customer_id = o.customer_id AND o.status = 'paid'
+WHERE o.order_id IS NULL
+ORDER BY c.customer_id ASC;
+```
+
+**Important:** Reference solutions are not learner submissions or academy official keys. No PNP course question ID credited.
+
+**Post-question learning:** Await optional Yes/No from learner.
