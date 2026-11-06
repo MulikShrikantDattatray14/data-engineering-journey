@@ -978,3 +978,35 @@ order by accounts.account_id  asc
 **Reasoning review:** The learner independently achieved correct anti-join matching: ON accepts payment matches only where status='settled' and amount>1000; WHERE amount IS NULL AND status IS NULL keeps rows with no qualifying match; explicit ORDER BY is correct. The two NULL checks are sufficient for this particular data and ON predicates, though using a non-nullable right-side key is the more robust/general anti-join convention. The selection must be reduced to the three required columns for exact output compliance. Preserve the unaltered original. Await learner's amended final projection; do not mark Q7 fully completed or create the question-closing commit yet.
 
 **Reference/learning:** Both approaches and the comparison will be reviewed in a progressive walkthrough after final output validation. GitHub closing commit and optional new-learning capture still pending.
+
+
+## Q7 — Final LEFT JOIN student revision: output verified
+
+**Original revised SQLite query, preserved verbatim:**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status ='settled' and amount >1000 where 
+amount is null and status is null
+order by accounts.account_id  asc
+```
+
+**Verified execution environment:** SQLite against the original six account and seven payment rows, including Orion's NULL amount and Luna's lack of payments.
+
+**Actual SQLite result:**
+
+| account_id | account_name | region |
+|---:|---|---|
+| 11 | Cedar | West |
+| 12 | Delta | North |
+| 13 | Orion | West |
+| 15 | Nova | West |
+| 16 | Luna | North |
+
+**Expected result:** Exactly these five rows and three columns, in account_id ascending order. **All 5 expected rows, 0 extra rows, 0 missing rows; column projection and ORDER BY now correct.**
+
+**Why it works:** The LEFT JOIN's ON condition requires matching account ID, settled status, and amount > 1000. In this sample only Maple's payment 505 qualifies. Other accounts are preserved with NULL right-side columns. The student's WHERE tests amount IS NULL and status IS NULL, which is sufficient here because qualifying right-side rows must have non-NULL values for both columns. Checking a non-nullable right-side primary key is generally clearer and more robust for missing matches. The SELECT now returns just requested account columns, with explicit ascending sort.
+
+**Status:** Final LEFT JOIN approach verified correct on sample. The previous query with extra output columns remains intact as its original attempt. Q7 subquery approach's original submission produced correct IDs but omitted ORDER BY, which remains a separate noted caveat. Await optional new-learning review and then a distinct **Q7 question-closing commit** before advancing to Q8.
