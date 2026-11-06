@@ -948,3 +948,33 @@ amount is null and status is null
 ```
 
 **Reasoning review:** Meaningful progress: ON restricts matching to settled payments with amount >1000; WHERE checks NULL-extended right-side fields to select accounts with no qualifying matches. For the specific Q7 fixture, the NULL checks are sufficient since any qualifying matched row has non-NULL status and amount. For robust anti-match detection, prefer testing a non-nullable payment key. The submitted query still includes extra right-side columns and no explicit ORDER BY; full output requirements not yet complete. No actual execution claimed for this Step 5 proposal. Student should independently finalize it. Q7 closing commit still pending.
+
+
+## Q7 LEFT JOIN — learner's final first submission (independent)
+
+**Verbatim SQLite query:**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status ='settled' and amount >1000 where 
+amount is null and status is null
+order by accounts.account_id  asc
+```
+
+**SQLite execution:** Executed this exact query against the original Q7 fixture with 6 accounts and 7 payments, returning five rows sorted by account_id:
+
+| account_id | account_name | region | status | amount |
+|---:|---|---|---|---:|
+| 11 | Cedar | West | NULL | NULL |
+| 12 | Delta | North | NULL | NULL |
+| 13 | Orion | West | NULL | NULL |
+| 15 | Nova | West | NULL | NULL |
+| 16 | Luna | North | NULL | NULL |
+
+**Expected final output:** The same five accounts and order, but only three columns: `account_id`, `account_name`, `region`. **Diff:** Two extra selected columns (`status`, `amount`); no missing/extra account rows.
+
+**Reasoning review:** The learner independently achieved correct anti-join matching: ON accepts payment matches only where status='settled' and amount>1000; WHERE amount IS NULL AND status IS NULL keeps rows with no qualifying match; explicit ORDER BY is correct. The two NULL checks are sufficient for this particular data and ON predicates, though using a non-nullable right-side key is the more robust/general anti-join convention. The selection must be reduced to the three required columns for exact output compliance. Preserve the unaltered original. Await learner's amended final projection; do not mark Q7 fully completed or create the question-closing commit yet.
+
+**Reference/learning:** Both approaches and the comparison will be reviewed in a progressive walkthrough after final output validation. GitHub closing commit and optional new-learning capture still pending.
