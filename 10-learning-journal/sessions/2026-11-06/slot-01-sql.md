@@ -1010,3 +1010,25 @@ order by accounts.account_id  asc
 **Why it works:** The LEFT JOIN's ON condition requires matching account ID, settled status, and amount > 1000. In this sample only Maple's payment 505 qualifies. Other accounts are preserved with NULL right-side columns. The student's WHERE tests amount IS NULL and status IS NULL, which is sufficient here because qualifying right-side rows must have non-NULL values for both columns. Checking a non-nullable right-side primary key is generally clearer and more robust for missing matches. The SELECT now returns just requested account columns, with explicit ascending sort.
 
 **Status:** Final LEFT JOIN approach verified correct on sample. The previous query with extra output columns remains intact as its original attempt. Q7 subquery approach's original submission produced correct IDs but omitted ORDER BY, which remains a separate noted caveat. Await optional new-learning review and then a distinct **Q7 question-closing commit** before advancing to Q8.
+
+
+## Q7 — Learner-confirmed new learning and final status (reviewed)
+
+**Learner's exact statement (verbatim):**
+
+```text
+anti join pattern was a importnant and new concept for me ..so save all those concept notes that were taught me here
+```
+
+**Learning classification:** SQL-R006, high-priority anti-join and subquery comparison, including ON vs WHERE, three-valued NULL logic, no qualifying row vs nonqualifying row, RIGHT-side non-nullable key detection, row multiplicity, and required projection and ordering.
+
+**Full Q7 reference lesson:** [Detailed Q7 anti-join / NOT IN guide](../../../01-sql/revision/SQL-R006-Q7-ANTI-JOIN-AND-SUBQUERY-DETAILED-LESSON.md). **Cross-day revision index:** [SQL-R006 in learned rules](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
+
+### Q7 two-approach completion review
+
+- **Subquery / NOT IN:** Learner identified qualifying account IDs and submitted a complete query returning all five correct accounts and three columns; **did not use ORDER BY**, so required ascending order is not guaranteed. **Status: correct filtering; ordering requirement unmet in the submitted version.** A formatted assistant reference with ORDER BY appears in detailed notes, not misattributed to the learner.
+- **LEFT JOIN anti-join:** Learner progressed from incorrect WHERE filters and contradictory predicates to the qualifying ON clause and missing-match WHERE condition, then independently removed extra output columns and added ORDER BY. Verified on SQLite fixture: exact expected five accounts, three columns, ascending order. **Status: independently corrected; final sample requirements met.**
+- **Transfer/mastery:** One successful corrected anti-join on a known fixture supports progress but doesn't prove generalized mastery. The next mixed question will test transfer.
+- **PNP source IDs newly completed:** None verified. Q7 is tutor-authored practice.
+
+**Workflow:** This Q7 record and revision bank are ready for a distinct question-closing GitHub commit. Do not open Q8 before that remote commit is verified.
