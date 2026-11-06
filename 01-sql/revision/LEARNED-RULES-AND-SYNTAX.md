@@ -228,3 +228,48 @@ This rule works in SQLite and SQL Server.
 | `WHERE` (right-table NULL-rejecting filter) | Filters joined results; may remove unmatched left rows |
 
 **Retrieval checkpoints:** Revisit in Q6 (no qualifying match), later multi-condition JOINs, and mixed review with NULL, OR grouping, and syntax checking. First require independent attempts; do not expose solution keys before attempts.
+
+
+## SQL-R005 — Find records with NO qualifying matches (anti-join)
+
+**Date:** 2026-11-06 | **Day 1, Slot 1, Q6**  
+**Priority:** High — user asked to capture all mistakes and all associated concepts.
+**Source:** [Original Q6 attempt, actual vs expected results, and reference queries](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md)
+
+### Learner's exact request (verbatim)
+
+```text
+there is lot of learn from this question ... include all those things that got wrong here as the  new learning
+```
+
+### What went wrong and what to learn
+
+1. **“Has a non-paid order” is not “has no paid orders.”** `o.status != 'paid'` checks *individual order rows*. A customer with one paid and one pending order still has a pending row; that doesn't prove there are zero paid orders. Q6 incorrectly included Asha for this reason.
+2. **INNER JOIN drops left rows with no right-side match.** A customer with no orders at all (Kabir) disappears in an INNER JOIN. Q6 required such customers, so INNER JOIN was inappropriate for this approach.
+3. **Formulate absence as an anti-match.** Start with every customer using `LEFT JOIN`; make only paid orders eligible to match in `ON`; then select customers with *no qualifying paid match* using `WHERE o.order_id IS NULL`. Choose a right-side column known to be non-NULL for matched rows, ideally a non-nullable key.
+4. **ON versus WHERE matters.** `ON o.status = 'paid'` narrows the matched right-side orders without removing customers. `WHERE o.status != 'paid'` removes unmatched NULL-extended records and filters individual non-paid rows, which isn't a “never paid” test.
+5. **SQL NULL and three-valued logic.** For unmatched rows, right-side values are `NULL`; `NULL != 'paid'` is `UNKNOWN`, not TRUE, so the original predicate doesn't keep unmatched customers.
+6. **A row-level test is not an entity-level negative condition.** To assert that an entity has *no* matching qualifying rows, reason across all rows belonging to that entity. A single nonqualifying row doesn't rule out other qualifying rows.
+7. **Always test mixed-status and zero-row edge cases.** Asha has both paid and pending orders; Kabir has no orders. They are deliberately necessary test cases for detecting this bug.
+8. **Qualify column names.** `o.status` is clearer than bare `status` and avoids ambiguity when more tables have a column of the same name.
+9. **Verify actual vs expected output before calling the solution correct.** Original returned Asha/Ravi; expected Ravi/Kabir. A successfully executing query can still be logically wrong.
+
+### Reference pattern — SQLite and SQL Server
+
+```sql
+SELECT c.customer_id, c.customer_name
+FROM customers AS c
+LEFT JOIN orders AS o
+  ON c.customer_id = o.customer_id
+ AND o.status = 'paid'
+WHERE o.order_id IS NULL
+ORDER BY c.customer_id ASC;
+```
+
+This is an **anti-join pattern**; Q6's reference query was reviewed after the student's attempt, not an original student solution. Its syntax is valid in SQLite and T-SQL; do not claim independent T-SQL execution.
+
+### Practice reinforcement
+
+Use future interleaved questions to contrast (a) at least one qualifying row, (b) at least one nonqualifying row, and (c) no qualifying row. Mix in previous Q1 NULL, Q2 AND/OR grouping, Q5 ON/WHERE placement, and Q3/Q4 careful submission checks. Do not leak answers to unattempted questions.
+
+---
