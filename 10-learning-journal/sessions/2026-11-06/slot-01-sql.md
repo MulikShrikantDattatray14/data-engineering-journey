@@ -222,3 +222,14 @@ ORDER BY order_id ASC;
 ## Verified SQLite execution and reference-solution archive (Q1 and Q2)
 
 Actual SQLite output, required expected output, comparison tables, and separately labeled SQLite + SQL Server reference solutions are documented in [the Q1–Q2 verification file](../../../01-sql/practice/verified-results/2026-11-06-q01-q02.md). Q1 matched immediately; Q2 initial query had an extra NULL-amount order 104, and Q2 corrected query matched. Original attempts above remain unchanged. Q3 has not been attempted; its answer and outcome are withheld.
+
+
+## Q2 — Learner-confirmed new learning (subsequent update)
+
+After reviewing the Q2 explanation, the learner explicitly requested that its lesson be saved as important **new learning from Q2**, superseding the earlier optional response of "No new learning to record."
+
+**Saved concept:** SQL evaluates the complete WHERE expression; AND takes precedence over OR; TRUE OR UNKNOWN evaluates TRUE; therefore an amount-NULL row may pass via another OR branch. To enforce NULL exclusion for all alternatives, group the OR clauses and append AND amount IS NOT NULL to the whole group. Avoid repeating mandatory filters unnecessarily.
+
+**Permanent learning reference:** [SQL-R002 — Mandatory conditions across OR branches](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
+
+This is a learner-approved takeaway from the prior tutor explanation, not a student-authored solution or a new PNP question completion.
