@@ -298,3 +298,30 @@ ORDER BY c.customer_id, o.order_id ASC;
 **Optional post-question new learning:** Await learner Yes/No. No new rule entered without explicit learner confirmation.
 
 **Course tracking:** Q3 is original tutor-created practice, not a new PNP question ID or module mastery.
+
+
+## Q3 — Learner-confirmed new learning (verbatim)
+
+**Student's original reflection:**
+
+```text
+yeah i know it should not be sort by but its should be order by ..i did this mistake bcz i didnt recheck question before submitting . i hurried while submitting , so my learning is i should not hurry.
+```
+
+**Classification:** Submission discipline / pre-submit checklist (not a new JOIN concept). The learner knew `ORDER BY` but rushed and entered `SORT BY`. Reread the question, scan syntax, and execute/check results before submitting.
+
+**Cumulative rules reference:** [SQL-R003](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
+
+**Tracking:** No new source question ID credited; Q3 original attempt and error remain preserved.
+
+## Question 4 — INNER JOIN and filtering (awaiting SQLite learner attempt)
+
+Use the same four-customer and four-order sample as Q3.
+
+**Task:** Return `customer_name`, `order_id`, and `status` for **only orders with status `'paid'`**. Sort by `order_id` ascending. Customers without a paid order must not appear, and each paid order should appear as its own row. Use an explicit JOIN and do not hardcode names or order IDs.
+
+**Original learner SQLite query:** Pending.  
+**Original reasoning:** Pending.  
+**Expected vs actual execution:** Withheld until submission.  
+**Reference SQLite and SQL Server solutions:** Withheld until submission.  
+**Optional new-learning capture:** Ask after review.
