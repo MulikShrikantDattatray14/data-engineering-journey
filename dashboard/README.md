@@ -67,3 +67,10 @@ No repository secret or PAT is necessary for normal publishing. Do not add an ac
 ## Nov 6 launch day and separate practice telemetry
 
 The website's **Today's targets** and **Daily targets** now show November 6 as an actual selectable Day 1. Its `practice` object is independent of scored PNP/Python curriculum fields and displays: seven tutor questions reviewed, three independently correct/corrected, and the closing Q7 checkpoint. Study-day wins remain based on reviewed source task requirements, Python progress and reflection; those are not inferred from GitHub commits. November 7 remains available, relabeled Day 2. If your browser still shows an old cached dashboard, reload the site and press **Refresh** in the dashboard.
+
+
+## Daily revision links and practice progress (November 6 update)
+
+The **Daily targets** view now includes distinct sections for **guided SQL diagnostic progress**, **each reviewed question**, and **concepts studied**. Question links open [the November 6 per-question GitHub revision index](../10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md), which points to exact attempted SQL, actual output comparisons and references. Concept links open SQL-R001–SQL-R006 rules and detailed lessons. Future dated records can use the same `daily[].practice.questions` and `daily[].practice.concepts` data fields.
+
+The overview and daily scoring panel display **7/8 guided tutor questions reviewed** and **3/7 independently correct or corrected** on November 6, with an explicit explanation that these are *separate* from official PNP/Python source-completion credits. In the timeline and day list, the date shows guided activity even while its official curriculum score is 0%. **Do not change curriculum mastery flags or source-completed IDs just to make the practice meter move.**
