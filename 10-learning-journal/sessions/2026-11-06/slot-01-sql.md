@@ -879,3 +879,30 @@ and status ='settled' and amount >1000
 **Review:** The `ON` clause correctly restricts matches to settled payments with amount greater than 1000, leaving account 14 (Maple) as the only account with a qualifying payment match in this sample. Every left-side account remains due to `LEFT JOIN`. The user projects only `accounts` fields, so NULL-extended payment fields are not visible in the actual result; they should not be presented as actual selected output. Account 14 remains, so this step is correct as an intermediate join, not the completed anti-join answer.
 
 **Status:** Step 3 reviewed; Step 4 reasoning is next. Q7 closing commit remains pending until both approaches are completed and reviewed.
+
+
+## Q7 LEFT JOIN — Step 4 inspecting payment-side columns
+
+**Learner's exact query:**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status ='settled' and amount >1000
+```
+
+**Executed against the original Q7 sample in SQLite. Expected intermediate JOIN output and actual output match:**
+
+| account_id | account_name | region | status | amount |
+|---:|---|---|---|---:|
+| 11 | Cedar | West | NULL | NULL |
+| 12 | Delta | North | NULL | NULL |
+| 13 | Orion | West | NULL | NULL |
+| 14 | Maple | South | settled | 1800 |
+| 15 | Nova | West | NULL | NULL |
+| 16 | Luna | North | NULL | NULL |
+
+**Review:** Six rows. Only Maple has a qualifying joined payment, as shown by non-null payment columns. Other accounts have no payment match satisfying both status='settled' and amount>1000, so LEFT JOIN preserves them with null-extended right-side fields. Orion has a real payment with a NULL amount, but that payment is not a qualifying match. No ORDER BY, so presentation order not guaranteed. Current result is an exploratory stage, not the final account list.
+
+**Next:** Learner explains the filtering step in their own words, then writes its SQLite query. No final reference query pre-revealed. Closing Q7 commit remains pending until both approaches and review are complete.
