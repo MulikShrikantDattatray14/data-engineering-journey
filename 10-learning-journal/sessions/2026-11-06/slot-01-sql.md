@@ -394,7 +394,7 @@ same learning as previous question, i hurried up without rechecking,
 
 **Category:** Submission discipline. Connects to existing [SQL-R003](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md), not a new rule. This was a later reflection, not the original written reasoning.
 
-## Question 5 — LEFT JOIN with selective matching (awaiting original attempt)
+## Question 5 — LEFT JOIN with selective matching (reviewed original attempt)
 
 The following tables are unchanged from Q3/Q4:
 
@@ -403,7 +403,92 @@ The following tables are unchanged from Q3/Q4:
 
 **Task:** Return `customer_id`, `customer_name`, `order_id` and `status` for **every customer**, but attach **only paid orders**. Keep customers with no paid orders as rows with NULL order_id and NULL status. If a customer has multiple paid orders, show each matching paid order. Sort first by customer_id, then order_id, ascending. Use an explicit JOIN. No hardcoding.
 
-**Original SQLite submission:** Not yet received.  
-**Expected and actual output comparison:** Withheld until learner submission.  
-**SQLite reference and T-SQL translation:** Withheld until learner submission.  
-**New learning capture:** Ask optional Yes/No after review.
+**Original SQLite submission:** Recorded verbatim below.  
+**Expected and actual:** Executed in SQLite; 2 missing rows.  
+**Reference SQLite and T-SQL:** Recorded below following review.  
+**New learning:** Awaiting optional response.
+
+## Q5 — Original attempt, executed comparison, and reference queries
+
+### Learner's first SQLite query (verbatim, including whitespace)
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id, o.status
+FROM customers AS c
+left join  orders as o  on  c.customer_id = o.customer_id
+where o.status='paid'
+order by c.customer_id , o.order_id asc
+```
+
+### Learner's original reasoning (verbatim)
+
+```text
+i chose left join because of this below reuirements in the question:
+
+Includes every customer, even if they have no paid orders.
+
+
+
+Shows only paid orders in the order-related columns.
+
+
+
+For customers without paid orders, returns NULL for order_id and status.
+
+
+
+If a customer has multiple paid orders, shows each paid order separately.
+```
+
+### Reproducible sample
+
+`customers`: (1,Asha), (2,Ravi), (3,Neha), (4,Kabir).  
+`orders`: (201,1,paid), (202,1,pending), (203,2,cancelled), (204,3,paid).
+
+### Expected output
+
+| customer_id | customer_name | order_id | status |
+|---:|---|---:|---|
+| 1 | Asha | 201 | paid |
+| 2 | Ravi | NULL | NULL |
+| 3 | Neha | 204 | paid |
+| 4 | Kabir | NULL | NULL |
+
+### Actual SQLite output (executed on the sample tables with learner's *exact* first query)
+
+| customer_id | customer_name | order_id | status |
+|---:|---|---:|---|
+| 1 | Asha | 201 | paid |
+| 3 | Neha | 204 | paid |
+
+**Mismatch:** Missing Ravi (2) and Kabir (4). The query is valid SQLite and runs without syntax errors, but its WHERE `o.status='paid'` eliminates non-paid and unmatched rows after the LEFT JOIN, defeating the requirement to retain every customer.
+
+### SQLite reference solution — assistant-authored and executed
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id, o.status
+FROM customers AS c
+LEFT JOIN orders AS o
+    ON c.customer_id = o.customer_id
+   AND o.status = 'paid'
+ORDER BY c.customer_id, o.order_id ASC;
+```
+
+**Actual executed reference output:** (1, Asha, 201, paid), (2, Ravi, NULL, NULL), (3, Neha, 204, paid), (4, Kabir, NULL, NULL). Matches all expected rows.
+
+### SQL Server (T-SQL) reference — assistant-converted, not executed in SQL Server
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id, o.status
+FROM customers AS c
+LEFT JOIN orders AS o
+    ON c.customer_id = o.customer_id
+   AND o.status = 'paid'
+ORDER BY c.customer_id, o.order_id ASC;
+```
+
+**Explanation:** `ON` chooses matching paid orders while retaining each left-side customer; `WHERE` after the join would discard customer rows with no paid order. Do not attribute either reference block to the learner.
+
+**Reviewed status:** Original query attempted and compared; logic incorrect for two unmatched customers. No independently revised SQLite submission yet. No PNP source ID earned.
+
+**Optional new learning from Q5:** Awaiting learner Yes/No and their exact wording if Yes.
