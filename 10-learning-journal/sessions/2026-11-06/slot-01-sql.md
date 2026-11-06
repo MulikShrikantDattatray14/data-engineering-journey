@@ -693,3 +693,56 @@ where status='settled' and amount>1000
 **Expected for this partial step:** Account 14 only, because only its settled payment of 1800 has amount strictly greater than 1000. `amount > 1000` yields UNKNOWN for NULL, so an explicit IS NOT NULL check isn't necessary for this filter. Result matched expected. The student independently corrected the earlier literal `'status'` and `>=1000` errors.
 
 **Status:** Step 1 successfully completed and reviewed. This is an intermediate preservation commit; full Q7 and Step 2 remain pending. Do not reveal the outer query or closing solution before the learner's independent attempt.
+
+
+## Q7 — Subquery approach: final learner submission and execution
+
+**Original full SQLite submission (verbatim):**
+
+```sql
+select account_id , account_name, region
+from accounts 
+where account_id  not in (
+
+
+select account_id
+from payments
+where status='settled' and amount>1000
+)
+```
+
+**SQLite fixture:** Accounts 11 Cedar/West, 12 Delta/North, 13 Orion/West, 14 Maple/South, 15 Nova/West, 16 Luna/North; payments 501–507 from the Q7 prompt. Executed exactly this SQL in SQLite.
+
+**Actual output in the sample execution (in returned order):**
+
+| account_id | account_name | region |
+|---:|---|---|
+| 11 | Cedar | West |
+| 12 | Delta | North |
+| 13 | Orion | West |
+| 15 | Nova | West |
+| 16 | Luna | North |
+
+**Expected row values:** Same five rows, ordered by account_id ascending.
+
+**Review:** All five expected rows were present, none extra, and the sample happened to be emitted ascending. The subquery's qualifying IDs are (14); the outer NOT IN correctly excludes this value. **Important qualification:** The user's query has no `ORDER BY account_id ASC`; ascending output is **not guaranteed** under SQLite/SQL Server SQL semantics, so the explicit sort requirement is not fully satisfied despite the matching observed output. Await a learner-authored correction to guarantee sort order. Also, `NOT IN` may fail to behave as intended if the subquery contains a NULL account_id; the current qualifying result is non-NULL.
+
+**Progressive explanation:**
+1. All accounts from `accounts`: six rows (11 Cedar, 12 Delta, 13 Orion, 14 Maple, 15 Nova, 16 Luna).
+2. Inner qualifying filter: `status='settled' AND amount>1000` produces only `account_id=14`.
+3. Outer NOT IN eliminates 14, leaving 11,12,13,15,16. Current sample output is ascending by coincidence, not guaranteed without ORDER BY.
+
+**Assistant-formatted SQL Server/T-SQL equivalent of the submitted logical filter (not executed in SQL Server):**
+
+```sql
+SELECT account_id, account_name, region
+FROM accounts
+WHERE account_id NOT IN (
+    SELECT account_id
+    FROM payments
+    WHERE status = 'settled'
+      AND amount > 1000
+);
+```
+
+**Study status:** Subquery row selection verified; ordering requirement requires an independent addition by student. LEFT JOIN anti-join approach is pending. Do not create a Q7 closing commit or mark full Q7 complete yet; this is an intermediate GitHub preservation commit.
