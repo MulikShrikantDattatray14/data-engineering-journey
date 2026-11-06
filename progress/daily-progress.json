@@ -52,7 +52,7 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
@@ -66,7 +66,9 @@
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P002-ten-highest-priced-products-reattempt.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P002-CLOSED.md",
         "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P002-CLOSED.md",
-        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-customers-in-metro-cities-reattempt.md"
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-customers-in-metro-cities-reattempt.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-CLOSED.md",
+        "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P003-CLOSED.md"
       ],
       "practice": {
         "sql_tutor_reviewed": 8,
@@ -267,12 +269,13 @@
         "pnp_p001_status": "question-closing checkpoint committed in both GitHub repositories",
         "pnp_p002_status": "question-closing checkpoint completed on both repositories; correct first attempt",
         "pnp_p002_learning_response_verbatim": "No new learning.",
-        "pnp_p003_status": "independently corrected final SQLite verified, full post-attempt review archived; learning capture/closing checkpoint pending"
+        "pnp_p003_status": "closed in both repositories after independent correction",
+        "pnp_p003_learning_response_verbatim": "No new learning."
       },
       "execution": {
         "state": "in_progress",
         "current_slot": 1,
-        "current_question": "PNP P003 final SQLite verified; optional learning capture and closing commits next",
+        "current_question": "P003 closed; P004 pending first independent attempt",
         "last_verified": "2026-11-06",
         "slots": [
           {
@@ -282,7 +285,7 @@
             "track": "SQL",
             "status": "in_progress",
             "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
-            "done": "8/8 tutor diagnostics reviewed; P001 and P002 closed, P003 independently corrected and verified (3/6 source reattempts); P003 closing pending.",
+            "done": "Tutor Q1–Q8 reviewed, 4 independently correct/corrected; PNP P001–P003 reattempted and closed (3/6 minimum); zero newly completed source IDs.",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
           },
           {
@@ -358,7 +361,7 @@
             "completed": 3,
             "unit": "verified reattempts (minimum target 6)",
             "status": "in_progress",
-            "detail": "P001 and P002 closed; P003 independently corrected and verified, formal closing awaiting learning capture. Minimum 3 additional verified reattempts required.",
+            "detail": "P001, P002 and P003 reattempts closed in both repositories; 3 more verified reattempts to minimum 6.",
             "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
           },
           {
@@ -407,7 +410,7 @@
           }
         ],
         "next_actions": [
-          "Record P003 learner Yes/No new-learning response, then commit closing checkpoint in both repos.",
+          "Start independent P004 source reattempt: find invalid customer email addresses and label each issue.",
           "Independently retry Q3–Q6 weak areas before claiming mastery.",
           "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
           "Start Python PDF pages 1–8 and record actual page/exercise evidence.",
