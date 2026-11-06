@@ -52,7 +52,7 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0. Later Nov 6 chat: P004-style email validation query corrected; three guided challenges reviewed: identify bad emails, count duplicate emails with HAVING, return customers sharing emails using IN subquery. SQL Slot 1 and Slot 3 study sessions concluded by learner request, logged as reviewed rather than fully complete because PNP reattempt minimum and new source stretch targets were not met. No SQLite verification or new PNP source solve claimed. P004 formally closed: final learner-authored label correction to 'Not in name@domain.tld form' joined with previously submitted full query; executed in SQLite 3.46.1. Source sample 3/3 rows with exact 5 columns/labels; edge cases checked. Previously solved source reattempts now 4/6, no new PNP source ID credited.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0. Later Nov 6 chat: P004-style email validation query corrected; three guided challenges reviewed: identify bad emails, count duplicate emails with HAVING, return customers sharing emails using IN subquery. SQL Slot 1 and Slot 3 study sessions concluded by learner request, logged as reviewed rather than fully complete because PNP reattempt minimum and new source stretch targets were not met. No SQLite verification or new PNP source solve claimed. P004 formally closed: final learner-authored label correction to 'Not in name@domain.tld form' joined with previously submitted full query; executed in SQLite 3.46.1. Source sample 3/3 rows with exact 5 columns/labels; edge cases checked. Previously solved source reattempts now 4/6, no new PNP source ID credited. P005 independently corrected half-open Q1 2025 date query (< 2025-04-01), verified via SQLite 3.46.1 on original sample and 11-row extended fixture including March 31 timestamps and tie ordering; 7/7 qualifying rows. Archives committed in both repositories. Formally verified PNP reattempts 5/6; no new source IDs or focus minutes credited.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
@@ -70,7 +70,8 @@
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-CLOSED.md",
         "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P003-CLOSED.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-03-sql.md",
-        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P004-invalid-customer-emails-reattempt.md"
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P004-invalid-customer-emails-reattempt.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P005-orders-placed-in-q1-2025-reattempt.md"
       ],
       "practice": {
         "sql_tutor_reviewed": 8,
@@ -260,12 +261,13 @@
           "sqlite_execution": "verified",
           "tsql_execution": "not performed"
         },
-        "pnp_source_reattempts_verified": 4,
+        "pnp_source_reattempts_verified": 5,
         "pnp_reattempt_ids": [
           "P001",
           "P002",
           "P003",
-          "P004"
+          "P004",
+          "P005"
         ],
         "pnp_reattempt_target_min": 6,
         "pnp_p001_learning_response_verbatim": "No new learning.",
@@ -298,12 +300,14 @@
           "focus_minutes_logged": false
         },
         "pnp_p004_status": "CLOSED in Journey + Mastry after independent CASE label correction; SQLite 3.46.1 execution matched 3 sample rows and tested relevant edge cases",
-        "pnp_p004_first_try_correct": false
+        "pnp_p004_first_try_correct": false,
+        "pnp_p005_status": "CLOSED and SQLite 3.46.1 verified on sample and 11-row extended boundary/tie fixture: 7 expected qualifying rows; independently revised to half-open date range; no new PNP source ID",
+        "pnp_p005_first_try_correct": false
       },
       "execution": {
         "state": "sql_sessions_concluded_python_next",
         "current_slot": 2,
-        "current_question": "Python fundamentals — first independent exercise",
+        "current_question": "PNP P006 — next independent source reattempt",
         "last_verified": "2026-11-06",
         "slots": [
           {
@@ -313,7 +317,7 @@
             "track": "SQL",
             "status": "reviewed",
             "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
-            "done": "Guided Q1–Q8 reviewed, 4 independent correct/corrected; previously solved PNP P001–P004 independently corrected and source-closed (4/6 minimum). Slot session concluded with 2 source reattempts remaining.",
+            "done": "Guided Q1–Q8 reviewed (4 independently correct/corrected). Previously solved PNP P001–P005 independently reattempted and source-closed (5/6 minimum); SQL session concluded, P006 remains.",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
           },
           {
@@ -386,10 +390,10 @@
             "track": "SQL",
             "name": "Reattempt 6–10 previously solved PNP SQL questions",
             "target": 6,
-            "completed": 4,
+            "completed": 5,
             "unit": "verified reattempts (minimum target 6)",
             "status": "in_progress",
-            "detail": "P001–P004 source reattempts independently verified and closed; P004 final query executed against sample and edge cases in SQLite 3.46.1. Two more verified reattempts required for minimum six.",
+            "detail": "P001–P005 existing source question reattempts independently verified and archived in both repositories; P005 final half-open date range executed in SQLite (7/7 extended qualifying rows). One more verified reattempt required.",
             "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
           },
           {
@@ -449,7 +453,7 @@
           }
         ],
         "next_actions": [
-          "P004 source reattempt independently corrected, SQLite-verified and formally closed. P005/P006 still needed for 6/6 source reattempts.",
+          "PNP P005 source reattempt closed and both repositories updated; P006 remains for 6/6 minimum.",
           "SQL sessions concluded; switch to Python fundamentals and independent practice. SQL source quota and stretch IDs remain uncompleted.",
           "Independently retry Q3–Q6 weak areas before claiming mastery.",
           "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
