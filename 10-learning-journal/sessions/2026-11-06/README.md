@@ -21,3 +21,16 @@
 **Note:** The original official 156-day tracker starts 2026-11-07. November 6 is a holiday-sprint launch day and must not be falsely counted as an already earned daily win. Track any November 6 work separately until the tracker is updated to represent it correctly.
 
 [Full archiving protocol](../../SESSION-ARCHIVE-POLICY.md) · [Daily study targets](../../../DIWALI-HOLIDAY-SPRINT-NOV-6-9.md) · [Dashboard](../../../dashboard/README.md)
+
+
+## November 6 close-of-session handoff (recorded before Nov 7)
+
+**Learner's plan:** Resume at **09:00 IST on November 7, 2026**. Finish all mandatory **November 6 backlog across Slots 2 and 4, plus remaining daily review**, **before** starting any November 7 targets in Slots 1–4. This is a future plan, not study attendance.
+
+- **Slot 1 SQL:** Previous six PNP reattempts P001–P006 independently verified. Original minimum source reattempt target 6/6 achieved; optional stretch targets and Q3–Q6 diagnostic retries are tracked separately.
+- **Slot 3 SQL:** Additional guided email validity, duplicates and subquery practice reviewed; original unattempted stretch PNP source IDs remain separately outstanding.
+- **Slot 2 Python:** [Interactive lesson archive](slot-02-python.md) updated for lesson groups 1–12. Independent coding practice reviewed in chat (conditionals, for/while, break/continue, list filtering/slicing and tuple immutability). **Lesson 13A — sets is the exact next unanswered checkpoint.** Official PNP PDF pp. 1–8 are **not yet source-verified**.
+- **Slot 4 Python:** [Bosscoder backlog and evidence plan](slot-04-python.md) documented. Lecture 1 / Refresher 1 assignment alignment, selected exercises, mixed revision and day reflection remain unverified; do not count Slot 2 practice as separately completed Slot 4 assignments.
+- **Revision list:** negative modulo; `range()` boundaries and step; safe loop termination; colons/indentation/equality; slicing steps; tuple immutability.
+
+**Data integrity:** No future day credited, no Python PDF pages or Bosscoder assignments invented, no focus minutes inferred from the schedule. Refer to [progress data](../../../progress/daily-progress.json) for current verified counts.
