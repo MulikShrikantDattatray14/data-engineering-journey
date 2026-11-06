@@ -1,7 +1,7 @@
 # Day 1 — Slot 01: SQL Foundations & PNP Practice
 
 **Study date:** November 6, 2026 (Asia/Kolkata)  
-**Status:** Interactive session in progress; Q1 reviewed correct, Q2 pending  
+**Status:** Interactive session in progress; Q1 correct, Q2 first attempt reviewed (revision pending)  
 **Actual start/end and verified focus minutes:** Not recorded  
 **Goal:** Rebuild accurate foundations, use independent queries to demonstrate fluency, then revisit the existing PNP SQL 205-question bank without duplicating solutions.
 
@@ -77,8 +77,36 @@ Using the **same orders table** from Q1, write one PostgreSQL query that returns
 
 **Requirement:** Use correct parentheses to make the intended logical grouping explicit. Do not hardcode IDs. In your own words, explain which operator would otherwise take precedence between `AND` and `OR`, and why order 104 must be excluded.
 
-**Student first attempt:** Pending.
-**Assistant feedback and expected result:** Withheld until attempt.
+**Student's original first attempt (preserved verbatim, including spaces):**
+
+```sql
+SELECT order_id, status, state, amount
+FROM orders
+WHERE  (status ='paid' and state='Maharashtra') or  amount > 2000 
+order by order_id
+```
+
+**Student's original reasoning (verbatim):**
+
+> Excludes all orders where amount is NULL need not to be handled seperately as where handles that properly where is excludes this automatically .. this thing i learned from question-1
+
+**Review:** 4 of 5 requirements satisfied. The query's `(status='paid' AND state='Maharashtra') OR amount > 2000` admits order 104: the first group is TRUE despite `amount > 2000` being UNKNOWN. The separate universal exclusion of NULL amounts is missing. `ORDER BY order_id` correctly sorts ascending by default. Expected qualifying IDs after fixing the predicate: 101, 103, 105, 106. This is a **reviewed unsuccessful first attempt**, with independent revision pending.
+
+### SQL Server (T-SQL) — assistant translation of the ORIGINAL attempt (same unresolved logic error)
+
+```sql
+SELECT order_id, status, state, amount
+FROM orders
+WHERE (status = 'paid' AND state = 'Maharashtra')
+   OR amount > 2000
+ORDER BY order_id;
+```
+
+**Important:** This is a dialect-equivalent translation of the learner's *original attempt* and **does not fix the NULL problem**. The corrected SQLite and T-SQL solutions will be saved only after the student independently revises the SQLite query. Do not attribute T-SQL to the student.
+
+**Expected-result explanation:** The first Boolean branch can be TRUE even when amount is NULL; WHERE keeps rows whose entire predicate is TRUE, not all rows with a non-NULL amount.
+
+**Optional post-question new-learning prompt:** Ask Yes/No after the revised query is reviewed; if Yes, capture the exact learner text and link to revision bank.
 
 **Archive rule:** Record next answer exactly before providing corrections.
 
@@ -133,4 +161,4 @@ WHERE status = 'paid'
 ORDER BY amount DESC;
 ```
 
-This particular original query is syntactically valid in both dialects; the second version is a readability formatting of the same logic, **not a second learner-authored attempt**. Q2 still awaits the student's SQLite attempt and has no answer recorded.
+This particular original query is syntactically valid in both dialects; the second version is a readability formatting of the same logic, **not a second learner-authored attempt**. Q2 first SQLite attempt has now been recorded below in the Q2 section; its correction remains pending.
