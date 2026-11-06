@@ -218,3 +218,7 @@ ORDER BY order_id ASC;
 **Task:** Write a SQLite query returning `customer_id`, `customer_name`, and `order_id` for **every customer, including customers with no orders**. For each customer, return their matching orders as separate rows, sorted by `customer_id` and then `order_id` ascending. Do not filter by order status.
 
 **Student SQLite attempt:** Pending. **Assistant review and SQL Server version:** Withheld until attempt.
+
+## Verified SQLite execution and reference-solution archive (Q1 and Q2)
+
+Actual SQLite output, required expected output, comparison tables, and separately labeled SQLite + SQL Server reference solutions are documented in [the Q1–Q2 verification file](../../../01-sql/practice/verified-results/2026-11-06-q01-q02.md). Q1 matched immediately; Q2 initial query had an extra NULL-amount order 104, and Q2 corrected query matched. Original attempts above remain unchanged. Q3 has not been attempted; its answer and outcome are withheld.
