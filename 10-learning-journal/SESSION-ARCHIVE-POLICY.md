@@ -71,3 +71,15 @@ After review, retain the optional Yes/No **New learning?** prompt. Store Yes sub
 ## Progressive teaching of every reviewed reference solution
 
 For every practice problem **after the learner submits an attempt**, create a detailed solution walkthrough, not merely a final query: (1) explain why this technique solves the business requirement and the learner's mistake, (2) use one consistent sample dataset, (3) build the query in small logical steps (start table, JOIN, ON qualification, WHERE, sorting or aggregation as applicable), (4) show the **actual executed SQLite output of each intermediate step**, with row counts and what changed, (5) explain correctness, NULL behavior, duplicates, edge cases and a generalizable pattern, (6) include the original student's unchanged attempt, expected-versus-actual comparison, the assistant-verified SQLite reference and separately labeled SQL Server/T-SQL equivalent, (7) link the optional learner-confirmed insights into the reusable rules bank. If a step is not executable, mark it as illustrated/inferred rather than executed. Never expose answer keys for unattempted questions or label assistant-authored references official platform keys. Full example: [Q6 progressive walkthrough](../01-sql/practice/verified-results/2026-11-06-q06-walkthrough.md).
+
+## Guided, student-led step-by-step SQL workflow (starting Q7)
+
+Starting Day 1 Slot 1 Q7 and for subsequent SQL problems, **do not begin with a final-solution submission form**. Present the problem and full sample data, then invite the learner to choose and explain **one next reasoning/coding step** in their own words and submit its **partial SQLite query**. For each step:
+
+1. Preserve the learner's exact reasoning and incremental SQLite query separately, labeled Step 1, Step 2, etc., with question/date and no retrospective rewriting.
+2. Execute **that submitted intermediate query** in SQLite against a consistent, reproducible sample fixture and display its **actual output or actual execution error**; explain what the output means relative to the learner's intended step and the question.
+3. Ask the learner what step they want to do next; offer a small, answer-neutral prompt if they're stuck. Do **not** complete the remaining steps or leak the final solution.
+4. Only after the learner decides their steps form a complete answer, present a **separate final solution submission**. Execute their final query, compare full expected vs actual, then explain the official-key-versus-assistant-reference distinction, archive detailed SQLite and separately labeled SQL Server reference solutions, and offer optional new-learning capture.
+5. Record step output as **executed** only when it was really run; otherwise explicitly mark it not executed. SQLite is the primary dialect, not PostgreSQL. Include duplicate and NULL behavior in output reviews.
+
+The goal is visible reasoning development and learner autonomy, **not** giving a complete reference answer before final submission.
