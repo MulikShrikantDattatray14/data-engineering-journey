@@ -825,3 +825,30 @@ left join payments  on accounts.account_id = payments.account_id
 **Review:** Cedar and Nova each show two matched payment rows. Orion's amount NULL belongs to a real settled payment; Luna has no payment row, hence null-extended status and amount. The distinction between a NULL *field in a real match* and *no match* matters for anti-join reasoning. Step 2 is a correct exploratory projection, not a complete solution. There is no ORDER BY or payment qualification yet.
 
 **Next:** Ask for learner's Step 3 thinking only; no pre-supplied SQL or final query. Q7 closing commit is deferred until both approaches are completed and reviewed.
+
+
+## Q7 LEFT JOIN Step 3 — Original and revised thinking
+
+### Earlier Step 3, original SQLite query
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+where status !='settled' and amount <=1000
+```
+
+**Actual SQLite result recorded in the session review:** Three rows: (11, Cedar, West, pending, 300), (15, Nova, West, failed, 400), and (15, Nova, West, pending, 600). This evaluates non-settled, low-amount individual payment rows, not absence of qualifying payments. Missing Delta, Orion, and Luna from the expected final set; Nova appears twice.
+
+### Revised Step 3 query supplied for reasoning review (verbatim)
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+and status !='settled' and amount <=1000
+```
+
+**Review of reasoning only:** Moving right-side conditions to ON helps preserve the left accounts. However, matching non-settled low-amount payments is still conceptually the inverse of the intended qualifying payments. Maple, whose settled payment of 1800 is qualifying, would not match this predicate and would be retained as an unmatched left row. No corrected SQL is shown to the student; await revised reasoning before next code step.
+
+**Status:** Q7 incomplete, closing commit pending.
