@@ -51,3 +51,9 @@ This repository documents a real journey. It is not a collection of copied answe
 - Practice mixed concepts and production-oriented Data Engineering scenarios.
 - Review regularly and maintain meaningful commit history.
 - Never publish secrets, private employer data, proprietary code, or unauthorized assessment questions.
+
+## Complete question archive — SQL and Python
+
+Every practice question is preserved in [the shared study-record protocol](study-records/README.md), with [SQL](study-records/SQL-QUESTION-TEMPLATE.md) and [Python](study-records/PYTHON-QUESTION-TEMPLATE.md) templates. Before the student solves: problem, sample input/output and why output is expected; after the independent attempt: exact student submission, execution comparisons, progressive walkthrough and reviewed reference. Mirrors and cross-links are maintained in [Data Engineering Mastry](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/tree/main/study-records).
+
+- [Q8 archived problem, input and expected output — solution withheld](study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md)
