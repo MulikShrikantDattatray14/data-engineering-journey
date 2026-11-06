@@ -15,7 +15,7 @@ You can also open `dashboard/index.html` locally in any modern web browser.
 
 | Information | Where it comes from | Refresh |
 |---|---|---|
-| 156-day SQL/Python targets | Repository 1 `progress/daily-progress.json` | Every five minutes and via Refresh button |
+| 157-date campaign (Nov 6 kickoff + original 156 planned study dates) | Repository 1 `progress/daily-progress.json` | Every five minutes and via Refresh button |
 | Completed source SQL IDs | `daily[].sql.completed_ids` in Repository 1 | Same |
 | Previously solved 20 SQL questions | `baseline.sql_previously_solved` | Same |
 | Python pages actually completed | `daily[].python.completed_pages` | Same |
@@ -36,14 +36,14 @@ This is a secure, free, static public site with no always-running server or auth
 
 - Overview: study wins, SQL/205, Python/80, actual focused hours.
 - Daily: selected date, original SQL IDs, Python source pages, 25% × 4 target score, reflection and actual minutes.
-- Timeline: all 156 study dates; no false completions.
+- Timeline: all 157 study dates; no false completions.
 - Central roadmap: source sprint to Nov 22, SQL+Python mastery by Dec 31, modeling/ETL, Spark/cloud, projects, interview readiness and applications. PNP mentor's sequence has priority when provided.
 - Career readiness: skills and interview evidence gates are **not yet verified** until explicit project and mock logs exist.
 - Sources: latest main-branch commit messages from both repositories; activity is not equivalent to mastery.
 
 ## Dates / source-of-truth nuance
 
-- `progress/daily-progress.json` starts on **November 7, 2026**, with Friday rest days (156 study entries). The **Nov 6 holiday target** appears as a separate overlay drawn from `DIWALI-HOLIDAY-SPRINT-NOV-6-9.md`; it currently has no verified completion record.
+- `progress/daily-progress.json` now begins **November 6, 2026 (Day 1 kickoff)** and contains 157 dated entries. The original 156 planned curriculum entries are retained from November 7 onward as Days 2–157, with the same source tasks and final date. November 6 records seven reviewed tutor-created SQLite questions (Q1–Q7), three independently correct/corrected (Q1, Q2, Q7), and links to the dated session archive. It does **not** invent PNP completions, Python PDF completions, study minutes, or a daily win.
 - The aspirational 10h schedule is a stretch. The dashboard deliberately records actual study time separately.
 - `SPRINT-NOV-22.md` supersedes the older 100-day SQL and 77-day Python source deadlines.
 - Salary ₹30–40 LPA is a target, not a forecast or guarantee.
@@ -62,3 +62,8 @@ The deploy workflow was pushed successfully but its initial run **failed during 
 **One-time owner action:** Visit [Repository Settings → Pages](https://github.com/MulikShrikantDattatray14/data-engineering-journey/settings/pages), choose **GitHub Actions** as the build source. Then visit [Actions → Deploy Data Engineering Progress Dashboard](https://github.com/MulikShrikantDattatray14/data-engineering-journey/actions/workflows/deploy-de-dashboard.yml) and use **Run workflow** if GitHub does not redeploy automatically. Once the workflow succeeds, use the Pages URL GitHub reports. The live site is not asserted active before that succeeds.
 
 No repository secret or PAT is necessary for normal publishing. Do not add an access token to the public static website.
+
+
+## Nov 6 launch day and separate practice telemetry
+
+The website's **Today's targets** and **Daily targets** now show November 6 as an actual selectable Day 1. Its `practice` object is independent of scored PNP/Python curriculum fields and displays: seven tutor questions reviewed, three independently correct/corrected, and the closing Q7 checkpoint. Study-day wins remain based on reviewed source task requirements, Python progress and reflection; those are not inferred from GitHub commits. November 7 remains available, relabeled Day 2. If your browser still shows an old cached dashboard, reload the site and press **Refresh** in the dashboard.
