@@ -273,3 +273,8 @@ This is an **anti-join pattern**; Q6's reference query was reviewed after the st
 Use future interleaved questions to contrast (a) at least one qualifying row, (b) at least one nonqualifying row, and (c) no qualifying row. Mix in previous Q1 NULL, Q2 AND/OR grouping, Q5 ON/WHERE placement, and Q3/Q4 careful submission checks. Do not leak answers to unattempted questions.
 
 ---
+
+
+### Dedicated detailed lesson — Anti-join (SQL-R005)
+
+The learner explicitly highlighted the anti-join pattern as a major *new* concept, so it has a full separate tutorial: [SQL-R005 — Detailed anti-join lesson](SQL-R005-ANTI-JOIN-DETAILED-LESSON.md). It explains the Q6 data, original reasoning mistake, each SQL stage and its actual intermediate results, what happens with 0/1/multiple matches, NULL handling, when ON versus WHERE matters, T-SQL equivalence and Data Engineering applications. Mark this for high-priority retrieval practice. Q7 remains unanswered.
