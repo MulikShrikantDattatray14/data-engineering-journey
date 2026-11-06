@@ -746,3 +746,25 @@ WHERE account_id NOT IN (
 ```
 
 **Study status:** Subquery row selection verified; ordering requirement requires an independent addition by student. LEFT JOIN anti-join approach is pending. Do not create a Q7 closing commit or mark full Q7 complete yet; this is an intermediate GitHub preservation commit.
+
+## Q7 LEFT JOIN approach — Step 1 reasoning and first partial query
+
+**Original student reasoning (verbatim):**
+
+```text
+i will use left join and keep accounts table on left as question asks me to have - all accounts that have never received a settled payment greater than ₹1,000.
+```
+
+**Review of reasoning:** Valid starting point: LEFT JOIN with accounts on the left preserves accounts with no matching payments. Additional qualifying predicates and anti-match detection are still future steps.
+
+**Student's first partial SQLite query (verbatim):**
+
+```sql
+select
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+```
+
+**Executed in SQLite** against the Q7 six-account/seven-payment fixture. Actual result: `OperationalError: near "from": syntax error`. **No output table** was returned; this is not an empty successful result. SQLite requires at least one selected expression or column after SELECT. The LEFT JOIN table order and account_id matching condition themselves are correct.
+
+**Step status:** Awaiting independent correction of the SELECT list; do not proceed to Step 2 or reveal the final query yet. Keep Q7 question-closing commit pending until both approaches and optional new learning are complete. This is an intermediate preservation commit.
