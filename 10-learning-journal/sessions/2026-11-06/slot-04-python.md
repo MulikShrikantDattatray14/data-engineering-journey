@@ -1,29 +1,31 @@
-# Day 1 — Slot 04 — Python — Bosscoder Lecture 1 alignment and practice
+# Day 1 — Slot 04: Python Bosscoder alignment and review
 
-**Date:** 2026-11-06 (Asia/Kolkata)  
-**Status:** Planned / not yet verified  
-**Actual start/end:** Not recorded  
-**Target:** Check relevant Lecture 1 notes and independently attempt matched exercises in Python  
-**Actual reviewed work:** None verified
+**Study date:** 2026-11-06 (Asia/Kolkata). **Status:** Pending source-aligned verification; no independently confirmed Slot 04 attendance or Bosscoder assignment completion.
 
-## Full theory and lesson content
-Not recorded yet. When taught, preserve the original, assistant-authored explanations, diagrams as descriptions, code, outputs, examples and reasoning in teaching order.
+## Work available from prior Python guided session
 
-## Questions as presented
-Not recorded yet. Record original tutor-authored questions faithfully; for PNP/Bosscoder proprietary material, link and summarize the source rather than publicly reproducing entire paid worksheets.
+During the interactive Python study documented in [Slot 02](slot-02-python.md), the learner independently completed multiple tutor-created coding tasks:
+- Transaction classification with `if/elif/else`.
+- Two forms of transaction sum using `for` loops.
+- Threshold-based `while` processing, corrected for index limits and exact-1000 stopping.
+- Skip negative transactions, break at zero, total 700.
+- Positive-only sales filtering into a separate list.
+- First/last/every-second/reversed list slicing.
+- Constructing an updated tuple without mutating the original.
 
-## Your original attempt
-Not submitted yet. Store the first SQL/Python code or written answer **unaltered**, even if it is incorrect.
+These provide suitable candidate practice evidence, **but they are not yet verified Bosscoder-assignment answers** and should not be misattributed as separate Slot 04 attendance. Their original attempts, corrections and review summaries are archived in Slot 02.
 
-## Review and revised attempt
-Pending. Record feedback, tests, complexity, improvements and later revision separately. Do not rewrite the original attempt.
+## Outstanding Slot 04 checklist
 
-## Revision and mastery
-- Concepts independently explained: Not assessed
-- Original practice attempted: Not assessed
-- Correctness reviewed: Not assessed
-- Evidence and source IDs/pages: None yet
-- Focus minutes: Not logged
-- Topic mastered: Not assessed
+- [ ] Compare each Python topic with actual Bosscoder Python Refresher 1 notes; identify genuinely new material, especially strings, slicing, operators, functions/scope, loops, and class exercises.
+- [ ] Independently attempt relevant unsolved Bosscoder exercises; record exact assignment identity, original code, review evidence and outcome. Do not double-count repeated exercises.
+- [ ] Run mixed-topic practice on known weaknesses: negative modulo, range stop/step, safe loop termination, Python indentation and equality, reverse slicing, and tuple immutability.
+- [ ] Log actual focus minutes (not inferred from planned slot time).
+- [ ] Record end-of-day learning reflection and outstanding source targets.
+- [ ] Verify PNP Python PDF pp. 1–8 separately; guided tutor questions are not automatic PNP PDF credit.
 
-[Day 1 index](README.md) · [Study archive policy](../../SESSION-ARCHIVE-POLICY.md)
+## Ordered handoff
+
+At the learner-requested **09:00 IST, November 7, 2026** study resumption, continue **Lesson 13A (sets)** first; then complete the remaining November 6 Python source and Bosscoder gaps, revision and review. Carry forward any other mandatory November 6 backlog before starting November 7's four-slot curriculum. No future date or slot is marked completed in advance.
+
+[Python Slot 02 archive](slot-02-python.md) · [Session index](README.md) · [Progress](../../../progress/daily-progress.json)
