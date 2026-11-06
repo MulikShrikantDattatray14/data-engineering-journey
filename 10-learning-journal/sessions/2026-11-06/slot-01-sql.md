@@ -314,14 +314,74 @@ yeah i know it should not be sort by but its should be order by ..i did this mis
 
 **Tracking:** No new source question ID credited; Q3 original attempt and error remain preserved.
 
-## Question 4 — INNER JOIN and filtering (awaiting SQLite learner attempt)
+## Question 4 — INNER JOIN and filtering (first SQLite attempt reviewed)
 
 Use the same four-customer and four-order sample as Q3.
 
 **Task:** Return `customer_name`, `order_id`, and `status` for **only orders with status `'paid'`**. Sort by `order_id` ascending. Customers without a paid order must not appear, and each paid order should appear as its own row. Use an explicit JOIN and do not hardcode names or order IDs.
 
-**Original learner SQLite query:** Pending.  
-**Original reasoning:** Pending.  
-**Expected vs actual execution:** Withheld until submission.  
-**Reference SQLite and SQL Server solutions:** Withheld until submission.  
-**Optional new-learning capture:** Ask after review.
+**Original learner SQLite query:** Submitted, preserved below.  
+**Expected vs actual execution:** SQLite syntax error at `0.status`.  
+**Reference SQLite and SQL Server solutions:** Preserved below after review.  
+**Optional new-learning capture:** Awaiting learner Yes/No.
+
+## Q4 — Original submission, SQLite execution and reviewed reference
+
+**Original SQLite query — exact learner submission (unaltered):**
+
+```sql
+SELECT c.customer_name, o.order_id, 0.status
+FROM customers AS c
+join  orders as o on  c.customer_id=o.customer_id
+where o.status = 'paid'
+order by o.order_id asc
+```
+
+**Learner's original reasoning — verbatim:**
+
+```text
+i used inner join to Excludes customers without paid orders.
+
+if i use left join... it will take all the customers
+```
+
+**Expected output:**
+
+| customer_name | order_id | status |
+|---|---:|---|
+| Asha | 201 | paid |
+| Neha | 204 | paid |
+
+**Actual original-query execution against sample SQLite database:** `OperationalError: unrecognized token: "0.status"` — statement rejected, **no result set**; not an empty result table.
+
+**Diagnosis:** The third selected expression uses digit `0` rather than letter `o` in the alias `o.status`. Other clauses correctly join customers and orders on customer_id, filter status='paid', and sort order_id ascending. The learner's INNER JOIN rationale was partly incomplete: INNER JOIN excludes rows with no matching order; the WHERE predicate specifically removes matching non-paid orders. A LEFT JOIN with this WHERE would also discard customers lacking a paid matching order.
+
+### Assistant-verified reference — SQLite (executed)
+
+```sql
+SELECT c.customer_name, o.order_id, o.status
+FROM customers AS c
+INNER JOIN orders AS o
+    ON c.customer_id = o.customer_id
+WHERE o.status = 'paid'
+ORDER BY o.order_id ASC;
+```
+
+**Executed reference output:** (Asha, 201, paid); (Neha, 204, paid). Both match expected.
+
+### Assistant-created SQL Server T-SQL reference (not executed under SQL Server)
+
+```sql
+SELECT c.customer_name, o.order_id, o.status
+FROM customers AS c
+INNER JOIN orders AS o
+    ON c.customer_id = o.customer_id
+WHERE o.status = 'paid'
+ORDER BY o.order_id ASC;
+```
+
+**Learner correction:** Not yet separately submitted; original preserved, reference is **not learner-authored**.
+
+**Optional post-question learning:** Awaiting learner reply, Yes with exact reflection or No.
+
+**Tracking:** Tutor diagnostic Q4 reviewed, but original query did not execute. No new PNP source credit.
