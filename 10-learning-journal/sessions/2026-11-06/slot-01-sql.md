@@ -651,3 +651,7 @@ The learner requested detailed justification for every reference solution, inclu
 ## Q6 — Dedicated anti-join lesson
 
 The learner explicitly confirmed anti-joins are major new learning. See the [detailed SQL-R005 tutorial](../../../01-sql/revision/SQL-R005-ANTI-JOIN-DETAILED-LESSON.md), covering the reason for anti-joins, the original mistake, progressive queries with output tables, multiple matches, NULL cases, SQLite and T-SQL references, and practical applications. Q7 remains unattempted.
+
+## Q7 — Student-led incremental coding workflow adopted
+
+The learner requested Q7 onward follow a slow, stepwise interactive process: they explain **what they plan to do and why**, write a **partial SQLite query**, inspect its **actual SQLite output**, and then choose the next step. There is no upfront final-solution form. Each step's original input, output/error and review will be recorded separately in the dated slot journal. When the student declares the query finished, a separate final submission will be evaluated and compared with expected output. Assistant reference solutions and SQL Server translations remain hidden until then. **Q7 not yet attempted** at the time of this rule change.
