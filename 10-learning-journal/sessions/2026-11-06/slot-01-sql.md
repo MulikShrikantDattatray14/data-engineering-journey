@@ -632,3 +632,7 @@ Two new SQLite tables:
 
 **Learner's original SQLite attempt and reasoning:** Pending.
 **Expected result and SQLite reference/T-SQL translation:** Hidden until first attempt. Save attempts unmodified; execute and compare actual vs expected after submission.
+
+## Q6 — Progressive reference explanation
+
+The learner requested detailed justification for every reference solution, including a single dataset carried through all stages and the resulting **actual SQLite output after each step**. The complete Q6 tutorial has now been committed here: [Step-by-step Q6 walkthrough](../../../01-sql/practice/verified-results/2026-11-06-q06-walkthrough.md). It covers 4 stages (all customers → all LEFT JOIN matches → paid-only matches in ON → missing paid matches in WHERE), detailed output tables, anti-join reasoning, error analysis, and SQLite/T-SQL references. The Q7 answer remains unrevealed pending the learner's attempt.
