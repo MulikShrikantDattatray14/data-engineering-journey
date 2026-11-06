@@ -1,7 +1,7 @@
 # Day 1 — Slot 01: SQL Foundations & PNP Practice
 
 **Study date:** November 6, 2026 (Asia/Kolkata)  
-**Status:** Interactive session in progress; Q1 correct, Q2 corrected and reviewed (5/5)  
+**Status:** Q1–Q8 tutor diagnostics reviewed; 4 independently correct/corrected (Q1, Q2, Q7, Q8). PNP source reattempts still pending  
 **Actual start/end and verified focus minutes:** Not recorded  
 **Goal:** Rebuild accurate foundations, use independent queries to demonstrate fluency, then revisit the existing PNP SQL 205-question bank without duplicating solutions.
 
@@ -1032,3 +1032,48 @@ anti join pattern was a importnant and new concept for me ..so save all those co
 - **PNP source IDs newly completed:** None verified. Q7 is tutor-authored practice.
 
 **Workflow:** This Q7 record and revision bank are ready for a distinct question-closing GitHub commit. Do not open Q8 before that remote commit is verified.
+
+
+---
+
+## Q8 — Vendors Without Qualifying Deliveries (finished diagnostic)
+
+**Date:** 2026-11-06 · **Outcome:** student independently corrected final SQLite answer; exact expected five vendors, three columns and ascending sort. Q8 is a **tutor-authored diagnostic**, not PNP source practice. No actual focused-minutes total was recorded.
+
+**Complete Q8 evidence, input/output and progression:** [Original question and final detailed SQLite/T-SQL review](../../../study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md). This linked record contains every submitted learner SQLite step and its actual results/errors: ambiguous `vendor_id`, trailing SELECT comma, unfiltered LEFT JOIN (10 rows), qualification predicates in ON (8 rows), unmatched right-side vendor ID filter (5 rows with extra columns), wrong right-side vendor ID selection (five NULL IDs), final left-side ID selection and ORDER BY (five correct rows).
+
+**Learner's final SQLite query (verbatim):**
+
+```sql
+select v.vendor_id, v.vendor_name, v.region
+from vendors as v
+left join deliveries as d on v.vendor_id=d.vendor_id and d.status='delivered' and d.amount > 1000 and (v.region = 'West' or d.service='express')
+where d.vendor_id is null
+order by v.vendor_id asc
+```
+
+**Actual executed final output:**
+
+| vendor_id | vendor_name | region |
+|---:|---|---|
+| 1 | Atlas | West |
+| 2 | Birch | North |
+| 4 | Drift | South |
+| 5 | Ember | North |
+| 8 | Haven | East |
+
+**User response to optional new-learning prompt:** Yes.
+
+**Learner's exact insight:**
+
+```text
+anti join pattern concept
+```
+
+**New revision entry:** [SQL-R007 — Q8 anti-join transfer, NULLs, left-side projection and ordering](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md). Revisited earlier SQL-R005 and R006 concepts in a new business scenario.
+
+**Review integrity:** Q1–Q8 all reviewed, 4 independently correct/corrected (Q1, Q2, Q7, Q8), 1 correct first try (Q1). Q3–Q6 still require independent corrected solutions. Q8 successfully completed only after learner-authored revisions, so it is not a first-try pass or evidence of universal mastery. New PNP source IDs: zero; Python source pages: zero. Follow-up source practice and focus-time logging remain outstanding.
+
+**GitHub cross-repo Q8 mirror:** [Data Engineering Mastry Q8 record](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md).
+
+**Question-closing commits:** To be recorded in the separate Q8 closing checkpoint after final repository verification.
