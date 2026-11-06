@@ -217,11 +217,11 @@ ORDER BY order_id ASC;
 
 **Task:** Write a SQLite query returning `customer_id`, `customer_name`, and `order_id` for **every customer, including customers with no orders**. For each customer, return their matching orders as separate rows, sorted by `customer_id` and then `order_id` ascending. Do not filter by order status.
 
-**Student SQLite attempt:** Pending. **Assistant review and SQL Server version:** Withheld until attempt.
+**Student SQLite attempt:** Submitted and reviewed below; original SQL hit a syntax error at `sort`. Reference query and expected versus actual output documented below.
 
 ## Verified SQLite execution and reference-solution archive (Q1 and Q2)
 
-Actual SQLite output, required expected output, comparison tables, and separately labeled SQLite + SQL Server reference solutions are documented in [the Q1–Q2 verification file](../../../01-sql/practice/verified-results/2026-11-06-q01-q02.md). Q1 matched immediately; Q2 initial query had an extra NULL-amount order 104, and Q2 corrected query matched. Original attempts above remain unchanged. Q3 has not been attempted; its answer and outcome are withheld.
+Actual SQLite output, required expected output, comparison tables, and separately labeled SQLite + SQL Server reference solutions are documented in [the Q1–Q2 verification file](../../../01-sql/practice/verified-results/2026-11-06-q01-q02.md). Q1 matched immediately; Q2 initial query had an extra NULL-amount order 104, and Q2 corrected query matched. Original attempts above remain unchanged. Q3 was subsequently attempted and reviewed; see its detailed execution evidence and reference query below.
 
 
 ## Q2 — Learner-confirmed new learning (subsequent update)
@@ -233,3 +233,68 @@ After reviewing the Q2 explanation, the learner explicitly requested that its le
 **Permanent learning reference:** [SQL-R002 — Mandatory conditions across OR branches](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
 
 This is a learner-approved takeaway from the prior tutor explanation, not a student-authored solution or a new PNP question completion.
+
+## Q3 — Student submission, executed result, reference solutions
+
+**Question status:** First attempt reviewed; syntax error identified; student independent revised submission not yet received.
+
+### Original learner SQLite submission (exactly preserved)
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id
+FROM customers as c
+left join  orders as o on   c.customer_id = o.customer_id
+sort by c.customer_id,  o.order_id asc 
+```
+
+**Original explanation (verbatim):**
+
+> as it asks for every customer, i kept customer table on left
+
+### Execution test
+
+Ran the original query against an actual in-memory SQLite database containing the exact four customers and four orders from Q3. The attempted SQLite query returned:
+
+```text
+OperationalError: near "sort": syntax error
+```
+
+**Expected output:**
+
+| customer_id | customer_name | order_id |
+|---:|---|---:|
+| 1 | Asha | 201 |
+| 1 | Asha | 202 |
+| 2 | Ravi | 203 |
+| 3 | Neha | 204 |
+| 4 | Kabir | NULL |
+
+**Actual original-query output:** No rows returned (SQLite refused to execute the query). This is an execution error, not an empty result set. Cause: SQL sorting keyword is `ORDER BY`, not `SORT BY`. Join type and ON condition are correct.
+
+### Assistant-verified SQLite reference query (executed)
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id
+FROM customers AS c
+LEFT JOIN orders AS o
+    ON c.customer_id = o.customer_id
+ORDER BY c.customer_id, o.order_id ASC;
+```
+
+**Actual output from executing reference:** (1,Asha,201), (1,Asha,202), (2,Ravi,203), (3,Neha,204), (4,Kabir,NULL). Matches expected output.
+
+### Assistant-converted SQL Server (T-SQL) reference query (not SQL Server executed)
+
+```sql
+SELECT c.customer_id, c.customer_name, o.order_id
+FROM customers AS c
+LEFT JOIN orders AS o
+    ON c.customer_id = o.customer_id
+ORDER BY c.customer_id, o.order_id ASC;
+```
+
+**Review:** Correct JOIN design, one syntax mistake; not scored as first-attempt execution success. Preserve a future learner revised attempt separately if submitted.
+
+**Optional post-question new learning:** Await learner Yes/No. No new rule entered without explicit learner confirmation.
+
+**Course tracking:** Q3 is original tutor-created practice, not a new PNP question ID or module mastery.
