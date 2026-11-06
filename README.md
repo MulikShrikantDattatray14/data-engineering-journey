@@ -22,6 +22,7 @@ I have around two years of software engineering experience with the MERN stack. 
 - [SQL learning path](01-sql/README.md)
 - [Python learning path](02-python/README.md)
 - [Learning journal](10-learning-journal/README.md)
+- **[Detailed daily/slot-by-slot study archive](10-learning-journal/sessions/2026-11-06/README.md)** — original learning content, first attempts and reviews
 - [Project portfolio](08-projects/README.md)
 
 ## Learning areas
