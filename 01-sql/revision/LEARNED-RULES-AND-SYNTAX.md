@@ -76,3 +76,29 @@ This syntax works in SQLite and SQL Server. The student originally repeated IS N
 **Recall:** Would a paid row with NULL amount pass `status = 'paid' OR amount > 2000`?
 
 **Source:** [Verified expected vs actual Q2](../practice/verified-results/2026-11-06-q01-q02.md). Learner requested this new learning **after** previously choosing No for Q2; this later explicit request overrides No. No extra course problem completion is credited.
+
+
+## SQL-R003 — Check syntax and requirements before submitting
+
+**Date:** 2026-11-06 · Day 1 · Slot 1 · Q3  
+**Classification:** Practice habit / submission checklist, with related syntax reminder  
+**Source:** [Q3 original attempted query and review](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md)
+
+### Learner's exact reflection (verbatim)
+
+```text
+yeah i know it should not be sort by but its should be order by ..i did this mistake bcz i didnt recheck question before submitting . i hurried while submitting , so my learning is i should not hurry.
+```
+
+### Reusable reminder
+
+The learner **knew** the correct SQL keyword but rushed and wrote `SORT BY`. In both SQLite and SQL Server, the sorting clause is `ORDER BY`, not `SORT BY`.
+
+**20-second pre-submit check:**
+1. Reread the required columns, filters, joins, sorting, and unmatched-row behavior.
+2. Scan the query for invalid syntax, especially `ORDER BY` and aliases.
+3. Run the query when possible and compare its actual output to the expected rows before submitting.
+
+This records a learner-identified process mistake, **not** a new JOIN misconception or a PNP completion.
+
+---
