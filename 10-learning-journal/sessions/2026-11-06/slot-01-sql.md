@@ -796,3 +796,32 @@ left join payments  on accounts.account_id = payments.account_id
 **Review:** Valid SQLite syntax and correct LEFT JOIN keys. Accounts 11 and 15 each have two matching payment rows, producing repeated account columns; account 16 has no payment match but remains due to LEFT JOIN. The student's SELECT projects only columns from `accounts`, so NULL payment values are **not visible in this result**. In a diagnostic query selecting payment fields, Luna's right-side fields would be NULL, but that was not this submitted query's output. No filter, sorting, or final anti-match evaluation has yet been performed, by design.
 
 **Step status:** Step 1 reviewed correct and preserved. Await student's Step 2 reasoning **before** asking them to write a new SQL query. Q7 question-closing commit remains pending; this is an incremental save.
+
+## Q7 LEFT JOIN approach — Step 2: inspect matched payment columns
+
+**Learner's exact Step 2 SQLite query:**
+
+```sql
+select accounts.account_id , accounts.account_name, accounts.region, payments.status, payments.amount
+from accounts 
+left join payments  on accounts.account_id = payments.account_id
+```
+
+**Learner's intent:** Show output after adding payment status and amount to the existing LEFT JOIN, so the matching payment details and NULLs are visible. Review approved as an exploratory step; no filtering introduced yet.
+
+**Actual execution:** SQLite in-memory database with the six Q7 accounts and seven Q7 payments. Exact submitted SQL executed successfully. Returned eight rows, in this observed order (not guaranteed without ORDER BY):
+
+| account_id | account_name | region | status | amount |
+|---:|---|---|---|---:|
+| 11 | Cedar | West | pending | 300 |
+| 11 | Cedar | West | settled | 900 |
+| 12 | Delta | North | failed | 1500 |
+| 13 | Orion | West | settled | NULL |
+| 14 | Maple | South | settled | 1800 |
+| 15 | Nova | West | failed | 400 |
+| 15 | Nova | West | pending | 600 |
+| 16 | Luna | North | NULL | NULL |
+
+**Review:** Cedar and Nova each show two matched payment rows. Orion's amount NULL belongs to a real settled payment; Luna has no payment row, hence null-extended status and amount. The distinction between a NULL *field in a real match* and *no match* matters for anti-join reasoning. Step 2 is a correct exploratory projection, not a complete solution. There is no ORDER BY or payment qualification yet.
+
+**Next:** Ask for learner's Step 3 thinking only; no pre-supplied SQL or final query. Q7 closing commit is deferred until both approaches are completed and reviewed.
