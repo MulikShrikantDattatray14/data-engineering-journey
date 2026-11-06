@@ -49,3 +49,11 @@ Only after verifying actual learning update `progress/daily-progress.json`; GitH
 When **Yes**: preserve the exact text in the dated slot under that question, tag it as rule/syntax/formula, misconception, strategy, or engineering insight, then create/update a linked entry in the subject's cumulative revision notes (e.g., [SQL learned rules](../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md)). Include question, date, source and any important caveat. Distinguish the student's new takeaway from a response they independently authored *before* seeing feedback.
 
 **No** = record no new rule; it must not reduce question credit or prevent moving forward.
+
+## SQL dialect policy (student choice)
+
+The student's **primary coding dialect is SQLite**. For every SQL question, retain the original SQLite query **exactly as submitted** in a clearly labeled code block. After the first attempt and review, add an independently validated **SQL Server / T-SQL translation** with differences explained when relevant. Label any translation written by the assistant as *assistant-converted*; do not attribute it to the learner.
+
+Only **SQLite and SQL Server** versions should be saved as solutions. Do not create PostgreSQL solution variants. Differences to watch include `LIMIT` versus `TOP`/`OFFSET … FETCH`, date functions, string operations, boolean semantics, null handling, and features not implemented identically. A dialect-independent query can be written identically under both headings, without pretending the student submitted it twice.
+
+Do not generate a SQL Server solution or reveal an answer to an **unattempted** assessment question. Save the prompt and await the student's SQLite attempt first. Study notes may explain syntax without pre-solving assessment questions.
