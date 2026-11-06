@@ -295,3 +295,23 @@ anti join pattern was a importnant and new concept for me ..so save all those co
 **Generalized rule:** To find entities with **no qualifying matches**, start with all entities, LEFT JOIN only rows meeting the qualifying condition via ON, then use WHERE on a **non-nullable right-side key IS NULL** to retain absent matches. Never confuse a nonqualifying *row* with absence of all qualifying rows for the entity. Beware of NULLs in NOT IN, extra selected columns, and omitted ORDER BY. Use this rule in later mixed retrieval questions.
 
 **Evidence:** Q7 final student LEFT JOIN matched all five expected rows and the three required columns in ascending order. Student's NOT IN version filtered correctly but omitted explicit ORDER BY. No PNP source ID credit is inferred.
+
+
+## SQL-R007 — Q8 anti-join transfer and selecting left-side IDs
+
+**Date:** 2026-11-06 · Day 1 · Slot 1 · Q8 (Vendors Without Qualifying Deliveries).  
+**Learner's *exact* new learning (verbatim):**
+
+```text
+anti join pattern concept
+```
+
+**Evidence:** The student independently repaired the Q8 JOIN query, with `d.status='delivered'`, `d.amount>1000`, and `(v.region='West' OR d.service='express')` inside the LEFT JOIN `ON`, followed by `WHERE d.vendor_id IS NULL` and a left-table `v.vendor_id` selection and sort. The final SQLite execution matched all five expected vendors (1, 2, 4, 5, 8), with correct columns, no duplicates and ascending IDs, **after multiple independent corrections**, not on first attempt.
+
+**General rule (assistant-authored):** To find entities with **no qualifying right-side records**, preserve all left-side entities with `LEFT JOIN`; place the matching criteria in `ON`; check a guaranteed non-NULL right-side identifier for NULL in `WHERE`. For final projection and sorting, use the **left-side entity key**, because right-side keys are NULL on the anti-matched rows. In this fixture, `d.vendor_id IS NULL` works; when available prefer a non-nullable right-side primary key (`d.delivery_id IS NULL`).
+
+**Key transfer details:** Parentheses around the OR alternative prevent logic leakage; `NULL > 1000` does not match; multiple nonqualifying deliveries do not disqualify a vendor; multiple qualifying deliveries still cause the vendor to be excluded. An explicitly sorted output is mandatory when order is required.
+
+**Full independently authored SQL, input and output, executed progressive review, and SQL Server reference:** [Q8 — complete reviewed question](../../study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md).
+
+**Integrity:** Tutor-created Q8, zero new PNP source credit. One successful corrected fixture is evidence of learning, not generalized mastery.
