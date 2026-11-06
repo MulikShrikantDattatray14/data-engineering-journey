@@ -97,3 +97,14 @@ Using the **same orders table** from Q1, write one PostgreSQL query that returns
 **Q1 review:** Correct query; explanation originally supplied in feedback, subsequently explicitly selected by learner as a new learning.
 
 **Tracking:** Rule recorded, no change to PNP SQL question totals or mastery counts.
+
+
+### Q1 learning — resubmitted exact wording
+
+```text
+Your condition amount > 1000 evaluates to UNKNOWN when amount is NULL. Since WHERE retains only rows whose condition is TRUE, order 104 is excluded automatically.
+
+You do not need an additional amount IS NOT NULL condition for this query.
+```
+
+This entry reproduces the learner's subsequent submission exactly; the original formatted entry above is retained for history.
