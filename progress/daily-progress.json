@@ -52,14 +52,15 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
         "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
-        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md"
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P001-brand-directory-reattempt.md"
       ],
       "practice": {
         "sql_tutor_reviewed": 8,
@@ -248,12 +249,17 @@
           "mirror_url": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/Q8-vendors-without-qualifying-deliveries.md",
           "sqlite_execution": "verified",
           "tsql_execution": "not performed"
-        }
+        },
+        "pnp_source_reattempts_verified": 1,
+        "pnp_reattempt_ids": [
+          "P001"
+        ],
+        "pnp_reattempt_target_min": 6
       },
       "execution": {
         "state": "in_progress",
         "current_slot": 1,
-        "current_question": "Q8 verified and reviewed; PNP source reattempts next",
+        "current_question": "PNP P001 reattempt verified; optional new-learning capture and closing checkpoint pending",
         "last_verified": "2026-11-06",
         "slots": [
           {
@@ -263,7 +269,7 @@
             "track": "SQL",
             "status": "in_progress",
             "target": "8 guided diagnostic questions, then 6–10 previously solved PNP SQL reattempts",
-            "done": "Q1–Q8 reviewed (8/8); 4 independently correct/corrected; no PNP reattempts verified",
+            "done": "Q1–Q8 tutor diagnostics reviewed, 4 independently correct/corrected; PNP P001 reattempt verified (1/6 minimum); P001 lesson capture and closing checkpoint pending.",
             "href": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md"
           },
           {
@@ -336,10 +342,10 @@
             "track": "SQL",
             "name": "Reattempt 6–10 previously solved PNP SQL questions",
             "target": 6,
-            "completed": 0,
+            "completed": 1,
             "unit": "verified reattempts (minimum target 6)",
-            "status": "not_started",
-            "detail": "Existing baseline 20 solves is not new Day 1 credit",
+            "status": "in_progress",
+            "detail": "P001 independently corrected on third attempt and verified against the illustrative 8-row fixture; 5 further reattempts minimum. Learning capture/closing checkpoint pending.",
             "href": "https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry"
           },
           {
@@ -388,7 +394,7 @@
           }
         ],
         "next_actions": [
-          "Start independently reattempting 6–10 previously solved PNP source SQL questions; the tutor diagnostic Q8 is complete.",
+          "Capture PNP P001 new learning Yes/No, then close the question in both GitHub repositories.",
           "Independently retry Q3–Q6 weak areas before claiming mastery.",
           "Reattempt 6–10 already solved PNP SQL source questions when the schedule allows.",
           "Start Python PDF pages 1–8 and record actual page/exercise evidence.",
