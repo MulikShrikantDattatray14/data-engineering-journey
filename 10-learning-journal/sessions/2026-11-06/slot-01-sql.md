@@ -655,3 +655,20 @@ The learner explicitly confirmed anti-joins are major new learning. See the [det
 ## Q7 — Student-led incremental coding workflow adopted
 
 The learner requested Q7 onward follow a slow, stepwise interactive process: they explain **what they plan to do and why**, write a **partial SQLite query**, inspect its **actual SQLite output**, and then choose the next step. There is no upfront final-solution form. Each step's original input, output/error and review will be recorded separately in the dated slot journal. When the student declares the query finished, a separate final submission will be evaluated and compared with expected output. Assistant reference solutions and SQL Server translations remain hidden until then. **Q7 not yet attempted** at the time of this rule change.
+
+
+## Q7 — Student-led Step 1: Inner subquery identification (in progress)
+
+**Student-submitted original partial SQLite query (verbatim):**
+
+```sql
+select account_id
+from payments
+where status='status' and amount>=1000
+```
+
+**Actual SQLite execution:** This query executed against the Q7 payments sample dataset without syntax error and returned **zero rows** (empty result set), with one selected column `account_id`.
+
+**Review:** Table `payments`, column `account_id`, and AND combination are appropriate for the intended first step. Two filtering issues: `status='status'` compares against literal text `status`, which appears in no row; target status should be the qualifying value specified in the question. `amount>=1000` includes amounts equal to 1000, whereas the problem requires strictly greater than 1000. The original submission has been preserved before any learner revision.
+
+**Step 1 status:** Needs independent correction by learner; not completed. The outer query and final Q7 solution remain withheld. This is an intermediate GitHub preservation commit, **not** the Q7 question-closing commit.
