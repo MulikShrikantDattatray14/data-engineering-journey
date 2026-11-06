@@ -48,7 +48,7 @@ order by amount desc
 
 **Review:** 5/5 explicit query requirements satisfied. Valid PostgreSQL SQL. `WHERE` checks paid orders, Maharashtra, and amount strictly greater than 1000. `ORDER BY amount DESC` yields order 105 (1800), then order 101 (1200). For order 104, comparison `NULL > 1000` is UNKNOWN, and `WHERE` only retains TRUE. Extra `IS NOT NULL` is unnecessary. Keyword capitalization / line breaks are optional style choices only; student's original retained.
 
-**Student's written explanation of NULL:** Not yet separately submitted (the assistant supplied the explanation during review).
+**Learner-confirmed new learning (submitted after Q1 review):** The learner identified the following explanation as their new takeaway, not as a separately authored pre-review answer. It is saved verbatim under the learning entry below.
 
 **Completion credit:** One original tutor diagnostic question reviewed correct; this is **not** a new PNP source ID, not a full slot completion, and not a mastered SQL module.
 
@@ -62,7 +62,7 @@ order by amount desc
 - Actual focused minutes: Unverified
 - First attempted query: Q1 submitted and reviewed correct (5/5 requirements)
 - SQL source IDs verified today: None
-- Errors and important insights: No query errors found; distinguish unknown results of NULL comparisons from TRUE; learner's independent NULL explanation still pending
+- Errors and important insights: No query errors found; distinguish unknown results of NULL comparisons from TRUE; learner-confirmed NULL/WHERE takeaway recorded separately after feedback
 - Next revision: Pending
 
 **Rule:** Log each original student submission before corrections. Lesson documentation does not equal reviewed mastery.
@@ -81,3 +81,19 @@ Using the **same orders table** from Q1, write one PostgreSQL query that returns
 **Assistant feedback and expected result:** Withheld until attempt.
 
 **Archive rule:** Record next answer exactly before providing corrections.
+
+## Optional post-question learning capture — Q1 (learner-submitted)
+
+**Asked-for workflow:** After every future practice submission and its review, ask **“Any new learning from this question?”** with a Yes/No choice. No is valid, optional, and requires no further response. If Yes, collect learner-authored text and save it both in the session archive and the relevant subject-level rule/syntax revision reference; avoid rewriting the learner's text. Any new insight must remain associated with its date, slot, question and source.
+
+**Q1 — Learner's exact reported takeaway:**
+
+> Your condition `amount > 1000` evaluates to `UNKNOWN` when `amount` is `NULL`. Since `WHERE` retains only rows whose condition is `TRUE`, order 104 is excluded automatically.
+>
+> You do not need an additional `amount IS NOT NULL` condition for this query.
+
+**Classification:** General rule / SQL syntax / three-valued logic.  
+**Cross-topic revision reference:** [SQL-R001 — NULL comparisons and WHERE](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).  
+**Q1 review:** Correct query; explanation originally supplied in feedback, subsequently explicitly selected by learner as a new learning.
+
+**Tracking:** Rule recorded, no change to PNP SQL question totals or mastery counts.
