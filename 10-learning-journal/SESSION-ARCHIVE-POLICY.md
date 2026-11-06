@@ -57,3 +57,13 @@ The student's **primary coding dialect is SQLite**. For every SQL question, reta
 Only **SQLite and SQL Server** versions should be saved as solutions. Do not create PostgreSQL solution variants. Differences to watch include `LIMIT` versus `TOP`/`OFFSET … FETCH`, date functions, string operations, boolean semantics, null handling, and features not implemented identically. A dialect-independent query can be written identically under both headings, without pretending the student submitted it twice.
 
 Do not generate a SQL Server solution or reveal an answer to an **unattempted** assessment question. Save the prompt and await the student's SQLite attempt first. Study notes may explain syntax without pre-solving assessment questions.
+
+## Expected vs actual SQL results — mandatory after every submission
+
+For each **submitted** SQLite SQL question, record the original query verbatim before making corrections. With a provided schema and fixture, **execute that exact query in SQLite** and show two labeled result tables: **Expected output** (from the question's requirements) and **Actual output** (from the submitted query). Highlight extra, missing, incorrectly valued, duplicated, or misordered rows. State any runtime/syntax errors and distinguish actual execution from inferred output. Preserve the first execution and all revisions, do not silently replace evidence.
+
+Compare columns, values, duplicate multiplicity and required ordering; if row order is not specified, compare unordered rows with duplicates preserved. Prefer representative edge cases (NULL, no match, duplicate keys, ties). If executable schema/sample data are missing, say **Not executed — fixture unavailable**; do not pretend to have actual output. SQL Server translations are labeled **assistant-converted, not executed** unless genuinely tested against SQL Server.
+
+After a student's attempt (or corrected retry) has been reviewed, archive an **assistant-verified reference solution** separately in both SQLite and SQL Server (T-SQL), without replacing the student's code. Use **official platform solution** only when the platform's own answer key has actually been supplied and is authorized to be stored; do not call a generated reference solution official. Never pre-reveal the reference solution for an unattempted problem.
+
+After review, retain the optional Yes/No **New learning?** prompt. Store Yes submissions verbatim in the slot and shared rulebank; No creates no new rule. A submitted question's output comparison is evidence for an attempt, **not automatically a mastered topic or an extra PNP question credit**.
