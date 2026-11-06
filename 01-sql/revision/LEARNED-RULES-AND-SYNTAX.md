@@ -11,9 +11,11 @@ A living, cross-day revision reference for **new insights explicitly identified 
 
 ### Learner's recorded takeaway (verbatim)
 
-> Your condition `amount > 1000` evaluates to `UNKNOWN` when `amount` is `NULL`. Since `WHERE` retains only rows whose condition is `TRUE`, order 104 is excluded automatically.
->
-> You do not need an additional `amount IS NOT NULL` condition for this query.
+```text
+Your condition amount > 1000 evaluates to UNKNOWN when amount is NULL. Since WHERE retains only rows whose condition is TRUE, order 104 is excluded automatically.
+
+You do not need an additional amount IS NOT NULL condition for this query.
+```
 
 ### Reusable rule / syntax
 
