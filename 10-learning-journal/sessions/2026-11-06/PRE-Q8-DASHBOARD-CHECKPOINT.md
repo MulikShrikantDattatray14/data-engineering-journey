@@ -7,13 +7,13 @@
 
 ## Completed and committed changes
 
-- [Interactive Data Engineering dashboard](../../../../dashboard/index.html) with detailed Daily targets: date navigation, per-day KPI snapshot, planned slots, measurable task board, SQL/Python source tracking, guided-practice-vs-curriculum scoring, next actions, recorded focus time, evidence and revision links.
-- [157-date progress tracker](../../../../progress/daily-progress.json) beginning November 6. The original 156 curriculum days are retained, beginning November 7.
-- [Dashboard usage and data-contract notes](../../../../dashboard/README.md).
+- [Interactive Data Engineering dashboard](../../../dashboard/index.html) with detailed Daily targets: date navigation, per-day KPI snapshot, planned slots, measurable task board, SQL/Python source tracking, guided-practice-vs-curriculum scoring, next actions, recorded focus time, evidence and revision links.
+- [157-date progress tracker](../../../progress/daily-progress.json) beginning November 6. The original 156 curriculum days are retained, beginning November 7.
+- [Dashboard usage and data-contract notes](../../../dashboard/README.md).
 - [Reviewed November 6 question-by-question revision index](PRACTICE-INDEX.md), linking Q1–Q7 and six SQL learning-rule entries.
 - [Complete Slot 1 SQL learning journal](slot-01-sql.md), including original attempts, corrected queries, intermediate SQLite outputs, progressive explanations, and review status.
-- [Q7 question-closing review](Q7-CLOSED.md) and [SQL learning rules](../../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
-- [Generated Markdown progress dashboard](../../../../PROGRESS-DASHBOARD.md).
+- [Q7 question-closing review](Q7-CLOSED.md) and [SQL learning rules](../../../01-sql/revision/LEARNED-RULES-AND-SYNTAX.md).
+- [Generated Markdown progress dashboard](../../../PROGRESS-DASHBOARD.md).
 
 ## Honest progress status at this checkpoint
 
