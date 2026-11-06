@@ -278,3 +278,20 @@ Use future interleaved questions to contrast (a) at least one qualifying row, (b
 ### Dedicated detailed lesson — Anti-join (SQL-R005)
 
 The learner explicitly highlighted the anti-join pattern as a major *new* concept, so it has a full separate tutorial: [SQL-R005 — Detailed anti-join lesson](SQL-R005-ANTI-JOIN-DETAILED-LESSON.md). It explains the Q6 data, original reasoning mistake, each SQL stage and its actual intermediate results, what happens with 0/1/multiple matches, NULL handling, when ON versus WHERE matters, T-SQL equivalence and Data Engineering applications. Mark this for high-priority retrieval practice. Q7 remains unanswered.
+
+
+## SQL-R006 — Q7 anti-join consolidation (high priority)
+
+**Date:** 2026-11-06 · Day 1 · Slot 1 · Q7. The learner explicitly called the anti-join pattern important, unfamiliar new learning and asked that all taught concepts be saved.
+
+**Exact learner statement (verbatim):**
+
+```text
+anti join pattern was a importnant and new concept for me ..so save all those concept notes that were taught me here
+```
+
+**Detailed lesson:** [SQL-R006 — Q7 full progression, intermediate SQLite outputs, NOT IN and anti-join](SQL-R006-Q7-ANTI-JOIN-AND-SUBQUERY-DETAILED-LESSON.md).
+
+**Generalized rule:** To find entities with **no qualifying matches**, start with all entities, LEFT JOIN only rows meeting the qualifying condition via ON, then use WHERE on a **non-nullable right-side key IS NULL** to retain absent matches. Never confuse a nonqualifying *row* with absence of all qualifying rows for the entity. Beware of NULLs in NOT IN, extra selected columns, and omitted ORDER BY. Use this rule in later mixed retrieval questions.
+
+**Evidence:** Q7 final student LEFT JOIN matched all five expected rows and the three required columns in ascending order. Student's NOT IN version filtered correctly but omitted explicit ORDER BY. No PNP source ID credit is inferred.
