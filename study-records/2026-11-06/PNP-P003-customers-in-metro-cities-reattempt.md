@@ -69,3 +69,18 @@ Eight customer rows are expected in exact five-column order; output city values 
 ## Mirrored record links
 
 [Journey P003 reattempt](https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/study-records/2026-11-06/PNP-P003-customers-in-metro-cities-reattempt.md) · [Mastry P003 reattempt](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/blob/main/study-records/2026-11-06/PNP-P003-customers-in-metro-cities-reattempt.md).
+
+## Step 1 — Student's first SQLite attempt
+
+**Original learner query (verbatim):**
+
+```sql
+select `CustomerID`, `FirstName`, `LastName`, trim(`City`), `State`
+from Customers
+where upper(trim(City)) in  ('bangalore','bengaluru','bombay','mumbai','new delhi','Delhi')
+order by trim(`City`) asc , CustomerID asc
+```
+
+**Actual execution:** SQLite 3.46.1 on the nine-row sample; no errors, zero rows returned. Column names: CustomerID, FirstName, LastName, `trim(`City`)`, State.
+
+**Expected:** Eight rows, as shown above. **Review:** UPPER(TRIM(City)) produces uppercase values but the IN list contains lowercase/mixed-case values; SQLite's normal equality is case-sensitive. Chennai and Hyderabad are absent from the accepted list. The trimmed city projection lacks the required alias, and sorting by TRIM(City) alone is case-sensitive. Independent correction needed. No P003 verified reattempt credit yet; old source/assistant answers withheld.
