@@ -1,6 +1,6 @@
 {
-  "schema_version": 1,
-  "plan_started": "2026-11-07",
+  "schema_version": 2,
+  "plan_started": "2026-11-06",
   "timezone": "Asia/Kolkata",
   "baseline": {
     "sql_source_total": 205,
@@ -32,6 +32,56 @@
   "daily": [
     {
       "day": 1,
+      "date": "2026-11-06",
+      "sql": {
+        "title": "Mission kickoff — guided SQL foundations, joins, NULL and anti-joins; PNP review pending",
+        "source_ids": [],
+        "completed_ids": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "python": {
+        "title": "Holiday target — Python PDF pages 1–8 (not yet verified)",
+        "pdf_pages": [],
+        "completed_pages": [],
+        "guided_reviewed": false,
+        "applied_task_done": false
+      },
+      "focus_minutes": {
+        "sql": 0,
+        "python": 0
+      },
+      "reflection_completed": false,
+      "notes": "Day 1 kickoff: 7 tutor-created SQLite SQL diagnostics (Q1–Q7) reviewed. Q1 correct first try; Q2 independently corrected; Q7 LEFT JOIN approach independently corrected and verified; Q3–Q6 reviewed but not independently solved in final form. Q7 NOT IN returned correct account rows but omitted explicit ORDER BY. SQL-R001–SQL-R006 documented. No new PNP question IDs or Python PDF pages verified. Exact focused minutes not recorded.",
+      "evidence_links": [
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
+        "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/01-sql/revision/LEARNED-RULES-AND-SYNTAX.md"
+      ],
+      "practice": {
+        "sql_tutor_reviewed": 7,
+        "sql_tutor_verified_correct": 3,
+        "first_try_correct": 1,
+        "reviewed_question_ids": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ],
+        "verified_correct_ids": [
+          "Q1",
+          "Q2",
+          "Q7"
+        ],
+        "status": "Q7 closed; Q8 not started",
+        "kind": "tutor-practice-not-pnp"
+      }
+    },
+    {
+      "day": 2,
       "date": "2026-11-07",
       "sql": {
         "title": "Sorting and Grouping; Aggregation",
@@ -85,7 +135,7 @@
       "evidence_links": []
     },
     {
-      "day": 2,
+      "day": 3,
       "date": "2026-11-08",
       "sql": {
         "title": "Aggregation; Joins",
@@ -132,7 +182,7 @@
       "evidence_links": []
     },
     {
-      "day": 3,
+      "day": 4,
       "date": "2026-11-09",
       "sql": {
         "title": "Joins; Advance string functions, regex and clause; NULL Logic",
@@ -182,7 +232,7 @@
       "evidence_links": []
     },
     {
-      "day": 4,
+      "day": 5,
       "date": "2026-11-10",
       "sql": {
         "title": "NULL Logic; Dates and Time",
@@ -228,7 +278,7 @@
       "evidence_links": []
     },
     {
-      "day": 5,
+      "day": 6,
       "date": "2026-11-11",
       "sql": {
         "title": "Dates and Time; SubQueries",
@@ -274,7 +324,7 @@
       "evidence_links": []
     },
     {
-      "day": 6,
+      "day": 7,
       "date": "2026-11-12",
       "sql": {
         "title": "SubQueries",
@@ -319,7 +369,7 @@
       "evidence_links": []
     },
     {
-      "day": 7,
+      "day": 8,
       "date": "2026-11-14",
       "sql": {
         "title": "CTEs; Windowing Functions",
@@ -369,7 +419,7 @@
       "evidence_links": []
     },
     {
-      "day": 8,
+      "day": 9,
       "date": "2026-11-15",
       "sql": {
         "title": "Windowing Functions",
@@ -417,7 +467,7 @@
       "evidence_links": []
     },
     {
-      "day": 9,
+      "day": 10,
       "date": "2026-11-16",
       "sql": {
         "title": "Windowing Functions",
@@ -464,7 +514,7 @@
       "evidence_links": []
     },
     {
-      "day": 10,
+      "day": 11,
       "date": "2026-11-17",
       "sql": {
         "title": "Windowing Functions; Recursive CTE",
@@ -508,7 +558,7 @@
       "evidence_links": []
     },
     {
-      "day": 11,
+      "day": 12,
       "date": "2026-11-18",
       "sql": {
         "title": "Gaps and Islands; Data Quality and Deduplication",
@@ -552,7 +602,7 @@
       "evidence_links": []
     },
     {
-      "day": 12,
+      "day": 13,
       "date": "2026-11-19",
       "sql": {
         "title": "Data Quality and Deduplication",
@@ -592,7 +642,7 @@
       "evidence_links": []
     },
     {
-      "day": 13,
+      "day": 14,
       "date": "2026-11-21",
       "sql": {
         "title": "Data Quality and Deduplication; Analytics and Performance",
@@ -633,7 +683,7 @@
       "evidence_links": []
     },
     {
-      "day": 14,
+      "day": 15,
       "date": "2026-11-22",
       "sql": {
         "title": "Analytics and Performance; Extra Problems",
@@ -674,7 +724,7 @@
       "evidence_links": []
     },
     {
-      "day": 15,
+      "day": 16,
       "date": "2026-11-23",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -699,7 +749,7 @@
       "evidence_links": []
     },
     {
-      "day": 16,
+      "day": 17,
       "date": "2026-11-24",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -724,7 +774,7 @@
       "evidence_links": []
     },
     {
-      "day": 17,
+      "day": 18,
       "date": "2026-11-25",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -749,7 +799,7 @@
       "evidence_links": []
     },
     {
-      "day": 18,
+      "day": 19,
       "date": "2026-11-26",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -774,7 +824,7 @@
       "evidence_links": []
     },
     {
-      "day": 19,
+      "day": 20,
       "date": "2026-11-28",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -799,7 +849,7 @@
       "evidence_links": []
     },
     {
-      "day": 20,
+      "day": 21,
       "date": "2026-11-29",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -824,7 +874,7 @@
       "evidence_links": []
     },
     {
-      "day": 21,
+      "day": 22,
       "date": "2026-11-30",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -849,7 +899,7 @@
       "evidence_links": []
     },
     {
-      "day": 22,
+      "day": 23,
       "date": "2026-12-01",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -874,7 +924,7 @@
       "evidence_links": []
     },
     {
-      "day": 23,
+      "day": 24,
       "date": "2026-12-02",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -899,7 +949,7 @@
       "evidence_links": []
     },
     {
-      "day": 24,
+      "day": 25,
       "date": "2026-12-03",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -924,7 +974,7 @@
       "evidence_links": []
     },
     {
-      "day": 25,
+      "day": 26,
       "date": "2026-12-05",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -949,7 +999,7 @@
       "evidence_links": []
     },
     {
-      "day": 26,
+      "day": 27,
       "date": "2026-12-06",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -974,7 +1024,7 @@
       "evidence_links": []
     },
     {
-      "day": 27,
+      "day": 28,
       "date": "2026-12-07",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -999,7 +1049,7 @@
       "evidence_links": []
     },
     {
-      "day": 28,
+      "day": 29,
       "date": "2026-12-08",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1024,7 +1074,7 @@
       "evidence_links": []
     },
     {
-      "day": 29,
+      "day": 30,
       "date": "2026-12-09",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1049,7 +1099,7 @@
       "evidence_links": []
     },
     {
-      "day": 30,
+      "day": 31,
       "date": "2026-12-10",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1074,7 +1124,7 @@
       "evidence_links": []
     },
     {
-      "day": 31,
+      "day": 32,
       "date": "2026-12-12",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1099,7 +1149,7 @@
       "evidence_links": []
     },
     {
-      "day": 32,
+      "day": 33,
       "date": "2026-12-13",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1124,7 +1174,7 @@
       "evidence_links": []
     },
     {
-      "day": 33,
+      "day": 34,
       "date": "2026-12-14",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1149,7 +1199,7 @@
       "evidence_links": []
     },
     {
-      "day": 34,
+      "day": 35,
       "date": "2026-12-15",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1174,7 +1224,7 @@
       "evidence_links": []
     },
     {
-      "day": 35,
+      "day": 36,
       "date": "2026-12-16",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1199,7 +1249,7 @@
       "evidence_links": []
     },
     {
-      "day": 36,
+      "day": 37,
       "date": "2026-12-17",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1224,7 +1274,7 @@
       "evidence_links": []
     },
     {
-      "day": 37,
+      "day": 38,
       "date": "2026-12-19",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1249,7 +1299,7 @@
       "evidence_links": []
     },
     {
-      "day": 38,
+      "day": 39,
       "date": "2026-12-20",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1274,7 +1324,7 @@
       "evidence_links": []
     },
     {
-      "day": 39,
+      "day": 40,
       "date": "2026-12-21",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1299,7 +1349,7 @@
       "evidence_links": []
     },
     {
-      "day": 40,
+      "day": 41,
       "date": "2026-12-22",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1324,7 +1374,7 @@
       "evidence_links": []
     },
     {
-      "day": 41,
+      "day": 42,
       "date": "2026-12-23",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1349,7 +1399,7 @@
       "evidence_links": []
     },
     {
-      "day": 42,
+      "day": 43,
       "date": "2026-12-24",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1374,7 +1424,7 @@
       "evidence_links": []
     },
     {
-      "day": 43,
+      "day": 44,
       "date": "2026-12-26",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1399,7 +1449,7 @@
       "evidence_links": []
     },
     {
-      "day": 44,
+      "day": 45,
       "date": "2026-12-27",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1424,7 +1474,7 @@
       "evidence_links": []
     },
     {
-      "day": 45,
+      "day": 46,
       "date": "2026-12-28",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1449,7 +1499,7 @@
       "evidence_links": []
     },
     {
-      "day": 46,
+      "day": 47,
       "date": "2026-12-29",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1474,7 +1524,7 @@
       "evidence_links": []
     },
     {
-      "day": 47,
+      "day": 48,
       "date": "2026-12-30",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1499,7 +1549,7 @@
       "evidence_links": []
     },
     {
-      "day": 48,
+      "day": 49,
       "date": "2026-12-31",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1524,7 +1574,7 @@
       "evidence_links": []
     },
     {
-      "day": 49,
+      "day": 50,
       "date": "2027-01-02",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1549,7 +1599,7 @@
       "evidence_links": []
     },
     {
-      "day": 50,
+      "day": 51,
       "date": "2027-01-03",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1574,7 +1624,7 @@
       "evidence_links": []
     },
     {
-      "day": 51,
+      "day": 52,
       "date": "2027-01-04",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1599,7 +1649,7 @@
       "evidence_links": []
     },
     {
-      "day": 52,
+      "day": 53,
       "date": "2027-01-05",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1624,7 +1674,7 @@
       "evidence_links": []
     },
     {
-      "day": 53,
+      "day": 54,
       "date": "2027-01-06",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1649,7 +1699,7 @@
       "evidence_links": []
     },
     {
-      "day": 54,
+      "day": 55,
       "date": "2027-01-07",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1674,7 +1724,7 @@
       "evidence_links": []
     },
     {
-      "day": 55,
+      "day": 56,
       "date": "2027-01-09",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1699,7 +1749,7 @@
       "evidence_links": []
     },
     {
-      "day": 56,
+      "day": 57,
       "date": "2027-01-10",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1724,7 +1774,7 @@
       "evidence_links": []
     },
     {
-      "day": 57,
+      "day": 58,
       "date": "2027-01-11",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1749,7 +1799,7 @@
       "evidence_links": []
     },
     {
-      "day": 58,
+      "day": 59,
       "date": "2027-01-12",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1774,7 +1824,7 @@
       "evidence_links": []
     },
     {
-      "day": 59,
+      "day": 60,
       "date": "2027-01-13",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1799,7 +1849,7 @@
       "evidence_links": []
     },
     {
-      "day": 60,
+      "day": 61,
       "date": "2027-01-14",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1824,7 +1874,7 @@
       "evidence_links": []
     },
     {
-      "day": 61,
+      "day": 62,
       "date": "2027-01-16",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1849,7 +1899,7 @@
       "evidence_links": []
     },
     {
-      "day": 62,
+      "day": 63,
       "date": "2027-01-17",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1874,7 +1924,7 @@
       "evidence_links": []
     },
     {
-      "day": 63,
+      "day": 64,
       "date": "2027-01-18",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1899,7 +1949,7 @@
       "evidence_links": []
     },
     {
-      "day": 64,
+      "day": 65,
       "date": "2027-01-19",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1924,7 +1974,7 @@
       "evidence_links": []
     },
     {
-      "day": 65,
+      "day": 66,
       "date": "2027-01-20",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1949,7 +1999,7 @@
       "evidence_links": []
     },
     {
-      "day": 66,
+      "day": 67,
       "date": "2027-01-21",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1974,7 +2024,7 @@
       "evidence_links": []
     },
     {
-      "day": 67,
+      "day": 68,
       "date": "2027-01-23",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -1999,7 +2049,7 @@
       "evidence_links": []
     },
     {
-      "day": 68,
+      "day": 69,
       "date": "2027-01-24",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2024,7 +2074,7 @@
       "evidence_links": []
     },
     {
-      "day": 69,
+      "day": 70,
       "date": "2027-01-25",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2049,7 +2099,7 @@
       "evidence_links": []
     },
     {
-      "day": 70,
+      "day": 71,
       "date": "2027-01-26",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2074,7 +2124,7 @@
       "evidence_links": []
     },
     {
-      "day": 71,
+      "day": 72,
       "date": "2027-01-27",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2099,7 +2149,7 @@
       "evidence_links": []
     },
     {
-      "day": 72,
+      "day": 73,
       "date": "2027-01-28",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2124,7 +2174,7 @@
       "evidence_links": []
     },
     {
-      "day": 73,
+      "day": 74,
       "date": "2027-01-30",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2149,7 +2199,7 @@
       "evidence_links": []
     },
     {
-      "day": 74,
+      "day": 75,
       "date": "2027-01-31",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2174,7 +2224,7 @@
       "evidence_links": []
     },
     {
-      "day": 75,
+      "day": 76,
       "date": "2027-02-01",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2199,7 +2249,7 @@
       "evidence_links": []
     },
     {
-      "day": 76,
+      "day": 77,
       "date": "2027-02-02",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2224,7 +2274,7 @@
       "evidence_links": []
     },
     {
-      "day": 77,
+      "day": 78,
       "date": "2027-02-03",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2249,7 +2299,7 @@
       "evidence_links": []
     },
     {
-      "day": 78,
+      "day": 79,
       "date": "2027-02-04",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2274,7 +2324,7 @@
       "evidence_links": []
     },
     {
-      "day": 79,
+      "day": 80,
       "date": "2027-02-06",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2299,7 +2349,7 @@
       "evidence_links": []
     },
     {
-      "day": 80,
+      "day": 81,
       "date": "2027-02-07",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2324,7 +2374,7 @@
       "evidence_links": []
     },
     {
-      "day": 81,
+      "day": 82,
       "date": "2027-02-08",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2349,7 +2399,7 @@
       "evidence_links": []
     },
     {
-      "day": 82,
+      "day": 83,
       "date": "2027-02-09",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2374,7 +2424,7 @@
       "evidence_links": []
     },
     {
-      "day": 83,
+      "day": 84,
       "date": "2027-02-10",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2399,7 +2449,7 @@
       "evidence_links": []
     },
     {
-      "day": 84,
+      "day": 85,
       "date": "2027-02-11",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2424,7 +2474,7 @@
       "evidence_links": []
     },
     {
-      "day": 85,
+      "day": 86,
       "date": "2027-02-13",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2449,7 +2499,7 @@
       "evidence_links": []
     },
     {
-      "day": 86,
+      "day": 87,
       "date": "2027-02-14",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2474,7 +2524,7 @@
       "evidence_links": []
     },
     {
-      "day": 87,
+      "day": 88,
       "date": "2027-02-15",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2499,7 +2549,7 @@
       "evidence_links": []
     },
     {
-      "day": 88,
+      "day": 89,
       "date": "2027-02-16",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2524,7 +2574,7 @@
       "evidence_links": []
     },
     {
-      "day": 89,
+      "day": 90,
       "date": "2027-02-17",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2549,7 +2599,7 @@
       "evidence_links": []
     },
     {
-      "day": 90,
+      "day": 91,
       "date": "2027-02-18",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2574,7 +2624,7 @@
       "evidence_links": []
     },
     {
-      "day": 91,
+      "day": 92,
       "date": "2027-02-20",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2599,7 +2649,7 @@
       "evidence_links": []
     },
     {
-      "day": 92,
+      "day": 93,
       "date": "2027-02-21",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2624,7 +2674,7 @@
       "evidence_links": []
     },
     {
-      "day": 93,
+      "day": 94,
       "date": "2027-02-22",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2649,7 +2699,7 @@
       "evidence_links": []
     },
     {
-      "day": 94,
+      "day": 95,
       "date": "2027-02-23",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2674,7 +2724,7 @@
       "evidence_links": []
     },
     {
-      "day": 95,
+      "day": 96,
       "date": "2027-02-24",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2699,7 +2749,7 @@
       "evidence_links": []
     },
     {
-      "day": 96,
+      "day": 97,
       "date": "2027-02-25",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2724,7 +2774,7 @@
       "evidence_links": []
     },
     {
-      "day": 97,
+      "day": 98,
       "date": "2027-02-27",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2749,7 +2799,7 @@
       "evidence_links": []
     },
     {
-      "day": 98,
+      "day": 99,
       "date": "2027-02-28",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2774,7 +2824,7 @@
       "evidence_links": []
     },
     {
-      "day": 99,
+      "day": 100,
       "date": "2027-03-01",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2799,7 +2849,7 @@
       "evidence_links": []
     },
     {
-      "day": 100,
+      "day": 101,
       "date": "2027-03-02",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2824,7 +2874,7 @@
       "evidence_links": []
     },
     {
-      "day": 101,
+      "day": 102,
       "date": "2027-03-03",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2849,7 +2899,7 @@
       "evidence_links": []
     },
     {
-      "day": 102,
+      "day": 103,
       "date": "2027-03-04",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2874,7 +2924,7 @@
       "evidence_links": []
     },
     {
-      "day": 103,
+      "day": 104,
       "date": "2027-03-06",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2899,7 +2949,7 @@
       "evidence_links": []
     },
     {
-      "day": 104,
+      "day": 105,
       "date": "2027-03-07",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2924,7 +2974,7 @@
       "evidence_links": []
     },
     {
-      "day": 105,
+      "day": 106,
       "date": "2027-03-08",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2949,7 +2999,7 @@
       "evidence_links": []
     },
     {
-      "day": 106,
+      "day": 107,
       "date": "2027-03-09",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2974,7 +3024,7 @@
       "evidence_links": []
     },
     {
-      "day": 107,
+      "day": 108,
       "date": "2027-03-10",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -2999,7 +3049,7 @@
       "evidence_links": []
     },
     {
-      "day": 108,
+      "day": 109,
       "date": "2027-03-11",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3024,7 +3074,7 @@
       "evidence_links": []
     },
     {
-      "day": 109,
+      "day": 110,
       "date": "2027-03-13",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3049,7 +3099,7 @@
       "evidence_links": []
     },
     {
-      "day": 110,
+      "day": 111,
       "date": "2027-03-14",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3074,7 +3124,7 @@
       "evidence_links": []
     },
     {
-      "day": 111,
+      "day": 112,
       "date": "2027-03-15",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3099,7 +3149,7 @@
       "evidence_links": []
     },
     {
-      "day": 112,
+      "day": 113,
       "date": "2027-03-16",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3124,7 +3174,7 @@
       "evidence_links": []
     },
     {
-      "day": 113,
+      "day": 114,
       "date": "2027-03-17",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3149,7 +3199,7 @@
       "evidence_links": []
     },
     {
-      "day": 114,
+      "day": 115,
       "date": "2027-03-18",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3174,7 +3224,7 @@
       "evidence_links": []
     },
     {
-      "day": 115,
+      "day": 116,
       "date": "2027-03-20",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3199,7 +3249,7 @@
       "evidence_links": []
     },
     {
-      "day": 116,
+      "day": 117,
       "date": "2027-03-21",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3224,7 +3274,7 @@
       "evidence_links": []
     },
     {
-      "day": 117,
+      "day": 118,
       "date": "2027-03-22",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3249,7 +3299,7 @@
       "evidence_links": []
     },
     {
-      "day": 118,
+      "day": 119,
       "date": "2027-03-23",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3274,7 +3324,7 @@
       "evidence_links": []
     },
     {
-      "day": 119,
+      "day": 120,
       "date": "2027-03-24",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3299,7 +3349,7 @@
       "evidence_links": []
     },
     {
-      "day": 120,
+      "day": 121,
       "date": "2027-03-25",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3324,7 +3374,7 @@
       "evidence_links": []
     },
     {
-      "day": 121,
+      "day": 122,
       "date": "2027-03-27",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3349,7 +3399,7 @@
       "evidence_links": []
     },
     {
-      "day": 122,
+      "day": 123,
       "date": "2027-03-28",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3374,7 +3424,7 @@
       "evidence_links": []
     },
     {
-      "day": 123,
+      "day": 124,
       "date": "2027-03-29",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3399,7 +3449,7 @@
       "evidence_links": []
     },
     {
-      "day": 124,
+      "day": 125,
       "date": "2027-03-30",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3424,7 +3474,7 @@
       "evidence_links": []
     },
     {
-      "day": 125,
+      "day": 126,
       "date": "2027-03-31",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3449,7 +3499,7 @@
       "evidence_links": []
     },
     {
-      "day": 126,
+      "day": 127,
       "date": "2027-04-01",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3474,7 +3524,7 @@
       "evidence_links": []
     },
     {
-      "day": 127,
+      "day": 128,
       "date": "2027-04-03",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3499,7 +3549,7 @@
       "evidence_links": []
     },
     {
-      "day": 128,
+      "day": 129,
       "date": "2027-04-04",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3524,7 +3574,7 @@
       "evidence_links": []
     },
     {
-      "day": 129,
+      "day": 130,
       "date": "2027-04-05",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3549,7 +3599,7 @@
       "evidence_links": []
     },
     {
-      "day": 130,
+      "day": 131,
       "date": "2027-04-06",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3574,7 +3624,7 @@
       "evidence_links": []
     },
     {
-      "day": 131,
+      "day": 132,
       "date": "2027-04-07",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3599,7 +3649,7 @@
       "evidence_links": []
     },
     {
-      "day": 132,
+      "day": 133,
       "date": "2027-04-08",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3624,7 +3674,7 @@
       "evidence_links": []
     },
     {
-      "day": 133,
+      "day": 134,
       "date": "2027-04-10",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3649,7 +3699,7 @@
       "evidence_links": []
     },
     {
-      "day": 134,
+      "day": 135,
       "date": "2027-04-11",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3674,7 +3724,7 @@
       "evidence_links": []
     },
     {
-      "day": 135,
+      "day": 136,
       "date": "2027-04-12",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3699,7 +3749,7 @@
       "evidence_links": []
     },
     {
-      "day": 136,
+      "day": 137,
       "date": "2027-04-13",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3724,7 +3774,7 @@
       "evidence_links": []
     },
     {
-      "day": 137,
+      "day": 138,
       "date": "2027-04-14",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3749,7 +3799,7 @@
       "evidence_links": []
     },
     {
-      "day": 138,
+      "day": 139,
       "date": "2027-04-15",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3774,7 +3824,7 @@
       "evidence_links": []
     },
     {
-      "day": 139,
+      "day": 140,
       "date": "2027-04-17",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3799,7 +3849,7 @@
       "evidence_links": []
     },
     {
-      "day": 140,
+      "day": 141,
       "date": "2027-04-18",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3824,7 +3874,7 @@
       "evidence_links": []
     },
     {
-      "day": 141,
+      "day": 142,
       "date": "2027-04-19",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3849,7 +3899,7 @@
       "evidence_links": []
     },
     {
-      "day": 142,
+      "day": 143,
       "date": "2027-04-20",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3874,7 +3924,7 @@
       "evidence_links": []
     },
     {
-      "day": 143,
+      "day": 144,
       "date": "2027-04-21",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3899,7 +3949,7 @@
       "evidence_links": []
     },
     {
-      "day": 144,
+      "day": 145,
       "date": "2027-04-22",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3924,7 +3974,7 @@
       "evidence_links": []
     },
     {
-      "day": 145,
+      "day": 146,
       "date": "2027-04-24",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3949,7 +3999,7 @@
       "evidence_links": []
     },
     {
-      "day": 146,
+      "day": 147,
       "date": "2027-04-25",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3974,7 +4024,7 @@
       "evidence_links": []
     },
     {
-      "day": 147,
+      "day": 148,
       "date": "2027-04-26",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -3999,7 +4049,7 @@
       "evidence_links": []
     },
     {
-      "day": 148,
+      "day": 149,
       "date": "2027-04-27",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4024,7 +4074,7 @@
       "evidence_links": []
     },
     {
-      "day": 149,
+      "day": 150,
       "date": "2027-04-28",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4049,7 +4099,7 @@
       "evidence_links": []
     },
     {
-      "day": 150,
+      "day": 151,
       "date": "2027-04-29",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4074,7 +4124,7 @@
       "evidence_links": []
     },
     {
-      "day": 151,
+      "day": 152,
       "date": "2027-05-01",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4099,7 +4149,7 @@
       "evidence_links": []
     },
     {
-      "day": 152,
+      "day": 153,
       "date": "2027-05-02",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4124,7 +4174,7 @@
       "evidence_links": []
     },
     {
-      "day": 153,
+      "day": 154,
       "date": "2027-05-03",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4149,7 +4199,7 @@
       "evidence_links": []
     },
     {
-      "day": 154,
+      "day": 155,
       "date": "2027-05-04",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4174,7 +4224,7 @@
       "evidence_links": []
     },
     {
-      "day": 155,
+      "day": 156,
       "date": "2027-05-05",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
@@ -4199,7 +4249,7 @@
       "evidence_links": []
     },
     {
-      "day": 156,
+      "day": 157,
       "date": "2027-05-06",
       "sql": {
         "title": "Advanced Data Engineering SQL, revision and mixed interview practice",
