@@ -94,3 +94,15 @@ The goal is visible reasoning development and learner autonomy, **not** giving a
 - After the commit is acknowledged, provide the user with a link and move to the next question. If the user's solution remains incorrect, record **reviewed / needs independent retry**, not successfully mastered. If the user elects to move on, make the status explicit.
 - The GitHub connection writes directly to the remote repo; its successful commit is the equivalent of committing and pushing. Do not claim a separate local git push occurred.
 - Never commit correct answers to a not-yet-attempted question. Q7 keeps its final solution hidden until the learner has submitted it.
+
+## Every practice question: complete problem + two-repository preservation
+
+**Starting with Q8, mandatory for both SQL and Python**, create linked per-question study records in **both** `data-engineering-journey` and `Data-Engineering-Mastry`, without modifying the original PNP course files. See [record policy and SQL/Python templates](../study-records/README.md).
+
+**Before student attempts:** Archive the original tutor-authored or authorized question, both/all input tables or Python input/signature, explicit output, and a plain-language explanation of why each expected row/value appears. For paid-course questions, preserve an independent problem summary and link to the protected source instead of copying restricted content. Hide all full solutions/answer keys.
+
+**During attempts:** Record reasoning first, each original intermediate SQLite/Python code submission verbatim, actual run output or error and incremental review. The learner drives steps. Never pretend a query/code snippet was executed if it wasn't.
+
+**After attempt and review:** Preserve the original student code, expected versus actual, independently revised code, comprehensive progressive walkthrough using the same example and actual intermediate outputs, assistant-reviewed reference solution, and source-provided official answer **only when genuinely available and authorized**. SQL uses student's SQLite plus separate assistant SQLite and SQL Server/T-SQL references; Python uses original and revised Python, tested Python reference, and complexity without inventing SQL Server variants. After the optional learning capture, create the question-closing GitHub commits in both repositories with links pointing to each other. Maintain the distinction between reviewed, correct, and mastered, and between tutor practice and PNP source credit.
+
+**Existing questions:** Q1–Q7 are already archived in the main repo and should remain linked from the PNP/source repo's retrospective index; the new mirrored full-question template begins with Q8.
