@@ -646,3 +646,8 @@ The learner requested detailed justification for every reference solution, inclu
 **Review:** Correct. The cancelled order 203 does not match the ON predicate. Both paid orders match independently and produce two rows: (Ravi, 205, paid) and (Ravi, 206, paid). No extra NULL-extended row is generated because at least one qualifying right-side match exists.
 
 **Evidence classification:** One correct follow-up reasoning check on JOIN multiplicity. This is not a new PNP SQL problem or proof of complete anti-join mastery. Q7 remains unattempted.
+
+
+## Q6 — Dedicated anti-join lesson
+
+The learner explicitly confirmed anti-joins are major new learning. See the [detailed SQL-R005 tutorial](../../../01-sql/revision/SQL-R005-ANTI-JOIN-DETAILED-LESSON.md), covering the reason for anti-joins, the original mistake, progressive queries with output tables, multiple matches, NULL cases, SQLite and T-SQL references, and practical applications. Q7 remains unattempted.
