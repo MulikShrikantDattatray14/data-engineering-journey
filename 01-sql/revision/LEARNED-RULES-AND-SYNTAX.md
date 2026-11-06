@@ -154,3 +154,77 @@ LEFT JOIN orders AS o
 **Nuance:** This is not a universal claim that `WHERE` always turns a LEFT JOIN into INNER JOIN. It applies to NULL-rejecting right-table conditions such as `o.status = 'paid'`. Conditions like `WHERE o.order_id IS NULL` deliberately select unmatched rows instead. SQL logical processing considers JOIN/ON before WHERE.
 
 **SQLite and SQL Server:** The demonstrated syntax and behavior apply to both. This is a new confirmed learning entry, not a new PNP question completion.
+
+
+### Q5 — High-priority learning (learner explicitly reaffirmed)
+
+**Priority:** High — learner reports making this type of error previously, so revisit in mixed questions.
+
+**Learner-selected explanation (verbatim as pasted, including table formatting):**
+
+~~~text
+## The generalized rule
+
+When using `LEFT JOIN`, the placement of a filter determines whether unmatched left-table records are preserved.
+
+|   |
+| - |
+
+Place the filter in
+
+|   |
+| - |
+
+What it does
+
+|   |
+| - |
+
+`ON`
+
+|   |
+| - |
+
+Restricts which right-table rows can match, while preserving all left-table rows
+
+|   |
+| - |
+
+`WHERE`
+
+|   |
+| - |
+
+Filters the final joined rows, potentially removing left-table records
+
+### Scenario 1 — Keep every customer, attach only paid orders
+```
+LEFT JOIN orders AS o
+    ON c.customer_id = o.customer_id
+   AND o.status = 'paid'
+```
+
+All customers remain, including those without paid orders.
+
+### Scenario 2 — Return only customers with paid orders
+```
+LEFT JOIN orders AS o
+    ON c.customer_id = o.customer_id
+WHERE o.status = 'paid'
+```
+
+Customers without paid orders disappear.
+
+Important nuance: Not every `WHERE` condition removes unmatched records. For example, `WHERE o.order_id IS NULL` can specifically identify customers with no matching orders.
+
+This rule works in SQLite and SQL Server.
+~~~
+
+**Clean review index (without changing the original above):**
+
+| Filter location | Effect |
+|---|---|
+| `ON` (right-table filter) | Limits qualifying matches; unmatched left rows remain under LEFT JOIN |
+| `WHERE` (right-table NULL-rejecting filter) | Filters joined results; may remove unmatched left rows |
+
+**Retrieval checkpoints:** Revisit in Q6 (no qualifying match), later multi-condition JOINs, and mixed review with NULL, OR grouping, and syntax checking. First require independent attempts; do not expose solution keys before attempts.
