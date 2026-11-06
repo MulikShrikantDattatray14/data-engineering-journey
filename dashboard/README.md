@@ -74,3 +74,24 @@ The website's **Today's targets** and **Daily targets** now show November 6 as a
 The **Daily targets** view now includes distinct sections for **guided SQL diagnostic progress**, **each reviewed question**, and **concepts studied**. Question links open [the November 6 per-question GitHub revision index](../10-learning-journal/sessions/2026-11-06/PRACTICE-INDEX.md), which points to exact attempted SQL, actual output comparisons and references. Concept links open SQL-R001–SQL-R006 rules and detailed lessons. Future dated records can use the same `daily[].practice.questions` and `daily[].practice.concepts` data fields.
 
 The overview and daily scoring panel display **7/8 guided tutor questions reviewed** and **3/7 independently correct or corrected** on November 6, with an explicit explanation that these are *separate* from official PNP/Python source-completion credits. In the timeline and day list, the date shows guided activity even while its official curriculum score is 0%. **Do not change curriculum mastery flags or source-completed IDs just to make the practice meter move.**
+
+
+## Detailed Daily Targets / execution cockpit
+
+The Daily targets navigation now opens a detailed, date-selectable execution view rather than only two generic score panels. It includes:
+
+- **Daily snapshot**: reviewed SQL practice count, independently correct/corrected count, newly credited PNP/Python source tasks, and actual focus minutes (0 means unlogged, not no study).
+- **Study slots**: target topics, scheduled time (explicitly planned, never inferred as attendance), status, verified work and GitHub source links.
+- **Detailed task board**: each learning objective with target, verified completion, units, review state, remaining work and source/evidence link. Tasks are grouped by SQL, Python and daily review.
+- **Curriculum source tracking**: actual assigned PNP SQL IDs, PDF pages and verification flags; never equates assistant-provided answers to independently solved source problems.
+- **Separate guided-practice vs official scoring**: 7 of 8 November 6 tutor diagnostic questions reviewed, 3 correctly solved/revised, and no newly verified PNP IDs; the official composite can remain 0% while guided practice advances.
+- **Next actions**: dated outstanding work and clear end-of-day requirements.
+- **Actual focus and evidence**: real time logs, notes, and direct links to reviewed GitHub artifacts.
+- **Daily revision library**: individual question links (Q1–Q7 for Nov 6) and concept lessons (SQL-R001–R006) for quick re-study, with status and tags.
+- **Calendar navigation**: Previous day, Next day, Today, date selector, and the 157-day directory. The content updates from the GitHub JSON data on Refresh and periodic refresh.
+
+**Data contract:** `progress/daily-progress.json` retains its original source completion arrays and assessment flags. A date may optionally define `execution.slots`, `execution.tasks`, and `execution.next_actions` for detailed plans, and `practice.questions` / `practice.concepts` for evidence links. When execution details are absent (future dates), the website derives task rows from existing SQL and Python source assignments and presents them as not started until reviewed updates are committed.
+
+**Status meanings:** `not_started` = no verified evidence; `in_progress` = some activity or a partial target; `reviewed` = review documented (not necessarily full mastery); `complete` = target fully verified. Website checklists are *read-only* and cannot alter account data.
+
+**Integrity examples:** November 6 is Day 1; November 7 remains its original scheduled curriculum as Day 2. Seven tutor questions reviewed ≠ seven newly credited PNP problems. Q3–Q6 have reviewed reference solutions but no independent final corrections recorded; Q7 final LEFT JOIN was independently corrected, whereas the original NOT IN solution omitted required sorting.
