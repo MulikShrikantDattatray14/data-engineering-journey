@@ -2,7 +2,7 @@
 
 **Study date:** 2026-11-06 · Day 1 / Slot 1 / Question 7  
 **Priority:** HIGH — learner explicitly identified anti-joins as important, new learning.  
-**Source:** [Q7 chronological original attempts and reviews](../../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md) · [Related Q6 anti-join fundamentals](SQL-R005-ANTI-JOIN-DETAILED-LESSON.md)  
+**Source:** [Q7 chronological original attempts and reviews](../../10-learning-journal/sessions/2026-11-06/slot-01-sql.md) · [Related Q6 anti-join fundamentals](SQL-R005-ANTI-JOIN-DETAILED-LESSON.md)  
 **Status:** Two SQLite solution approaches reviewed; LEFT JOIN final submission verified complete; original NOT IN version returned correct rows but omitted required explicit ordering. These are *tutor-authored practice/reference notes*, not an official PNP answer key.
 
 ## 1. Learner's exact new-learning statement
