@@ -34,3 +34,8 @@
 - **Revision list:** negative modulo; `range()` boundaries and step; safe loop termination; colons/indentation/equality; slicing steps; tuple immutability.
 
 **Data integrity:** No future day credited, no Python PDF pages or Bosscoder assignments invented, no focus minutes inferred from the schedule. Refer to [progress data](../../../progress/daily-progress.json) for current verified counts.
+
+
+## Diwali holiday schedule update — November 8, 2026
+
+The learner confirmed **no study on November 7 or November 8** because of Diwali holidays. The previously planned November 7 at 09:00 IST restart is **superseded**. Resume on **November 9, 2026**, from the unchanged first unanswered task: **Python Slot 2, Lesson 13A (sets)**. Close the remaining November 6 Slot 2 and Slot 4 backlog (plus mandatory review) first; then tackle November 7 and November 8 pending targets, and only afterwards start the November 9 targets. No holiday completion credit or retroactive attendance is claimed. See [daily tracker](../../../progress/daily-progress.json).
