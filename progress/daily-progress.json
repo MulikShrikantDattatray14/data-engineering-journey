@@ -52,7 +52,7 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0. Later Nov 6 chat: P004-style email validation query corrected; three guided challenges reviewed: identify bad emails, count duplicate emails with HAVING, return customers sharing emails using IN subquery. SQL Slot 1 and Slot 3 study sessions concluded by learner request, logged as reviewed rather than fully complete because PNP reattempt minimum and new source stretch targets were not met. No SQLite verification or new PNP source solve claimed. P004 formally closed: final learner-authored label correction to 'Not in name@domain.tld form' joined with previously submitted full query; executed in SQLite 3.46.1. Source sample 3/3 rows with exact 5 columns/labels; edge cases checked. Previously solved source reattempts now 4/6, no new PNP source ID credited. P005 independently corrected half-open Q1 2025 date query (< 2025-04-01), verified via SQLite 3.46.1 on original sample and 11-row extended fixture including March 31 timestamps and tie ordering; 7/7 qualifying rows. Archives committed in both repositories. Formally verified PNP reattempts 5/6; no new source IDs or focus minutes credited. P006 final learner query with explicit non-NULL price filters, equality of prices via subtraction ==0, CASE full-price display and top-10 sort independently corrected and executed in SQLite 3.46.1 on source sample and 18-product extended fixture. Passed; mirrored closure in Journey and Mastry. PNP reattempt minimum P001–P006 is 6/6 met; no additional newly solved source ID, reflection or focus minutes inferred. Python guided Slot 2 interactive lessons 1–12 reviewed in chat; independent coding submissions for classification, loop sums, safe while, break/continue, list filtering/slicing and tuples archived. Set lesson 13A question pending. Nov 6 Slot 4 Bosscoder alignment and exact source PDF pages 1–8 not verified; focus minutes and reflection not supplied. Learner directed pause and resume at 09:00 IST Nov 7, finish all Nov 6 backlog before any Nov 7 four-slot targets.",
+      "notes": "Day 1 Q1–Q8 tutor-created SQL diagnostics reviewed. Q1 correct first try; Q2, Q7 and Q8 independently corrected, with Q8 final LEFT JOIN returning exactly 5 expected rows, 3 columns and ascending IDs. Q3–Q6 reviewed but no independently corrected final versions. Q8 exact new learning: anti join pattern concept. SQL-R001–SQL-R007 recorded. No newly completed PNP SQL source IDs or Python PDF pages verified. Actual focused minutes not logged. PNP source P001 baseline question reattempted; independently corrected after three submissions; expected three-brand illustrative output verified. P001 new learning capture and closing commit still pending. This is a reattempt, not an additional new PNP source solve. P001 learning capture explicitly No new learning; closing checkpoint saved in both repositories. Next P002 reattempt; PNP reattempts 1/6 minimum, no new source completion. PNP P002 reattempt first independently submitted query passed exactly 10 rows, 4 columns and stable tie ordering on illustrative dataset; 2/6 minimum verified reattempts; P002 optional learning and closing checkpoint pending. No new source IDs credited. PNP P002 learning capture: No new learning; closing checkpoint committed to both repos. Next independent reattempt P003. P003 reattempt independently corrected and SQLite-verified on 9-row illustrative fixture, exact 8 rows/5 columns and case-insensitive city sorting; 3/6 source reattempts verified. P003 optional learning and closing commit pending, zero additional new source IDs. P003 final learning response: No new learning; question formally closed in both GitHub repositories. 3/6 reattempts verified; new source IDs completed remain 0. Later Nov 6 chat: P004-style email validation query corrected; three guided challenges reviewed: identify bad emails, count duplicate emails with HAVING, return customers sharing emails using IN subquery. SQL Slot 1 and Slot 3 study sessions concluded by learner request, logged as reviewed rather than fully complete because PNP reattempt minimum and new source stretch targets were not met. No SQLite verification or new PNP source solve claimed. P004 formally closed: final learner-authored label correction to 'Not in name@domain.tld form' joined with previously submitted full query; executed in SQLite 3.46.1. Source sample 3/3 rows with exact 5 columns/labels; edge cases checked. Previously solved source reattempts now 4/6, no new PNP source ID credited. P005 independently corrected half-open Q1 2025 date query (< 2025-04-01), verified via SQLite 3.46.1 on original sample and 11-row extended fixture including March 31 timestamps and tie ordering; 7/7 qualifying rows. Archives committed in both repositories. Formally verified PNP reattempts 5/6; no new source IDs or focus minutes credited. P006 final learner query with explicit non-NULL price filters, equality of prices via subtraction ==0, CASE full-price display and top-10 sort independently corrected and executed in SQLite 3.46.1 on source sample and 18-product extended fixture. Passed; mirrored closure in Journey and Mastry. PNP reattempt minimum P001–P006 is 6/6 met; no additional newly solved source ID, reflection or focus minutes inferred. Python guided Slot 2 interactive lessons 1–12 reviewed in chat; independent coding submissions for classification, loop sums, safe while, break/continue, list filtering/slicing and tuples archived. Set lesson 13A question pending. Nov 6 Slot 4 Bosscoder alignment and exact source PDF pages 1–8 not verified; focus minutes and reflection not supplied. Learner directed pause and resume at 09:00 IST Nov 7, finish all Nov 6 backlog before any Nov 7 four-slot targets. Diwali schedule revision: learner confirmed no study Nov 7–8; resumption shifted to Nov 9, same Lesson 13A and pending Nov 6 backlog first. Prior Nov 7 09:00 plan superseded.",
       "evidence_links": [
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-01-sql.md",
         "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/Q7-CLOSED.md",
@@ -311,7 +311,7 @@
         "pnp_p006_first_try_correct": false
       },
       "execution": {
-        "state": "paused_nov6_backlog_resume_nov7_0900",
+        "state": "paused_nov6_backlog_resume_nov9",
         "current_slot": 2,
         "current_question": "Python Lesson 13A — sets (predict len and membership)",
         "last_verified": "2026-11-06",
@@ -470,11 +470,11 @@
           }
         ],
         "next_actions": [
-          "09:00 IST Nov 7: resume November 6 backlog first, beginning with Slot 2 Lesson 13A (sets).",
+          "Nov 9: resume November 6 backlog first, beginning with Slot 2 Lesson 13A (sets).",
           "Close November 6 Slot 2: remaining topics/source gaps; verify actual PNP PDF pages 1–8 and associated practice before page credit.",
           "Close November 6 Slot 4: Bosscoder Python Refresher 1 notes/assignment alignment, mixed revision and original exercise evidence; do not double-count Slot 2.",
           "Finish November 6 day-end reflection, actual focus-time evidence if available, and unresolved mandatory tasks before claiming day closure.",
-          "Only after the Nov 6 backlog is closed, start the Nov 7 curriculum in four slots; do not mark any future work completed.",
+          "Only after the Nov 6 backlog is closed, start the Nov 7 and Nov 8 missed curriculum in four slots; do not mark any future work completed.",
           "Keep SQL source stretch IDs and earlier diagnostic corrections separately visible for future revision."
         ]
       },
@@ -559,23 +559,19 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "",
+      "notes": "Learner confirmed no study on this date due to Diwali holiday. Previously scheduled curriculum targets remain pending and are carried forward; no task, source page, focus minutes, or daily win credited. Resume from Nov 6 backlog on Nov 9.",
       "evidence_links": [],
       "carry_forward_from_previous_day": {
-        "priority": "complete_2026-11-06_backlog_first",
-        "resume_time_local": "09:00",
+        "priority": "paused_due_to_diwali_holiday",
+        "status": "no_study",
+        "resume_date": "2026-11-09",
         "timezone": "Asia/Kolkata",
-        "status": "planned_not_started",
         "entrypoint": "Python Slot 2 Lesson 13A — sets",
-        "remaining": [
-          "Nov 6 Slot 2 PNP Python PDF pp.1–8 source checks and missing basics",
-          "Nov 6 Slot 4 Bosscoder Refresher 1 alignment and independent assignments",
-          "Nov 6 mixed revision on negative modulo, range, loop boundaries, indentation, slicing, tuples",
-          "Nov 6 end-of-day review/reflection and actual focus evidence"
-        ],
-        "rule": "Do not begin Nov 7 four-slot targets until Nov 6 mandatory backlog is completed and reviewed",
+        "rule": "Retain uncompleted Nov 7 and Nov 8 targets in original order after closing Nov 6 backlog; no retrospective completion",
         "source_url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-02-python.md"
-      }
+      },
+      "study_status": "holiday_no_study",
+      "study_day_type": "Diwali holiday — no study"
     },
     {
       "day": 3,
@@ -621,8 +617,19 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "",
-      "evidence_links": []
+      "notes": "Learner confirmed no study on this date due to Diwali holiday. Previously scheduled curriculum targets remain pending and are carried forward; no task, source page, focus minutes, or daily win credited. Resume from Nov 6 backlog on Nov 9.",
+      "evidence_links": [],
+      "study_status": "holiday_no_study",
+      "study_day_type": "Diwali holiday — no study",
+      "carry_forward_from_previous_day": {
+        "priority": "paused_due_to_diwali_holiday",
+        "status": "no_study",
+        "resume_date": "2026-11-09",
+        "timezone": "Asia/Kolkata",
+        "entrypoint": "Python Slot 2 Lesson 13A — sets",
+        "rule": "Retain uncompleted Nov 7 and Nov 8 targets in original order after closing Nov 6 backlog; no retrospective completion",
+        "source_url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-02-python.md"
+      }
     },
     {
       "day": 4,
@@ -671,8 +678,33 @@
         "python": 0
       },
       "reflection_completed": false,
-      "notes": "",
-      "evidence_links": []
+      "notes": "Nov 7 and Nov 8 were Diwali no-study holidays, confirmed by learner. On Nov 9 resume from Nov 6 Python Lesson 13A, then finish Nov 6 backlog; complete Nov 7 and Nov 8 pending targets in order before advancing to Nov 9 targets. No actual Nov 9 study yet verified.",
+      "evidence_links": [],
+      "carry_forward_from_previous_day": {
+        "priority": "complete_oldest_backlog_before_nov9_new_targets",
+        "resume_date": "2026-11-09",
+        "timezone": "Asia/Kolkata",
+        "status": "planned_not_started",
+        "entrypoint": "Nov 6 Python Slot 2 Lesson 13A — Python sets (first unanswered question)",
+        "queue": [
+          "Finish outstanding Nov 6 Slot 2: Lesson 13A and follow-up, PNP Python PDF pp. 1–8 verified source coverage, missing fundamentals and review",
+          "Finish outstanding Nov 6 Slot 4: Bosscoder Python Refresher 1 alignment, independent exercises, mixed revision, day reflection and legitimate time log",
+          "Revisit outstanding mandatory Nov 6 SQL diagnostics Q3–Q6 if required; SQL six baseline PNP reattempts are already complete",
+          "Work through pending Nov 7 four-slot targets in sequence, without marking holiday attendance",
+          "Work through pending Nov 8 four-slot targets in sequence, without marking holiday attendance",
+          "Only then start Nov 9's own four-slot targets, carrying any remaining tasks onward"
+        ],
+        "revision_topics": [
+          "negative modulo",
+          "range() exclusive stop and step",
+          "safe while loop termination",
+          "Python indentation",
+          "slicing steps",
+          "tuple immutability"
+        ],
+        "rule": "No new-date targets until earlier backlog is completed and reviewed; no credit from schedule alone",
+        "source_url": "https://github.com/MulikShrikantDattatray14/data-engineering-journey/blob/main/10-learning-journal/sessions/2026-11-06/slot-02-python.md"
+      }
     },
     {
       "day": 5,
