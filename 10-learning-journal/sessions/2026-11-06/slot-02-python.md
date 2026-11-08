@@ -157,3 +157,8 @@ Expected outputs: `101`, `2500`, `INR`, `4`, `(101, 'SUCCESS', 3000, 'INR')`. Ne
 - **Learner's order instruction:** Resume at **09:00 IST on November 7**. First close **November 6's remaining backlog across Slots 2 and 4 (plus any outstanding mandatory day review)**. Only then begin the November 7 targets across all four slots. This is a plan, **not evidence of future attendance or completion**.
 
 [Slot 4 follow-up](slot-04-python.md) · [Nov 6 session index](README.md) · [Progress data](../../../progress/daily-progress.json)
+
+
+## Diwali holiday schedule update — November 8, 2026
+
+The learner confirmed **no study on November 7 or November 8** because of Diwali holidays. The previously planned November 7 at 09:00 IST restart is **superseded**. Resume on **November 9, 2026**, from the unchanged first unanswered task: **Python Slot 2, Lesson 13A (sets)**. Close the remaining November 6 Slot 2 and Slot 4 backlog (plus mandatory review) first; then tackle November 7 and November 8 pending targets, and only afterwards start the November 9 targets. No holiday completion credit or retroactive attendance is claimed. See [daily tracker](../../../progress/daily-progress.json).
