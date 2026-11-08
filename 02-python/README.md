@@ -1,5 +1,9 @@
 # Python for Data Engineering
 
+## Canonical concise Python foundation notes
+
+For quick revision, use the [numbered Python foundation folders in Data-Engineering-Mastry](https://github.com/MulikShrikantDattatray14/Data-Engineering-Mastry/tree/main/2.%20Python%20Mastry/0.%20Foundation%20Notes). Each topic has one short `0. Foundation Notes.md` with a simple explanation, Python example and JavaScript comparison where useful. The 80-page PDF, all 76 original PDF-aligned entries and Bosscoder lecture source/audit files remain preserved separately so nothing is lost. Do **not** treat foundation examples as solved problem-bank questions; add numbered practice files only after independent source-question attempts. Older detailed study logs remain evidence archives, not canonical foundation notes.
+
 Topics: syntax, variables, functions, lists, dictionaries, sets, iterators, generators, file processing, JSON, APIs, exception handling, testing, logging, pandas, performance, and practical ETL exercises.
 
 Use existing JavaScript knowledge for comparisons, but write idiomatic Python. Add notes, runnable code and reviewed exercises as learning progresses.
